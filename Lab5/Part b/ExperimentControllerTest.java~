@@ -1,0 +1,50 @@
+import junit.framework.TestCase;
+
+public class ExperimentController{
+  
+  public void testMyTimeFindSecond(){
+    MyListIntContainer myCont = new MyListIntContainer();
+    Wheel myWheel = new Wheel(seed, numberOfItems);
+    
+    for(int i=0; i< 500; i++){
+      int randomNumber = myWheel.spin();
+      myCont.addToFront(randomNumber);
+    }
+    
+    long startTime = System.currentTimeMillis();
+    myCont.findSecondLargest();
+    long stopTime = System.currentTimeMillis();
+
+    assertTrue((stopTime - startTime)>0);
+  }
+  
+  public void testRunMyFindSecond(int number){
+    ExperimentController test = new ExperimentController();
+    String answer = "";
+    answer = test.runMyFindSecond(1);
+    assertTrue(answer!="");
+  }
+  
+  public void testLinkedTimeFindSecond(){
+    LinkedListIntContainer linkedCont = new LinkedListIntContainer();
+    Wheel myWheel = new Wheel(seed, numberOfItems);
+    
+    for(int i=0; i< numberOfItems; i++){
+      int randomNumber = myWheel.spin();
+      linkedCont.addToFront(randomNumber);
+    }
+    
+    long startTime = System.currentTimeMillis();
+    linkedCont.findSecondLargest();
+    long stopTime = System.currentTimeMillis();
+    assertTrue((stopTime - startTime)>0);
+  }
+
+  public void testRunLinkedFindSecond(){
+    ExperimentController test = new ExperimentController();
+    String answer = "";
+    answer = test.runMyFindSecond(1);
+    assertTrue(answer!="");
+  }
+
+}

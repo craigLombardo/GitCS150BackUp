@@ -1,0 +1,166 @@
+/**
+ * This class creates customers that keep track of their arrival times, estimated wait time, 
+ * their table and other necessary information (like how many people are in their party).
+ * @author Craig Lombardo
+ */
+
+public class Customer{
+  
+  /**
+   * The customers arrival time.
+   */
+  protected int arrivalTime;
+  private int waitTimeEstimate;
+  private int waitTimeActual;
+  private int departTime;
+  /**
+   * The size of the customer group (1-8)
+   */
+  protected int partySize;
+  private int startIndex; //the index at a certain table where their group starts
+  private Seating myTable; //the table they are sitting at
+  private String type;
+  private boolean waiting; //whether or not a customer is on the waiting list
+  
+  /**
+   * This constructor method creates a customer, the type of customer and other pertinant
+   * information is passed in when instantiated as either a SmallGroup or LargeGroup.
+   */
+  public Customer(){
+    waiting = false;
+  }
+  
+  /**
+   * This method returns the customers arrival time in order to calculate the actual wait time.
+   * @return int The Customer arrivalTime
+   */
+  public int getArrivalTime(){
+    return arrivalTime;
+  }
+  
+  /**
+   * This method returns the customers wait time estimate.
+   * @return int The time estimate the customer was given.
+   */
+  public int getEstimateTime(){
+    return waitTimeEstimate;
+  }
+  
+  /**
+   * This method sets the customers wait time estimate.
+   * @param val The time estimate the customer was given.
+   */
+  public void setWaitTimeEstimate(int val){
+    waitTimeEstimate = val;
+  }
+  
+    /**
+   * This method returns the customers actual wait time.
+   * @return int The time the customer waited.
+   */
+  public int getActualWaitTime(){
+    return waitTimeActual;
+  }
+  
+  /**
+   * This method sets the customers actual wait time.
+   * @param val The time the customer waited.
+   */
+  public void setActualWaitTime(int val){
+    waitTimeActual = val;
+  }
+  
+  /**
+   * This method returns the size of the Customer party.
+   * @return int The Customer groupSize.
+   */
+  public int getSize(){
+    return partySize;
+  }
+  
+  /**
+   * This method sets the index that the first person in the party is seated at, this is used to aid in the group removal process.
+   * @param index The index of the first person in the group (at their given table).
+   */
+  public void setIndex(int index){
+    startIndex = index;
+  }
+  
+  /**
+   * This method returns the index that the first person in the party is seated at, this is used to aid in the group removal process.
+   * @return int The index that the first person in the party is seated at.
+   */
+  public int getIndex(){
+    return startIndex;
+  }
+  
+  /**
+   * This method sets the customers departTime.
+   * @param myTime The time that the group will leave.
+   */
+  public void setDepartTime(int myTime){
+    departTime = myTime;
+  }
+  
+  /**
+   * This method returns the departure time of the group.
+   * @return int The departTime of the group.
+   */
+  public int getDepartTime(){
+    return departTime;
+  }
+  
+  /**
+   * This method sets the table that the group was seated at.
+   * @param table The table that the customers are sitting at
+   */
+  public void setTable(Seating table){
+    myTable = table;
+  }
+  
+  /**
+   * This method returns the table that the group is sitting at, useful in removal of groups.
+   * @return Seating The table that the group is sitting at.
+   */
+  public Seating getTable(){
+    return myTable;
+  }
+  
+  /**
+   * This method sets the type of group, either "small" or "large" group.
+   * @param whatKind The type of group.
+   */
+  public void setType(String whatKind){
+    type = whatKind;
+  }
+  
+  /**
+   * This method get the type of group, either "small" or "large" group.
+   * @return String The type of group.
+   */
+  public String getType(){
+    return type;
+  }
+  
+  /**
+   * This method sets the boolean waiting. This is used to determine whether or not a customer
+   * is already on the waiting list.
+   * @param val The boolean value to set waiting to.
+   */
+  public void setWaiting(boolean val){
+    waiting = val;
+  }
+  
+  /**
+   * This method gets the boolean of whether or not a customer is waiting (to ensure 
+   * they are not added to the end of the waiting list after a seat check is made)
+   * @return boolean The boolean value that waiting is equal to.
+   */
+  public boolean getWaiting(){
+   return waiting;
+  }
+  
+  public void printResults(){
+    System.out.println(arrivalTime + "," + waitTimeEstimate + "," + waitTimeActual + ",");
+  }
+}

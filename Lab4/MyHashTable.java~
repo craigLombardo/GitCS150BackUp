@@ -1,0 +1,80 @@
+import java.util.LinkedList;
+import java.util.ArrayList;
+
+public class MyHashTable{
+  
+  protected LinkedList<Entry>[] buckets;
+  private int bucketSize,numElements;
+  private ArrayList<Integer> numInLL;
+  
+  public MyHashTable(int n){
+    buckets = new LinkedList[n];
+    numInLL = new ArrayList<Integer>(n);
+    
+    for(int i=0; i<n; i++) numInLL.add(0);
+    
+    bucketSize = buckets.length;
+    numElements=0;
+  }
+  
+  public boolean insert(Integer key, Integer value){
+    
+    try{
+      int index = hash(key);
+      
+      if(buckets[index] == null) buckets[index] = new LinkedList<Entry>();
+      
+      buckets[index].add(0,new Entry(key, value));
+      numInLL.set(index,numInLL.get(index)+1);
+      numElements+=1;
+      return true;
+    }
+    catch(Exception e){ 
+      return false;
+    }
+  }
+  
+  public Entry find(int key){
+    int index = hash(key);
+    LinkedList<Entry> listToSearch = buckets[index];
+    
+    if(listToSearch!=null){
+      for(int i=0; i<listToSearch.size(); i++){
+        Entry thisEntry = listToSearch.get(i);
+        if(thisEntry.getKey()==key) return thisEntry;
+      }
+    }
+    return null;
+  }
+  
+  public int hash(int val){
+    return val%bucketSize;
+  }
+  
+  public double percentOfTotal(int index){
+    try{
+      int numberAtIndex = numInLL.get(index);
+      return (100.0*numberAtIndex)/numElements;
+    }
+    catch(IndexOutOfBoundsException e){
+      return 0.0;
+    }
+  }
+  
+  //TESTING
+  public static void main(String[] args){
+    int runs = 100;
+    
+    MyHashTable testTable = new MyHashTable(50);
+    Wheel testWheel = new Wheel(2159341,runs);
+    
+    for(int i=0; i<runs; i++) testTable.insert(testWheel.spin(),testWheel.spin());
+    
+    Entry why = testTable.find(40);
+    if(why!=null) System.out.println(why.getInfo());
+    
+    for(int j=0; j<50; j++) System.out.println("Percent filled at index " + j + ": " + testTable.percentOfTotal(j)+"Number at index: " + testTable.numInLL.get(j));
+    
+  }
+  
+}

@@ -1,0 +1,8 @@
+import junit.framework.TestCase;
+
+public class LinkedListIntContainerTest extends TestCase{
+ 
+  public void testLinkedListIntContainer(){
+    IntContainer test = new LinkedListIntContainer();
+  }
+}

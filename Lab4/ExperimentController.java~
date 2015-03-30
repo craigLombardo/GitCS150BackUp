@@ -1,0 +1,76 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class ExperimentController{
+  
+  MyHashTable testTable;
+  
+  public long timeInsert(int numberOfItems, int seed, int hashTableSize){
+    testTable = new MyHashTable(hashTableSize);
+    Wheel myWheel = new Wheel(seed, numberOfItems);
+    
+    long startTime = System.nanoTime();
+    
+    for(int i=0; i< numberOfItems; i++){
+      int randomNumber1 = myWheel.spin();
+      int randomNumber2 = myWheel.spin();
+      testTable.insert(randomNumber1,randomNumber2);
+    }
+    long stopTime = System.nanoTime();
+    return (stopTime - startTime);
+  }
+  
+  public String runTimeInsert(int numberOfTimes, int seed){
+ 
+    String finalString="";
+    for(int i = 1; i<numberOfTimes+1; i++){
+      int numberOfItems = 1000000*i;
+      long total=0;
+      for(int j = 0; j<10; j++){
+        long time=timeInsert(numberOfItems,seed,2*numberOfItems);
+        total+=time;
+      }
+
+      finalString= finalString + numberOfItems+","+ (total/10)+",";
+      if(i!=numberOfTimes) finalString = finalString +"\n";
+      System.out.println(numberOfItems+","+ (total/10)+",");
+    }
+    return finalString;
+  }
+  
+  public long timeFind(int key){
+    long startTime = System.nanoTime();
+    testTable.find(key);
+    long stopTime = System.nanoTime();
+    return (stopTime - startTime);
+  }
+  
+  public String runTimeFind(int numberOfTimes, int seed){
+    Wheel random = new Wheel(seed, numberOfTimes);
+    
+    String finalString="";
+    for(int i = 1; i<numberOfTimes+1; i++){
+      int numberOfItems = 1000*i;
+      long total=0;
+      for(int j = 0; j<10; j++){
+        int keyToFind = random.spin();
+        long time=timeFind(keyToFind);
+        total+=time;
+      }
+
+      finalString= finalString + numberOfItems+","+ (total/10)+",";
+      if(i!=numberOfTimes) finalString = finalString +"\n";
+      System.out.println(numberOfItems+","+ (total/10)+",");
+    }
+    return finalString;
+  }
+  
+  public static void main(String[] args){
+
+      ExperimentController test = new ExperimentController();
+      test.runTimeInsert(Integer.parseInt(args[0]), Integer.parseInt(args[1]));
+    
+    
+  }
+  
+}

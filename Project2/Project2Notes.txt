@@ -1,0 +1,43 @@
+Project 2 Notes
+
+Recipe (Object)
+
+Name:
+
+Course: Appetizer, Entree, Dessert, Salad
+
+Ingredients:
+
+	Tofu: Tofu
+
+	Meat: Beef, Pork, Lamb, Chicken, Goat
+	
+	Fish: Salmon, Cod, Halibut, Shrimp, Scallops
+	
+	Vegetables: Broccoli, Peas, Potatoes, Carrots, Cauliflower, Spinach, Lettuce, 		Kale, Tomato,Olive, Mushroom
+
+	Other: Egg, Milk, Cheese
+
+Prep Time:
+
+	<Minutes>
+
+Cook Time:
+
+	<Minutes>
+
+Vegetarians: Anything that isn’t meat or Fish
+Vegan: Anything that isn’t Meat, Fish, Egg, Milk, Cheese
+
+Prep is sequential, Cook is in parallel
+
+1) Want to be able to search for a recipe
+2) Add Recipe
+3) Remove Recipe
+4) Generate Meal Plan (1 of each course)
+	a) Requirements (i.e. Vegan, Vegetarian)
+	b) Exclusions (i.e. Seafood, Dairy, ShellFish)
+	c) Time
+
+Sahn Fren Shiscko?
+Phil-eh-Dulfeea?

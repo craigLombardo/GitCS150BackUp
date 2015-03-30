@@ -1,0 +1,10 @@
+import junit.framework.TestCase;
+
+public class EntryTest{
+  
+  public void testGetKey(){
+    Entry test = new Entry(639217,6193);
+    assertTrue(test.getKey()==639217);
+  }
+  
+}

@@ -1,0 +1,146 @@
+import java.util.*;
+public class ListExperimentController{
+  
+  public long arrayTimeAddFromFront(int numberOfItems, int seed){
+    ArrayListIntContainer arrayCont = new ArrayListIntContainer();
+    Wheel myWheel = new Wheel(seed, 100);
+    
+    long startTime = System.currentTimeMillis();
+    for(int i=0; i< numberOfItems; i++){
+      int randomNumber = myWheel.spin();
+      arrayCont.addFromFront(randomNumber);
+    }
+    long stopTime = System.currentTimeMillis();
+    return (stopTime - startTime);
+  }
+  
+  public String runArrayFrontTest(int number){
+    String finalString="";
+    for(int i = 1; i<number+1; i++){
+      int numberOfItems = 3000+(2500*i);
+      long total=0;
+      for(int j = 0; j<10; j++){
+        long time=arrayTimeAddFromFront(numberOfItems,157);
+        total+=time;
+      }
+      finalString= finalString + numberOfItems+","+ (total/10)+",";
+      if(i!=number) finalString = finalString +"\n";
+      System.out.println(numberOfItems+","+ (total/10)+",");
+    }
+    return finalString;
+  }
+  
+  public long arrayTimeAddSorted(int numberOfItems, int seed){
+    ArrayListIntContainer arrayCont = new ArrayListIntContainer();
+    Wheel myWheel = new Wheel(seed, 100);
+    
+    long startTime = System.currentTimeMillis();
+    for(int i=0; i< numberOfItems; i++){
+      int randomNumber = myWheel.spin();
+      arrayCont.addSorted(randomNumber);
+    }
+    long stopTime = System.currentTimeMillis();
+    return (stopTime - startTime);
+  }
+  
+  public String runArraySortedTest(int number){
+    String finalString="";
+    for(int i = 1; i<number+1; i++){
+      int numberOfItems = 3000+(2500*i);
+      long total=0;
+      for(int j = 0; j<10; j++){
+        long time=arrayTimeAddSorted(numberOfItems,157);
+        total+=time;
+      }
+      finalString= finalString + numberOfItems+","+ (total/10)+",";
+      if(i!=number) finalString = finalString +"\n";
+      System.out.println(numberOfItems+","+ (total/10)+",");
+    }
+    return finalString;
+  }
+  
+  public long linkedTimeAddFromFront(int numberOfItems, int seed){
+    LinkedListIntContainer linkedCont = new LinkedListIntContainer();
+    Wheel myWheel = new Wheel(seed, 100);
+    
+    long startTime = System.currentTimeMillis();
+    for(int i=0; i< numberOfItems; i++){
+      int randomNumber = myWheel.spin();
+      linkedCont.addFromFront(randomNumber);
+    }
+    long stopTime = System.currentTimeMillis();
+    return (stopTime - startTime);
+  }
+  
+  public String runLinkedFrontTest(int number){
+    String finalString="";
+    for(int i = 1; i<number+1; i++){
+      int numberOfItems = (50000*i);
+      long total=0;
+      for(int j = 0; j<10; j++){
+        long time=linkedTimeAddFromFront(numberOfItems,157);
+        total+=time;
+      }
+      finalString= finalString + numberOfItems+","+ (total/10)+",";
+      if(i!=number) finalString = finalString +"\n";
+      System.out.println(numberOfItems+","+ (total/10)+",");
+    }
+    return finalString;
+  }
+  
+  public long linkedTimeAddSorted(int numberOfItems, int seed){
+    LinkedListIntContainer linkedCont = new LinkedListIntContainer();
+    Wheel myWheel = new Wheel(seed, 100);
+    
+    long startTime = System.currentTimeMillis();
+    for(int i=0; i< numberOfItems; i++){
+      int randomNumber = myWheel.spin();
+      linkedCont.addSorted(randomNumber);
+    }
+    long stopTime = System.currentTimeMillis();
+    return (stopTime - startTime);
+  }
+  
+  public String runLinkedSortedTest(int number){
+    String finalString="";
+    for(int i = 1; i<number+1; i++){
+      int numberOfItems = (1000*i);
+      long total=0;
+      for(int j = 0; j<10; j++){
+        long time=linkedTimeAddSorted(numberOfItems,157);
+        total+=time;
+      }
+      finalString= finalString + numberOfItems+","+ (total/10)+",";
+      if(i!=number) finalString = finalString +"\n";
+      System.out.println(numberOfItems+","+ (total/10)+",");
+    }
+    return finalString;
+  }
+  
+  public static void main(String[] args){
+    if(args[0].equals("frontarray")){
+      ListExperimentController testOne = new ListExperimentController();
+      System.out.println("arrayTimeAddFromFront test,");
+      System.out.println("Number Of,Average Time(ms),");
+      testOne.runArrayFrontTest(Integer.parseInt(args[1]));
+    }
+    else if(args[0].equals("sortedarray")){
+      ListExperimentController testTwo = new ListExperimentController();
+      System.out.println("arrayTimeAddSorted test,");
+      System.out.println("Number Of,Average Time(ms),");
+      testTwo.runArraySortedTest(Integer.parseInt(args[1]));
+    }
+    else if(args[0].equals("frontlinked")){
+      ListExperimentController testThree = new ListExperimentController();
+      System.out.println("linkedTimeAddFromFront test,");
+      System.out.println("Number Of,Average Time(ms),");
+      testThree.runLinkedFrontTest(Integer.parseInt(args[1]));
+    }
+    else if(args[0].equals("sortedlinked")){
+      ListExperimentController testFour = new ListExperimentController();
+      System.out.println("linkedTimeAddSorted test,");
+      System.out.println("Number Of,Average Time(ms),");
+      testFour.runLinkedSortedTest(Integer.parseInt(args[1]));
+    }
+  }
+}

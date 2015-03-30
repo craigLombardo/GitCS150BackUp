@@ -1,0 +1,98 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+import junit.framework.TestCase;
+
+public class ExperimentControllerTest extends TestCase{
+  
+  MyHashTable testTable;
+  
+  public long timeInsert(int numberOfItems, int seed, int hashTableSize){
+    testTable = new MyHashTable(hashTableSize);
+    Wheel myWheel = new Wheel(seed, numberOfItems);
+    
+    long startTime = System.nanoTime();
+    
+    for(int i=0; i< numberOfItems; i++){
+      int randomNumber1 = myWheel.spin();
+      int randomNumber2 = myWheel.spin();
+      testTable.insert(randomNumber1,randomNumber2);
+    }
+    long stopTime = System.nanoTime();
+    return (stopTime - startTime);
+  }
+  
+  public String runTimeInsert(int numberOfTimes, int seed){
+    System.out.println(",200.0,100.0,66.67,50.0,40.0,");
+    String finalString=",200.0,100.0,66.67,50.0,40.0,";
+    for(int i = 1; i<numberOfTimes+1; i++){
+      int numberOfItems = 1000000*i;
+      System.out.print(numberOfItems+",");
+      finalString= finalString + numberOfItems +",";
+      long total=0;
+      for(int k=1; k<=5; k++){
+        total=0;
+        int hashSize = k*numberOfItems/2;
+        for(int j = 0; j<10; j++){
+          long time=timeInsert(numberOfItems,seed,hashSize);
+          total+=time;
+        }
+        finalString = finalString + (total/10) + ",";
+        System.out.print((total/10)+",");
+      }
+      System.out.println();
+      if(i!=numberOfTimes) finalString = finalString +"\n";
+    }
+    return finalString;
+  }
+  
+  public long timeFind(int key){
+    long startTime = System.nanoTime();
+    testTable.find(key);
+    long stopTime = System.nanoTime();
+    return (stopTime - startTime);
+  }
+  
+  public String runTimeFind(int numberOfTimes, int seed, boolean valid){
+    int keyToFind= valid ? 0 : -1;
+    System.out.println(",200.0,100.0,66.67,50.0,40.0,");
+    String finalString=",200.0,100.0,66.67,50.0,40.0,";
+    
+    for(int i = 1; i<numberOfTimes+1; i++){
+      int numberOfItems = 1000000*i;
+      Wheel random = new Wheel(seed, numberOfItems);
+      System.out.print(numberOfItems+",");
+      finalString= finalString + numberOfItems +",";
+      for(int k=1; k<=5; k++){
+        long total=0;
+        int hashSize = k*numberOfItems/2;
+        testTable = new MyHashTable(hashSize);
+        testTable.insert(keyToFind,98);
+        for(int l=0; l<numberOfItems-1; l++){
+          int randomNumber1 = random.spin();
+          int randomNumber2 = random.spin();
+          testTable.insert(randomNumber1,randomNumber2);
+        }
+        long time=timeFind(keyToFind);
+        finalString= finalString + (total/10) + ",";
+        System.out.print((time)+",");
+      }
+      System.out.println();
+      if(i!=numberOfTimes) finalString = finalString +"\n";
+    }
+    return finalString;
+  }
+  
+  public static void main(String[] args){
+    if(args[0].equals("insert")){
+      ExperimentController test = new ExperimentController();
+      test.runTimeInsert(Integer.parseInt(args[1]), Integer.parseInt(args[2]));
+    }
+    else if(args[0].equals("find")){
+      ExperimentController test = new ExperimentController();
+      boolean valid = args[3] == "true" ? true : false;
+      test.runTimeFind(Integer.parseInt(args[1]), Integer.parseInt(args[2]), valid);
+    }
+    else System.out.println("fail");
+  }
+  
+}

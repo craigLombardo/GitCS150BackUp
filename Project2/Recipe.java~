@@ -1,0 +1,70 @@
+import java.util.ArrayList;
+/**
+ * This class serves as a Recipe in our ingredient book. Each recipe will have a name,
+ * a course type, the ingredients it's made of, and the prep/cook time of the recipe.
+ * @author Craig Lombardo
+ */
+public class Recipe{
+
+  private String myName, myCourse;
+  private ArrayList<String> myIngredients;
+  private int myPrepTime, myCookTime;
+  
+  /**
+   * This constructor method creates a Recipe with a specified name,
+   * course type, ingredients, and the prep/cook time of the recipe.
+   * @param name The name of the recipe.
+   * @param course The course type: Appetizer, Salad, Entree or Dessert.
+   * @param ingredients The ingredients required to make this Recipe.
+   * @param prepTime How long it takes to prep the Recipe (Minutes).
+   * @param cookTime How long it takes to cook the Recipe (Minutes).
+   */
+  public Recipe(String name, String course, ArrayList<String> ingredients, int prepTime, int cookTime){
+    myName = name;
+    myCourse = course;
+    myIngredients = ingredients;
+    myPrepTime = prepTime;
+    cookTime = myCookTime;
+  }
+  
+  /**
+   * This method returns the name of the Recipe.
+   * @return String The Recipe name.
+   */
+  public String getName(){
+    return myName;
+  }
+  
+  /**
+   * This method returns the course type of the Recipe.
+   * @return String The course type of the Recipe.
+   */
+  public String getCourse(){
+    return myCourse;
+  }
+
+  /**
+   * This method returns the ingredient list of the Recipe.
+   * @return ArrayList The ingredient list of the Recipe.
+   */
+  public ArrayList<String> getIngredients(){
+    return myIngredients;
+  }
+  
+  /**
+   * This method returns the prep time of the Recipe.
+   * @return int The prep time of the Recipe.
+   */
+  public int getPrepTime(){
+    return myPrepTime;
+  }
+  
+  /**
+   * This method returns the cook time of the Recipe.
+   * @return int The cook time of the Recipe.
+   */
+  public int getCookTime(){
+    return myCookTime;
+  }
+  
+}

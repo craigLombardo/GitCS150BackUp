@@ -1,0 +1,9 @@
+import junit.framework.TestCase;
+
+public class NodeTest extends TestCase {
+  
+  public void testGetValue(){
+    Node<Integer> n1 = new NodeInteger(5);
+  }
+  
+}

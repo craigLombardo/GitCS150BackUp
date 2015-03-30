@@ -1,0 +1,77 @@
+openName .......... Lombardo’s Kids Emporium
+City .......... Texas
+Type .......... Chinese
+Date Opened ... 03/05/1100
+Open Time ..... 03:17:00
+Closing Time .. 16:22:59
+
+Name .......... Lombardo’s Pub
+City .......... New Orleans
+Type .......... Chinese
+Date Opened ... 03/07/1917
+Open Time ..... 08:00:00
+Closing Time .. 19:27:00
+
+Name .......... Don Lombardo’s Mexican
+City .......... New Orleans
+Type .......... Chinese
+Date Opened ... 12/25/1985
+Open Time ..... 17:24:00
+Closing Time .. 23:19:59
+
+Name .......... Lombardo’s Golden Garden of Hong Kong
+City .......... Phoenix
+Type .......... Deli
+Date Opened ... 03/07/1917
+Open Time ..... 08:00:00
+Closing Time .. 19:27:00
+
+Name .......... Lombardo’s of the Sea
+City .......... Phoenix
+Type .......... Deli
+Date Opened ... 03/07/1917
+Open Time ..... 08:00:00
+Closing Time .. 19:27:00
+
+Name .......... Lombardo’s Safari Zone
+City .......... Beijing
+Type .......... French
+Date Opened ... 02/29/1996
+Open Time ..... 12:00:00
+Closing Time .. 12:00:01
+
+Name .......... Lombardo’s Epoch Palace
+City .......... Easton
+Type .......... Greek
+Date Opened ... 01/01/1970
+Open Time ..... 00:00:00
+Closing Time .. 23:59:59
+
+Name .......... Bon Lombardo’s
+City .......... Portland
+Type .......... Mexican
+Date Opened ... 01/15/2017
+Open Time ..... 02:09:00
+Closing Time .. 18:23:17
+
+Name .......... Lombardo’s Itallian
+City .......... Denver
+Type .......... Mexican
+Date Opened ... 03/07/1917
+Open Time ..... 06:00:00
+Closing Time .. 09:00:13
+
+Name .......... Lombardo’s Classic Diner
+City .......... Denver
+Type .......... Sea Food
+Date Opened ... 11/23/2010
+Open Time ..... 12:03:00
+Closing Time .. 13:03:00
+
+Name .......... Lombardo’s Pizza
+City .......... Denver
+Type .......... Sea Food
+Date Opened ... 11/23/2010
+Open Time ..... 12:03:00
+Closing Time .. 18:17:00
+

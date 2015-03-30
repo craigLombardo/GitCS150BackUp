@@ -1,0 +1,17 @@
+import java.util.LinkedList;
+
+/**
+ * This child class has all of the methods of the InsertionSortData parent class.
+ */
+public class LinkedListInsertionSort extends InsertionSortData{
+  
+  /**
+   * This constructor method instantiates the AbstractList list of the parent class
+   * for use.
+   */
+  public LinkedListInsertionSort(){
+    list = new LinkedList<Integer>();
+  }
+  
+  
+}

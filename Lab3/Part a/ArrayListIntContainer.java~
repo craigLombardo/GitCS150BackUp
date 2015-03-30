@@ -1,0 +1,9 @@
+import java.util.ArrayList;
+
+public class ArrayListIntContainer extends IntContainer{
+  
+  public ArrayListIntContainer(){
+    data = new ArrayList<Integer>();
+  }
+  
+}

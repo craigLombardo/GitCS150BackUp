@@ -1,0 +1,30 @@
+Max # of seats : 125
+
+10 : Tables that hold a maximum 4 people
+05 : Tables that hold a maximum 8 people
+15 : Bar seating
+01 : Big oval table that sits max 30 people
+
+Groups of max size 8
+
+*NO VISUAL COMPONENT*
+
+*EVEN DISTRIBUTION OF GROUPS*
+
+Small Groups: 1,2,3,4
+	Party Arrival Times Apart
+	Mean: 20 Seconds
+	S.D.: 10 Seconds
+
+	Stay Times
+	Mean: 45 Min
+	S.D.: 15 Min
+
+Large Groups: 5,6,7,8
+	Party Arrival Times Apart
+	Mean: 30 Seconds
+	S.D.: 15 Seconds
+
+	Stay Times
+	Mean: 75 Min
+	S.D.: 20 Min

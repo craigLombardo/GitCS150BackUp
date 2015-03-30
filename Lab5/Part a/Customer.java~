@@ -1,0 +1,14 @@
+public class Customer{
+  
+  private String id;
+  private long arrivalTime;
+  
+  public Customer(String id, long time){
+    this.id=id;
+    this.arrivalTime=time;
+  }
+  
+  public long getArrivalTime(){
+    return arrivalTime;
+  }
+}

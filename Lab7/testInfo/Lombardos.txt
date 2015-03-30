@@ -1,0 +1,76 @@
+Lombardo’s Pizza
+Denver
+Sea Food
+11/23/2010
+12:03:00
+18:17:00
+
+Lombardo’s Pub
+New Orleans
+Chinese
+03/07/1917
+08:00:00
+19:27:00
+
+Lombardo’s Itallian
+Denver
+Mexican
+03/07/1917
+06:00:00
+09:00:13
+
+Don Lombardo’s Mexican
+New Orleans
+Chinese
+12/25/1985
+17:24:00
+23:19:59
+
+Lombardo’s of the Sea
+Phoenix
+Deli
+03/07/1917
+08:00:00
+19:27:00
+
+Lombardo’s Classic Diner
+Denver
+Sea Food
+11/23/2010
+12:03:00
+13:03:00
+
+Lombardo’s Golden Garden of Hong Kong
+Phoenix
+Deli
+03/07/1917
+08:00:00
+19:27:00
+
+Bon Lombardo’s
+Portland
+Mexican
+01/15/2017
+02:09:00
+18:23:17
+
+Lombardo’s Safari Zone
+Beijing
+French
+02/29/1996
+12:00:00
+12:00:01
+
+Lombardo’s Epoch Palace
+Easton
+Greek
+01/01/1970
+00:00:00
+23:59:59
+
+Lombardo’s Kids Emporium
+Texas
+Chinese
+03/05/1100
+03:17:00
+16:22:59

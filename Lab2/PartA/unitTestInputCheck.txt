@@ -1,0 +1,5 @@
+2 cat 2.0
+22 dog 9.1
+29 elephant 41111.1
+11 fox 0.5
+3 bat 0.05

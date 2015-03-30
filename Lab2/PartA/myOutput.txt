@@ -1,0 +1,3 @@
+The collected words are "cat dog elephant fox bat goose"
+The integer total is 72
+The double total is 41132.65

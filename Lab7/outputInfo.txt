@@ -1,0 +1,70 @@
+Name .......... Joes
+City .......... Park Ridge
+Type .......... American
+Date Opened ... 2/17/1986
+Open Time ..... 1100
+Closing Time .. 2300
+
+Name .......... Stevens Beggels
+City .......... Park Ridge
+Type .......... French
+Date Opened ... 2/17/1986
+Open Time ..... 100
+Closing Time .. 2300
+
+Name .......... Lombardos
+City .......... Park Ridge
+Type .......... French
+Date Opened ... 2/17/1986
+Open Time ..... 1100
+Closing Time .. 2300
+
+Name .......... Lombardos
+City .......... Park Ridge
+Type .......... Italian
+Date Opened ... 2/17/1986
+Open Time ..... 1100
+Closing Time .. 2300
+
+Name .......... Matt's
+City .......... Park Ridge
+Type .......... Italian
+Date Opened ... 2/17/1986
+Open Time ..... 1100
+Closing Time .. 2300
+
+Name .......... Lombardos
+City .......... Park Ridge
+Type .......... Lebanese
+Date Opened ... 2/17/1986
+Open Time ..... 1100
+Closing Time .. 2300
+
+Name .......... Ippudo
+City .......... Park Ridge
+Type .......... Mexican
+Date Opened ... 2/17/1986
+Open Time ..... 1100
+Closing Time .. 1900
+
+Name .......... Ippudo 2
+City .......... Park Ridge
+Type .......... Mexican
+Date Opened ... 2/17/1986
+Open Time ..... 1100
+Closing Time .. 2100
+
+Name .......... Ippudo
+City .......... Park Ridge
+Type .......... Mexican
+Date Opened ... 2/17/1986
+Open Time ..... 1100
+Closing Time .. 2300
+
+Name .......... Lombardos
+City .......... Park Ridge
+Type .......... Mexican
+Date Opened ... 2/17/1986
+Open Time ..... 1100
+Closing Time .. 2300
+

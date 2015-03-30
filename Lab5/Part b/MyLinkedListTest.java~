@@ -1,0 +1,73 @@
+import junit.framework.TestCase;
+
+public class MyLinkedListTest extends TestCase{
+
+  public void testAddToFront(){
+    MyLinkedList test = new MyLinkedList();
+    test.addToFront(new Node<Integer>(11));
+  }
+  
+  /**
+   * This method returns the size of the LinkedList.
+   * @return int The size of the LinkedList
+   */
+  public int size(){
+    return size;
+  }
+  
+  /**
+   * This method returns an element E corresponding to the selected index. 
+   * If the number is out of the range of the linked list it will throw an ArrayIndexOutOfBoundsException.
+   * @param index The index of the you would like to access in the list.
+   * @return E The element at the specified index.
+   * @throws ArrayIndexOutOfBoundsException This occurs if the user enters a negative number or a number 
+   * greater than or equal to the size of the array
+   * as there is no index of such values in the LinkedList.
+   */
+  public E get(int index) throws ArrayIndexOutOfBoundsException{
+    if(index >= size() || index < 0) throw new ArrayIndexOutOfBoundsException();
+    else{
+      Node<E> thisNode = tail.getNext();
+      for(int i=0; i < index; i++){
+        thisNode = thisNode.getNext();
+      }
+      return thisNode.getValue();
+    }
+  }
+  
+  /**
+   * This method finds and returns the second largest number in the LinkedList
+   * @return Integer The number corresponding to the second largest number in the LinkedList, or null if there are 0 or 1 element(s).
+   */
+  public Integer findSecondLargest(){
+    try{
+      if(size() >= 2 ){
+      Integer largest = 0; 
+      Integer secondLargest = null;
+      for(int i = 0; i< size(); i++){
+        Integer number = (Integer) get(i);
+        if(number > largest){
+          secondLargest = largest;
+          largest = number;
+        }
+        else if(number > secondLargest) secondLargest = number;
+      }
+      return secondLargest;
+    }
+    else return null;
+    }
+    catch(NullPointerException e){
+      return null;
+    }
+  }
+  
+  /**
+   * This method adds an element of type E to the end of the LinkedList, this becomes the new tail.
+   * @param element The element to add.
+   */
+  public void add(int index, E element){
+      addToFront(element);
+      size++;
+  }
+  
+}

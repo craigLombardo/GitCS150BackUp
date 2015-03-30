@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class IntContainer{
+  
+  protected AbstractList<Integer> data;
+  
+  public IntContainer(){
+  }
+  
+  public void addFromFront(Integer element){
+    data.add(0,element);
+  }
+  
+  public int findSecondLargest(){
+    int first=0;
+    int second = 1;
+    for(int i = 0; i < data.size(); i++){
+      int val = data.get(i);
+      if(val > second){
+        
+        if(val > first){
+          second = first;
+          first = val;
+        }
+        else second = val;
+      }
+    }
+    return second;
+  }
+}

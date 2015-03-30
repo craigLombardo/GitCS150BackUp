@@ -1,0 +1,122 @@
+import junit.framework.TestCase;
+import java.util.ArrayList;
+
+public class BinaryTreeTest extends TestCase {
+  
+  public void testAdd(){
+    BinaryTree<Integer,String> test = new BinaryTree<Integer,String>();
+    assert(test.add(3,"hello"));
+    assert(test.add(0,"world"));
+    assert(test.add(-162371293,"huh?"));
+    assert(test.add(631674231,"what?"));
+    assert(test.add(3672,"please....."));
+    assert(!test.add(631674231,"Im already in there!"));
+    
+    test.clear();
+    assert(test.add(631674231,"This time I'm root!"));
+  }
+  
+  public void testClear(){
+    BinaryTree<Integer,String> test = new BinaryTree<Integer,String>();
+    assert(test.add(3,"hello"));
+    assert(test.add(0,"world"));
+    assert(test.add(-162371293,"huh?"));
+    assert(test.add(631674231,"what?"));
+    assert(test.add(3672,"please....."));
+    assert(test.size()==5);
+    test.clear();
+    assert(test.size()==0);
+  }
+  
+  public void testContains(){
+    BinaryTree<Integer,String> test = new BinaryTree<Integer,String>();
+    assert(test.add(3,"hello"));
+    assert(test.add(0,"world"));
+    assert(test.add(-162371293,"huh?"));
+    assert(test.add(631674231,"what?"));
+    assert(test.add(3672,"please....."));
+    assert(test.contains(3672));
+    assert(test.contains(631674231));
+    assert(!test.contains(22));
+    test.clear();
+    assert(!test.contains(3672));
+  }
+  
+  public void testFirst(){
+    BinaryTree<Integer,String> test = new BinaryTree<Integer,String>();
+    
+    assert(test.first() == null);
+    
+    assert(test.add(3,"hello"));
+    assert(test.add(0,"world"));
+    assert(test.add(-162371293,"huh?"));
+    assert(test.add(631674231,"what?"));
+    assert(test.add(3672,"please....."));
+    
+    assert(test.first().equals("huh?"));
+    
+    test.clear();
+    assert(test.first() == null);
+    
+  }
+  
+  public void testLast(){
+    BinaryTree<Integer,String> test = new BinaryTree<Integer,String>();
+    
+    assert(test.last() == null);
+    
+    assert(test.add(3,"hello"));
+    assert(test.add(0,"world"));
+    assert(test.add(-162371293,"huh?"));
+    assert(test.add(631674231,"what?"));
+    assert(test.add(3672,"please....."));
+    
+    assert(test.last().equals("what?"));
+    
+    test.clear();
+    assert(test.last() == null);
+    
+  }
+  
+  public void testRemove(){
+    
+  }
+  
+  public void testSize(){
+    BinaryTree<Integer,String> test = new BinaryTree<Integer,String>();
+    assert(test.size()==0);
+    assert(test.add(3,"hello"));
+    assert(test.add(0,"world"));
+    assert(test.add(-162371293,"huh?"));
+    assert(test.add(631674231,"what?"));
+    assert(test.add(3672,"please....."));
+    assert(test.size()==5);
+    test.clear();
+    assert(test.size()==0);
+  }
+  
+  public void testToArray(){
+    BinaryTree<Integer,String> test = new BinaryTree<Integer,String>();
+    ArrayList<String> answer = new ArrayList<String>();
+    
+    assert(test.toArray() == null);
+    
+    assert(test.add(3,"hello"));
+    assert(test.add(0,"world"));
+    assert(test.add(-162371293,"huh?"));
+    assert(test.add(631674231,"what?"));
+    assert(test.add(3672,"please....."));
+    
+    answer.add("huh?");
+    answer.add("world");
+    answer.add("hello");
+    answer.add("please.....");
+    answer.add("what?");
+
+    test.clear();
+    
+    assert(test.toArray() == null);
+
+  }
+  
+}

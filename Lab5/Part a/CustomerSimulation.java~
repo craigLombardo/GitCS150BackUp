@@ -1,0 +1,42 @@
+public class CustomerSimulation{
+
+  LineQueue<Customer> customerQueue;
+  RandomRange arrival, departure;
+  private int customerCount=0;
+  public int nextGroupArrivalTime = 0, nextGroupDepartTime = 0;
+  
+  public CustomerSimulation(){
+    customerQueue = new LineQueue<Customer>();
+    arrival = new RandomRange(1,10);
+    departure = new RandomRange(5,15);
+  }
+  
+  public static void main(String[] args){
+    CustomerSimulation restaurant = new CustomerSimulation();
+    int time = 0;
+    restaurant.nextGroupArrivalTime = time + restaurant.arrival.getRandomTime();
+    restaurant.nextGroupDepartTime = time + restaurant.departure.getRandomTime();
+
+    for(time=0; time<=100; time++){
+
+      boolean printLine = false;
+      if(restaurant.nextGroupArrivalTime == time){
+        restaurant.customerCount++;
+        restaurant.customerQueue.offer(new Customer("Customer"+restaurant.customerCount,time));
+        System.out.print("new customer arrived at "+time+",");
+        restaurant.nextGroupArrivalTime = time + restaurant.arrival.getRandomTime();
+        printLine = true;
+      }
+      
+      if(restaurant.nextGroupDepartTime == time){
+        Customer tmp = restaurant.customerQueue.poll();
+        System.out.print("it is now: " + time+",");
+        if(tmp != null) System.out.println("customer who arrived at:"+tmp.getArrivalTime()+" has left,");
+        else System.out.println("There are no customers in the Queue,");
+        printLine=false;
+        restaurant.nextGroupDepartTime = time + restaurant.departure.getRandomTime();
+      }
+      if(printLine) System.out.println();
+    }
+  }
+}

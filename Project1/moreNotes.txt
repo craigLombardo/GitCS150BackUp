@@ -1,0 +1,11 @@
+1. Arriving Customer (Groups)
+2. Seating (Table, Oval, Bar)
+
+Query how many options are available for a given group size.
+Determine who has been waiting the longest maybe? Possible strategy...
+
+Triggers:
+	Group Arrival
+	Group Departure (Open table)
+
+Groups are assigned departure times once they are seated! In the real world this is not possible; however, this is possible/used for the project.

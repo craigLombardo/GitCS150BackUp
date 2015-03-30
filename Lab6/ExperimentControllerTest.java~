@@ -1,0 +1,10 @@
+import junit.framework.TestCase;
+
+public class ExperimentControllerTest extends TestCase{
+  
+    public long timeArrayInsertion(int numberOfItems, int seed){
+    ExperimentController test = new ExperimentController();
+    assertTrue(test.timeArrayInsertion(10,612379));
+  }
+
+}

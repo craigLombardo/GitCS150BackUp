@@ -1,0 +1,9 @@
+import java.util.LinkedList;
+
+public class LinkedListIntContainer extends IntContainer{
+  
+  public LinkedListIntContainer(){
+    data = new LinkedList<Integer>();
+  }
+  
+}

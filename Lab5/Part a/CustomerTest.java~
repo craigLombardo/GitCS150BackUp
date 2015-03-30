@@ -1,0 +1,15 @@
+import junit.framework.TestCase;
+
+/**
+ * This class is used to test the methods within the Customer class.
+ * @author Craig Lombardo
+ */
+public class CustomerTest extends TestCase{
+
+  public void testGetArrivalTime(){
+    Customer test = new Customer("Craig Lombardo",68912);
+    assertTrue(test.getArrivalTime().equals("Craig Lombardo"));
+  
+  }
+
+}

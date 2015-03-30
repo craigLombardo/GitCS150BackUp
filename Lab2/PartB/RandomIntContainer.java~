@@ -1,0 +1,62 @@
+import java.util.*;
+
+public class RandomIntContainer{
+  
+  private int size;
+  private ArrayList<Integer> myArrayList;
+  
+  public RandomIntContainer(int size){
+    myArrayList = new ArrayList<Integer>(size);
+  }
+  
+  
+  public void addFromFront(Integer element){
+    myArrayList.add(0,element);
+  }
+  
+  
+  public void addFromEnd(Integer element){
+    myArrayList.add(element);
+  }
+  
+  
+  public void addSorted(Integer element){
+    myArrayList.add(element);
+    insertionSort();
+  }
+  //Adapted from http://www.mycstutorials.com/articles/sorting/insertionsort
+  public void insertionSort(){
+    int temp, pos;
+    
+    for (int i = 1; i < myArrayList.size(); i++){
+      temp = myArrayList.get(i);
+      pos = i - 1;
+      
+      while ((pos >= 0) && (temp < myArrayList.get(pos))){
+        myArrayList.set(pos + 1,myArrayList.get(pos));
+        pos--;
+      }
+      myArrayList.set(pos + 1,temp);
+    }
+  } 
+  
+  
+  
+  /*TESTING
+    public static void main(String[] args){
+    RandomIntContainer test = new RandomIntContainer(10);
+    for(int i = 0; i<10; i++) test.myArrayList.add(2*i);
+    
+    for(int i=0;i<10;i++) System.out.print(test.myArrayList.get(i) +" ");
+    System.out.println();
+    
+    
+    test.addSorted(123);
+    test.addSorted(11);
+    test.addSorted(12);
+    for(int i=0;i<13;i++) System.out.print(test.myArrayList.get(i) +" ");
+    System.out.println();
+    
+  }*/
+  
+}

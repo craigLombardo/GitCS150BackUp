@@ -1,0 +1,83 @@
+Lombardos
+Park Ridge
+Mexican
+2/17/1986
+1100
+2300
+
+Lombardos
+Park Ridge
+French
+2/17/1986
+1100
+2300
+
+Lombardos
+Park Ridge
+Italian
+2/17/1986
+1100
+2300
+
+Lombardos
+Park Ridge
+Lebanese
+2/17/1986
+1100
+2300
+
+Lombardos
+Park Ridge
+French
+2/17/1986
+1100
+2300
+
+Matt's
+Park Ridge
+Italian
+2/17/1986
+1100
+2300
+
+Lombardos
+Park Ridge
+Mexican
+2/17/1986
+1100
+2300
+
+Joes
+Park Ridge
+American
+2/17/1986
+1100
+2300
+
+Stevens Beggels
+Park Ridge
+French
+2/17/1986
+100
+2300
+
+Ippudo
+Park Ridge
+Mexican
+2/17/1986
+1100
+2300
+
+Ippudo
+Park Ridge
+Mexican
+2/17/1986
+1100
+1900
+
+Ippudo 2
+Park Ridge
+Mexican
+2/17/1986
+1100
+2100
