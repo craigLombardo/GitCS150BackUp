@@ -26,8 +26,8 @@ Cook Time:
 
 	<Minutes>
 
-Vegetarians: Anything that isn’t meat or Fish
-Vegan: Anything that isn’t Meat, Fish, Egg, Milk, Cheese
+Vegetarians: Anything that isn’t meat or seafood
+Vegan: Anything that isn’t Vegetarian, Egg, Milk, or Cheese
 
 Prep is sequential, Cook is in parallel
 
@@ -41,3 +41,9 @@ Prep is sequential, Cook is in parallel
 
 Sahn Fren Shiscko?
 Phil-eh-Dulfeea?
+
+Asia - China, Korea
+
+MiddleEastern - Turkish, Greek, Italy, 
+
+Indian

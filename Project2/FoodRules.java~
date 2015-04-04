@@ -1,0 +1,64 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class FoodRules{
+  
+  private ArrayList<String> meat, fish, vegetables, cuisineType;
+  
+  public FoodRules(){
+    meat = new ArrayList<String>();
+    
+    meat.add("beef");
+    meat.add("chicken");
+    meat.add("goat");
+    meat.add("lamb");
+    
+    fish = new ArrayList<String>();
+    
+    fish.add("salmon");
+    fish.add("scallops");
+    fish.add("shrimp");
+    
+    vegetables = new ArrayList<String>();
+    
+    vegetables.add("broccoli");
+    vegetables.add("cauliflower");
+    vegetables.add("spinach");
+    vegetables.add("mushrooms");
+    vegetables.add("beans");
+    vegetables.add("potatoes");
+    vegetables.add("beets");
+    vegetables.add("peas");
+    vegetables.add("rice");
+    vegetables.add("kale");
+    vegetables.add("lettuce");
+    vegetables.add("chard");
+    vegetables.add("mesclun");
+    vegetables.add("arugula");
+    vegetables.add("radishes");
+    vegetables.add("scallions");
+    vegetables.add("cucumbers");
+    vegetables.add("carrots");
+    vegetables.add("peas");
+    Collections.sort(vegetables);
+    
+    cuisineType = new ArrayList<String>();
+    
+    cuisineType.add("Italian");
+    cuisineType.add("Chinese");
+    cuisineType.add("Greek");
+    cuisineType.add("Turkish");
+    cuisineType.add("Indian");
+    cuisineType.add("Pakistan");
+    cuisineType.add("French");
+    cuisineType.add("Korean");
+    Collections.sort(cuisineType);
+    
+  }
+  
+  public static void main(String[] args){
+    FoodRules test = new FoodRules();
+    for(int i=0; i< test.vegetables.size(); i++) System.out.println(test.vegetables.get(i));
+  }
+  
+}

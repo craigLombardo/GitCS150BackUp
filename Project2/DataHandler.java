@@ -20,7 +20,7 @@ public class DataHandler{
   
   public void getData(){
     while(dataScanner.hasNextLine()){
-      String name = dataScanner.nextLine();
+      /*String name = dataScanner.nextLine();
       name = name.substring(6,name.length()-1);
       String course = dataScanner.nextLine();
       String type = dataScanner.nextLine();
@@ -31,7 +31,7 @@ public class DataHandler{
       String cookTime = dataScanner.nextLine();
       
       Recipe newRecipe = new Recipe(name, course, type, main, addons, sides, prepTime, cookTime);
-      
+      */
       if(dataScanner.hasNextLine()) dataScanner.nextLine();
       else break;
     }

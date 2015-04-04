@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Collections;
+
 /**
  * This class serves as a Recipe in our ingredient book. Each recipe will have a name,
  * a course type, the ingredients it's made of, and the prep/cook time of the recipe.
@@ -8,6 +10,7 @@ public class Recipe{
   
   private String myName, myCourse, myType, myMain, myAddons, mySides, myPrepTime, myCookTime;
   private ArrayList<String> myIngredients;
+  private boolean hasMeat; 
   
   /**
    * This constructor method creates a Recipe with a specified name,
@@ -37,6 +40,8 @@ public class Recipe{
         start = i+1;
       }
     }
+    Collections.sort(myIngredients);
+
   }
   
   /**
