@@ -9,7 +9,8 @@ import java.util.Collections;
  */
 public class FoodRules{
   
-  private ArrayList<String> meat, fish, vegetables, dairy, other, cuisineType;
+  private ArrayList<String> meat, seafood, shellfish, vegetables, dairy, soy, other, cuisineType;
+  private ArrayList<String> allIngredients;
   
   /**
    * This constructor method takes no parameters and sets all of the items included
@@ -23,11 +24,21 @@ public class FoodRules{
     meat.add("goat");
     meat.add("lamb");
     
-    fish = new ArrayList<String>();
+    seafood = new ArrayList<String>();
     
-    fish.add("salmon");
-    fish.add("scallops");
-    fish.add("shrimp");
+    seafood.add("salmon");
+    seafood.add("scallops");
+    seafood.add("shrimp");
+    
+    shellfish = new ArrayList<String>();
+    
+    shellfish.add("scallops");
+    shellfish.add("shrimp");
+    
+    soy = new ArrayList<String>();
+    
+    soy.add("tempeh");
+    soy.add("tofu");
     
     vegetables = new ArrayList<String>();
     
@@ -73,6 +84,13 @@ public class FoodRules{
     cuisineType.add("Korean");
     Collections.sort(cuisineType);
     
+    allIngredients = meat;
+    for(int i=0; i<seafood.size(); i++) allIngredients.add(seafood.get(i));
+    for(int i=0; i<vegetables.size(); i++) allIngredients.add(vegetables.get(i));
+    for(int i=0; i<dairy.size(); i++) allIngredients.add(dairy.get(i));
+    for(int i=0; i<other.size(); i++) allIngredients.add(other.get(i));
+    for(int i=0; i<soy.size(); i++) allIngredients.add(soy.get(i));
+    Collections.sort(allIngredients);
   }
   
   /**
@@ -87,8 +105,16 @@ public class FoodRules{
    * This method returns an ArrayList corresponding to the list of all seafood.
    * @return A list of all possible seafood options.
    */
-  public ArrayList<String> getFish(){
-    return fish;
+  public ArrayList<String> getSeafood(){
+    return seafood;
+  }
+  
+  /**
+   * This method returns an ArrayList corresponding to the list of all shellfish.
+   * @return A list of all possible shellfish options.
+   */
+  public ArrayList<String> getShellfish(){
+    return shellfish;
   }
   
   /**
@@ -148,9 +174,26 @@ public class FoodRules{
     return vegetables;
   }
   
+  /**
+   * This method returns an ArrayList corresponding to the list of all soy options.
+   * @return A list of all possible soy options.
+   */
+  public ArrayList<String> getSoy(){
+    return soy;
+  }
+  
+  /**
+   * This method returns an ArrayList corresponding to the list of all ingredient options.
+   * @return A list of all possible ingredient options.
+   */
+  public ArrayList<String> getIngredients(){
+    return allIngredients;
+  }
+  
   public static void main(String[] args){
     FoodRules test = new FoodRules();
-    for(int i=0; i< test.vegetables.size(); i++) System.out.println(test.vegetables.get(i));
+    for(int i=0; i< test.allIngredients.size(); i++) System.out.println(test.allIngredients.get(i));
+    
   }
   
 }
