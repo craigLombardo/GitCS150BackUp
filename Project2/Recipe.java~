@@ -1,14 +1,20 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.TreeSet;
+
 /**
  * This class serves as a Recipe in our ingredient book. Each recipe will have a name,
  * a course type, the ingredients it's made of, and the prep/cook time of the recipe.
  * @author Craig Lombardo
  */
-public class Recipe{
+public class Recipe implements Comparable<Recipe>{
   
-  private String myName, myCourse, myType, myMain, myAddons, mySides, myPrepTime, myCookTime;
+  private String myName, myCourse, myType, myMain, myAddons, mySides;
+  private int myPrepTime, myCookTime;
   private ArrayList<String> myIngredients;
-  private boolean hasMeat, 
+  private boolean hasMeat = false, hasSeafood = false, hasDairy = false;
+  private boolean hasShellfish = false, hasEggs = false;
+  private ArrayList<TreeSet<Recipe>> myLocations;
   
   /**
    * This constructor method creates a Recipe with a specified name,
@@ -19,7 +25,7 @@ public class Recipe{
    * @param prepTime How long it takes to prep the Recipe (Minutes).
    * @param cookTime How long it takes to cook the Recipe (Minutes).
    */
-  public Recipe(String name, String course, String type, String main, String addons, String sides, String prepTime, String cookTime){
+  public Recipe(String name, String course, String type, String main, String addons, String sides, int prepTime, int cookTime){
     myName = name;
     myCourse = course;
     myType = type;
@@ -38,9 +44,37 @@ public class Recipe{
         start = i+1;
       }
     }
+    Collections.sort(myIngredients);
     
-    ArrayList<String>
-    for(int j=0; j<)
+    FoodRules rules = new FoodRules("ingredients.txt");
+    
+    ArrayList<String> meats = rules.getMeats();
+    ArrayList<String> seafood = rules.getSeafood();
+    ArrayList<String> dairy = rules.getDairy();
+    ArrayList<String> shellfish = rules.getShellfish();
+    
+    for(int i=0; i<myIngredients.size(); i++){
+      for(int j=0; j<meats.size() && myIngredients.get(i).compareTo(meats.get(j)) >= 0 && !hasMeat; j++){
+        if(myIngredients.get(i).compareTo(meats.get(j))==0){
+          hasMeat = true;
+        }
+      }
+      
+      for(int j=0; j<seafood.size() && myIngredients.get(i).compareTo(seafood.get(j)) >= 0 && !hasSeafood; j++){
+        if(myIngredients.get(i).compareTo(seafood.get(j))==0) hasSeafood = true;
+      }
+      
+      for(int j=0; j<dairy.size() && myIngredients.get(i).compareTo(dairy.get(j)) >= 0 && !hasDairy; j++){
+        if(myIngredients.get(i).compareTo(dairy.get(j))==0) hasDairy = true;
+      }
+      
+      for(int j=0; j<shellfish.size() && myIngredients.get(i).compareTo(shellfish.get(j)) >= 0 && !hasShellfish; j++){
+        if(myIngredients.get(i).compareTo(shellfish.get(j))==0) hasShellfish = true;
+      }
+      
+      if(!hasEggs && myIngredients.get(i).compareTo("eggs") == 0) hasEggs = true;
+    }
+    myLocations = new ArrayList<TreeSet<Recipe>>();
   }
   
   /**
@@ -72,7 +106,7 @@ public class Recipe{
    * @return String The main ingredients of the Recipe.
    */
   public String getMain(){
-     return myMain;
+    return myMain;
   }
   
   /**
@@ -93,17 +127,17 @@ public class Recipe{
   
   /**
    * This method returns the prep time of the Recipe.
-   * @return int The prep time of the Recipe.
+   * @return The prep time of the Recipe.
    */
-  public String getPrepTime(){
+  public int getPrepTime(){
     return myPrepTime;
   }
   
   /**
    * This method returns the cook time of the Recipe.
-   * @return int The cook time of the Recipe.
+   * @return The cook time of the Recipe.
    */
-  public String getCookTime(){
+  public int getCookTime(){
     return myCookTime;
   } 
   
@@ -115,20 +149,92 @@ public class Recipe{
     return myIngredients;
   }
   
-  public static void main(String[] args){
-    Recipe tmp = new Recipe("1","2","3","soup no","hello World", "No Sides", "9", "9");
-    ArrayList<String> test = tmp.getIngredients();
-    for(int i=0; i<test.size(); i++){
-      System.out.println(test.get(i));
+  /**
+   * This method returns true if the recipe has meat, false if it does not.
+   */
+  public boolean containsMeat(){
+    return hasMeat;
+  }
+  
+  /**
+   * This method returns true if the recipe has seafood, false if it does not.
+   */
+  public boolean containsSeafood(){
+    return hasSeafood;
+  }
+  
+  /**
+   * This method returns true if the recipe has shellfish, false if it does not.
+   */
+  public boolean containsShellfish(){
+    return hasShellfish;
+  }
+  
+  /**
+   * This method returns true if the recipe has dairy, false if it does not.
+   */
+  public boolean containsDairy(){
+    return hasDairy;
+  }
+  
+  /**
+   * This method returns true if the recipe has eggs, false if it does not.
+   */
+  public boolean containsEggs(){
+    return hasEggs;
+  }
+  
+  /**
+   * This method returns true if the recipe is vegetarian, false if it is not.
+   */
+  public boolean isVegetarian(){
+    return !hasMeat && !hasSeafood;
+  }
+  
+  /**
+   * This method returns true if the recipe is vegan, false if it is not.
+   */
+  public boolean isVegan(){
+    return isVegetarian() && !hasDairy && !hasEggs;
+  }
+  
+  public int compareTo(Recipe other){
+    int total1 = myPrepTime + myCookTime;
+    int total2 = other.getPrepTime() + other.getCookTime();
+    if(total1 == total2) return 0; 
+   else return  total1 > total2 ? 1 : -1;
+  }
+  
+  public void addLocation(TreeSet<Recipe> location){
+    myLocations.add(location);
+  }
+  
+  public ArrayList<TreeSet<Recipe>> getLocations(){
+    return myLocations;
+  }
+  
+  public void delete(){
+    for(int i=0; i<myLocations.size(); i++){
+      myLocations.get(i).remove(this);
     }
-    System.out.println("name: " + tmp.getName());
-    System.out.println("type: " + tmp.getCourse());
-    System.out.println("cuisine: " + tmp.getType());
-    System.out.println("main: " + tmp.getMain());
-    System.out.println("addons: " + tmp.getAddons());
-    System.out.println("sides: " + tmp.getSides());
-    System.out.println("prep: " + tmp.getPrepTime());
-    System.out.println("cook: " + tmp.getCookTime());
+  }
+  
+  public String getInfo(){
+    String output = "";
+    output = output + "name: " + getName();
+    output = output + "type: " + getCourse();
+    output = output + "cuisine: " + getType();
+    output = output + "main: " + getMain();
+    output = output + "addons: " + getAddons();
+    output = output + "sides: " + getSides();
+    output = output + "prep: " + getPrepTime();
+    output = output + "cook: " + getCookTime();
+    return output;
+  }
+  
+  public static void main(String[] args){
+    Recipe tmp = new Recipe("1","2","3","no","peas eggs", "lettuce Sides", 9, 9);
+    tmp.getInfo();
   }
   
 }

@@ -1,0 +1,11 @@
+import java.util.Comparator;
+
+public class RecipeTreeTimeComparator implements Comparator<Recipe>{
+
+  public int compare(Recipe one, Recipe two){
+   
+    return (one.getPrepTime() +one.getCookTime() )>(two.getPrepTime() + two.getCookTime()) ? 1 : -1;
+  
+  }
+  
+}

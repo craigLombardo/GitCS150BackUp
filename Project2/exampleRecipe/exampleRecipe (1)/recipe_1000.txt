@@ -1,0 +1,9000 @@
+name: Salad-1 
+type: Salad
+cuisine: French
+main: lettuce
+addons: eggs
+sides: potatoes
+prep: 11
+cook: 4
+
+name: Entree-2 
+type: Entree
+cuisine: Turkish
+main: salmon chicken tempeh
+addons: broccoli
+sides: cheese
+prep: 25
+cook: 94
+
+name: Salad-3 
+type: Salad
+cuisine: Pakistan
+main: mesclun spinach spinach
+addons: scallions
+sides: cucumbers
+prep: 6
+cook: 10
+
+name: Salad-4 
+type: Salad
+cuisine: Chinese
+main: arugula mesclun
+addons: cheese
+sides: potatoes cucumbers
+prep: 19
+cook: 5
+
+name: Entree-5 
+type: Entree
+cuisine: Indian
+main: tempeh goat tempeh
+addons: spinach
+sides: beans
+prep: 57
+cook: 122
+
+name: Entree-6 
+type: Entree
+cuisine: Korean
+main: chicken tempeh
+addons: mushrooms
+sides: beans
+prep: 24
+cook: 70
+
+name: Appetizer-7 
+type: Appetizer
+cuisine: Chinese
+main: beef chicken
+addons: peas
+sides: cheese spinach
+prep: 27
+cook: 9
+
+name: Entree-8 
+type: Entree
+cuisine: Italian
+main: tempeh
+addons: cauliflower
+sides: beans
+prep: 41
+cook: 76
+
+name: Salad-9 
+type: Salad
+cuisine: Greek
+main: spinach lettuce mesclun
+addons: scallions
+sides: mushrooms
+prep: 18
+cook: 7
+
+name: Salad-10 
+type: Salad
+cuisine: French
+main: kale
+addons: radishes
+sides: cucumbers
+prep: 13
+cook: 2
+
+name: Entree-11 
+type: Entree
+cuisine: French
+main: beef beef shrimp
+addons: cauliflower
+sides: cheese eggs
+prep: 15
+cook: 45
+
+name: Appetizer-12 
+type: Appetizer
+cuisine: Turkish
+main: scallops shrimp scallops
+addons: eggs
+sides: mushrooms beans
+prep: 10
+cook: 13
+
+name: Salad-13 
+type: Salad
+cuisine: Indian
+main: chard
+addons: radishes
+sides: cucumbers
+prep: 10
+cook: 1
+
+name: Salad-14 
+type: Salad
+cuisine: Indian
+main: kale kale
+addons: cheese
+sides: carrots carrots
+prep: 11
+cook: 9
+
+name: Entree-15 
+type: Entree
+cuisine: Korean
+main: lamb
+addons: broccoli
+sides: cheese
+prep: 26
+cook: 14
+
+name: Appetizer-16 
+type: Appetizer
+cuisine: French
+main: beef shrimp
+addons: rice
+sides: beans spinach
+prep: 22
+cook: 6
+
+name: Appetizer-17 
+type: Appetizer
+cuisine: Pakistan
+main: tofu chicken
+addons: peas
+sides: cheese spinach
+prep: 19
+cook: 21
+
+name: Salad-18 
+type: Salad
+cuisine: Korean
+main: mesclun
+addons: radishes
+sides: potatoes
+prep: 6
+cook: 8
+
+name: Appetizer-19 
+type: Appetizer
+cuisine: Greek
+main: scallops
+addons: peas
+sides: mushrooms beans
+prep: 27
+cook: 9
+
+name: Entree-20 
+type: Entree
+cuisine: Pakistan
+main: tofu
+addons: mushrooms
+sides: milk
+prep: 41
+cook: 80
+
+name: Appetizer-21 
+type: Appetizer
+cuisine: Indian
+main: chicken scallops scallops
+addons: eggs
+sides: spinach spinach
+prep: 23
+cook: 5
+
+name: Salad-22 
+type: Salad
+cuisine: Italian
+main: spinach arugula
+addons: cheese
+sides: potatoes cucumbers
+prep: 13
+cook: 3
+
+name: Entree-23 
+type: Entree
+cuisine: Chinese
+main: goat tempeh
+addons: rice
+sides: eggs peas
+prep: 35
+cook: 45
+
+name: Salad-24 
+type: Salad
+cuisine: French
+main: kale spinach
+addons: scallions
+sides: mushrooms carrots
+prep: 18
+cook: 5
+
+name: Salad-25 
+type: Salad
+cuisine: Italian
+main: kale arugula kale
+addons: scallions
+sides: carrots carrots
+prep: 8
+cook: 9
+
+name: Entree-26 
+type: Entree
+cuisine: Indian
+main: tempeh tofu goat
+addons: cauliflower
+sides: cheese peas
+prep: 51
+cook: 34
+
+name: Salad-27 
+type: Salad
+cuisine: Greek
+main: spinach lettuce
+addons: eggs
+sides: potatoes
+prep: 13
+cook: 10
+
+name: Salad-28 
+type: Salad
+cuisine: Greek
+main: kale kale lettuce
+addons: scallions
+sides: cucumbers
+prep: 11
+cook: 4
+
+name: Appetizer-29 
+type: Appetizer
+cuisine: Italian
+main: shrimp
+addons: peas
+sides: spinach spinach
+prep: 32
+cook: 13
+
+name: Salad-30 
+type: Salad
+cuisine: Korean
+main: kale
+addons: radishes
+sides: carrots potatoes
+prep: 13
+cook: 8
+
+name: Entree-31 
+type: Entree
+cuisine: Turkish
+main: shrimp
+addons: peas
+sides: cheese beans
+prep: 22
+cook: 31
+
+name: Salad-32 
+type: Salad
+cuisine: Korean
+main: spinach lettuce
+addons: eggs
+sides: cucumbers carrots
+prep: 12
+cook: 6
+
+name: Appetizer-33 
+type: Appetizer
+cuisine: Chinese
+main: beef chicken beef
+addons: peas
+sides: spinach
+prep: 38
+cook: 22
+
+name: Entree-34 
+type: Entree
+cuisine: Pakistan
+main: scallops
+addons: beans
+sides: eggs milk
+prep: 25
+cook: 102
+
+name: Salad-35 
+type: Salad
+cuisine: Chinese
+main: spinach
+addons: eggs
+sides: carrots carrots
+prep: 14
+cook: 8
+
+name: Appetizer-36 
+type: Appetizer
+cuisine: Greek
+main: chicken
+addons: peas
+sides: mushrooms
+prep: 24
+cook: 8
+
+name: Salad-37 
+type: Salad
+cuisine: Italian
+main: mesclun chard
+addons: eggs
+sides: potatoes mushrooms
+prep: 13
+cook: 10
+
+name: Entree-38 
+type: Entree
+cuisine: Chinese
+main: tofu
+addons: peas
+sides: eggs peas
+prep: 39
+cook: 81
+
+name: Salad-39 
+type: Salad
+cuisine: Pakistan
+main: kale spinach mesclun
+addons: cheese
+sides: cucumbers
+prep: 15
+cook: 9
+
+name: Appetizer-40 
+type: Appetizer
+cuisine: Korean
+main: chicken
+addons: rice
+sides: beans beans
+prep: 33
+cook: 19
+
+name: Salad-41 
+type: Salad
+cuisine: Chinese
+main: lettuce arugula
+addons: scallions
+sides: cucumbers mushrooms
+prep: 13
+cook: 8
+
+name: Appetizer-42 
+type: Appetizer
+cuisine: Pakistan
+main: chicken shrimp shrimp
+addons: eggs
+sides: beans beans
+prep: 20
+cook: 10
+
+name: Entree-43 
+type: Entree
+cuisine: Pakistan
+main: goat tempeh shrimp
+addons: spinach
+sides: milk
+prep: 16
+cook: 55
+
+name: Salad-44 
+type: Salad
+cuisine: Indian
+main: arugula kale
+addons: eggs
+sides: potatoes
+prep: 19
+cook: 3
+
+name: Entree-45 
+type: Entree
+cuisine: Turkish
+main: tofu scallops
+addons: cauliflower
+sides: peas
+prep: 28
+cook: 65
+
+name: Entree-46 
+type: Entree
+cuisine: Italian
+main: lamb
+addons: cauliflower
+sides: milk
+prep: 42
+cook: 24
+
+name: Appetizer-47 
+type: Appetizer
+cuisine: Pakistan
+main: tofu shrimp
+addons: cheese
+sides: beans
+prep: 12
+cook: 12
+
+name: Entree-48 
+type: Entree
+cuisine: Chinese
+main: tempeh tempeh scallops
+addons: cucumber
+sides: peas
+prep: 43
+cook: 27
+
+name: Salad-49 
+type: Salad
+cuisine: Chinese
+main: spinach mesclun spinach
+addons: cheese
+sides: potatoes
+prep: 17
+cook: 3
+
+name: Appetizer-50 
+type: Appetizer
+cuisine: Pakistan
+main: shrimp chicken
+addons: peas
+sides: mushrooms
+prep: 17
+cook: 19
+
+name: Appetizer-51 
+type: Appetizer
+cuisine: Greek
+main: chicken chicken chicken
+addons: cheese
+sides: cheese
+prep: 19
+cook: 22
+
+name: Appetizer-52 
+type: Appetizer
+cuisine: Chinese
+main: beef shrimp beef
+addons: rice
+sides: beans
+prep: 38
+cook: 14
+
+name: Entree-53 
+type: Entree
+cuisine: Pakistan
+main: tofu
+addons: cauliflower
+sides: peas beans
+prep: 18
+cook: 80
+
+name: Salad-54 
+type: Salad
+cuisine: Pakistan
+main: chard lettuce
+addons: radishes
+sides: cucumbers
+prep: 16
+cook: 4
+
+name: Salad-55 
+type: Salad
+cuisine: French
+main: mesclun
+addons: cheese
+sides: potatoes
+prep: 7
+cook: 9
+
+name: Appetizer-56 
+type: Appetizer
+cuisine: Chinese
+main: scallops tofu beef
+addons: rice
+sides: mushrooms mushrooms
+prep: 31
+cook: 22
+
+name: Salad-57 
+type: Salad
+cuisine: Greek
+main: arugula
+addons: eggs
+sides: cucumbers
+prep: 8
+cook: 2
+
+name: Salad-58 
+type: Salad
+cuisine: Indian
+main: mesclun kale
+addons: scallions
+sides: cucumbers mushrooms
+prep: 16
+cook: 4
+
+name: Entree-59 
+type: Entree
+cuisine: Chinese
+main: salmon tempeh
+addons: rice
+sides: eggs beans
+prep: 34
+cook: 49
+
+name: Appetizer-60 
+type: Appetizer
+cuisine: Turkish
+main: chicken beef tofu
+addons: cheese
+sides: beans
+prep: 36
+cook: 6
+
+name: Entree-61 
+type: Entree
+cuisine: Chinese
+main: chicken salmon lamb
+addons: beans
+sides: milk eggs
+prep: 56
+cook: 61
+
+name: Appetizer-62 
+type: Appetizer
+cuisine: Greek
+main: shrimp scallops chicken
+addons: rice
+sides: mushrooms cheese
+prep: 11
+cook: 24
+
+name: Salad-63 
+type: Salad
+cuisine: Korean
+main: arugula chard lettuce
+addons: eggs
+sides: cucumbers mushrooms
+prep: 11
+cook: 3
+
+name: Entree-64 
+type: Entree
+cuisine: Indian
+main: shrimp beef goat
+addons: peas
+sides: milk
+prep: 22
+cook: 37
+
+name: Entree-65 
+type: Entree
+cuisine: Korean
+main: tempeh chicken tofu
+addons: spinach
+sides: cheese
+prep: 17
+cook: 17
+
+name: Appetizer-66 
+type: Appetizer
+cuisine: Pakistan
+main: tofu tofu beef
+addons: cheese
+sides: mushrooms beans
+prep: 28
+cook: 21
+
+name: Appetizer-67 
+type: Appetizer
+cuisine: Indian
+main: scallops beef
+addons: cheese
+sides: cheese mushrooms
+prep: 12
+cook: 22
+
+name: Entree-68 
+type: Entree
+cuisine: Italian
+main: lamb tempeh beef
+addons: spinach
+sides: eggs
+prep: 28
+cook: 60
+
+name: Salad-69 
+type: Salad
+cuisine: Turkish
+main: arugula kale
+addons: scallions
+sides: potatoes cucumbers
+prep: 18
+cook: 3
+
+name: Salad-70 
+type: Salad
+cuisine: Turkish
+main: arugula chard
+addons: cheese
+sides: carrots
+prep: 12
+cook: 7
+
+name: Appetizer-71 
+type: Appetizer
+cuisine: Italian
+main: chicken
+addons: eggs
+sides: spinach
+prep: 10
+cook: 11
+
+name: Salad-72 
+type: Salad
+cuisine: Turkish
+main: mesclun lettuce
+addons: cheese
+sides: cucumbers
+prep: 9
+cook: 1
+
+name: Salad-73 
+type: Salad
+cuisine: Korean
+main: spinach chard
+addons: scallions
+sides: cucumbers cucumbers
+prep: 11
+cook: 7
+
+name: Entree-74 
+type: Entree
+cuisine: Pakistan
+main: lamb
+addons: peas
+sides: milk
+prep: 52
+cook: 56
+
+name: Entree-75 
+type: Entree
+cuisine: French
+main: salmon chicken goat
+addons: cauliflower
+sides: eggs
+prep: 55
+cook: 27
+
+name: Salad-76 
+type: Salad
+cuisine: Korean
+main: mesclun kale
+addons: cheese
+sides: mushrooms
+prep: 17
+cook: 1
+
+name: Appetizer-77 
+type: Appetizer
+cuisine: Turkish
+main: scallops chicken chicken
+addons: rice
+sides: beans mushrooms
+prep: 17
+cook: 23
+
+name: Salad-78 
+type: Salad
+cuisine: Italian
+main: lettuce arugula
+addons: scallions
+sides: cucumbers
+prep: 18
+cook: 8
+
+name: Entree-79 
+type: Entree
+cuisine: Greek
+main: tofu
+addons: peas
+sides: peas peas
+prep: 49
+cook: 100
+
+name: Salad-80 
+type: Salad
+cuisine: French
+main: arugula
+addons: cheese
+sides: cucumbers
+prep: 11
+cook: 8
+
+name: Entree-81 
+type: Entree
+cuisine: Pakistan
+main: tempeh tofu lamb
+addons: peas
+sides: beans cheese
+prep: 39
+cook: 23
+
+name: Entree-82 
+type: Entree
+cuisine: Greek
+main: goat beef tofu
+addons: beans
+sides: cheese peas
+prep: 16
+cook: 22
+
+name: Entree-83 
+type: Entree
+cuisine: Turkish
+main: goat salmon beef
+addons: cucumber
+sides: peas
+prep: 55
+cook: 84
+
+name: Salad-84 
+type: Salad
+cuisine: Italian
+main: spinach
+addons: radishes
+sides: mushrooms
+prep: 16
+cook: 9
+
+name: Appetizer-85 
+type: Appetizer
+cuisine: Korean
+main: beef tofu chicken
+addons: cheese
+sides: mushrooms beans
+prep: 20
+cook: 20
+
+name: Entree-86 
+type: Entree
+cuisine: Chinese
+main: tempeh lamb
+addons: spinach
+sides: milk
+prep: 33
+cook: 15
+
+name: Entree-87 
+type: Entree
+cuisine: Pakistan
+main: goat
+addons: beets
+sides: milk beans
+prep: 41
+cook: 75
+
+name: Salad-88 
+type: Salad
+cuisine: Greek
+main: mesclun
+addons: eggs
+sides: potatoes potatoes
+prep: 18
+cook: 6
+
+name: Entree-89 
+type: Entree
+cuisine: Korean
+main: tempeh
+addons: carrots
+sides: peas milk
+prep: 26
+cook: 34
+
+name: Entree-90 
+type: Entree
+cuisine: Greek
+main: tofu scallops tofu
+addons: peas
+sides: cheese peas
+prep: 16
+cook: 101
+
+name: Entree-91 
+type: Entree
+cuisine: Pakistan
+main: lamb
+addons: potatoes
+sides: eggs peas
+prep: 32
+cook: 20
+
+name: Appetizer-92 
+type: Appetizer
+cuisine: Indian
+main: tofu shrimp
+addons: rice
+sides: mushrooms
+prep: 22
+cook: 10
+
+name: Entree-93 
+type: Entree
+cuisine: Turkish
+main: shrimp tempeh chicken
+addons: cucumber
+sides: beans milk
+prep: 42
+cook: 6
+
+name: Appetizer-94 
+type: Appetizer
+cuisine: Chinese
+main: tofu
+addons: peas
+sides: mushrooms
+prep: 30
+cook: 12
+
+name: Entree-95 
+type: Entree
+cuisine: Chinese
+main: shrimp goat
+addons: beans
+sides: milk
+prep: 30
+cook: 33
+
+name: Appetizer-96 
+type: Appetizer
+cuisine: Indian
+main: tofu shrimp
+addons: peas
+sides: spinach mushrooms
+prep: 21
+cook: 20
+
+name: Appetizer-97 
+type: Appetizer
+cuisine: Indian
+main: scallops
+addons: rice
+sides: cheese beans
+prep: 14
+cook: 22
+
+name: Salad-98 
+type: Salad
+cuisine: French
+main: chard lettuce spinach
+addons: eggs
+sides: potatoes potatoes
+prep: 5
+cook: 5
+
+name: Appetizer-99 
+type: Appetizer
+cuisine: Indian
+main: beef
+addons: cheese
+sides: cheese spinach
+prep: 14
+cook: 13
+
+name: Appetizer-100 
+type: Appetizer
+cuisine: Chinese
+main: scallops
+addons: rice
+sides: beans cheese
+prep: 17
+cook: 7
+
+name: Appetizer-101 
+type: Appetizer
+cuisine: Greek
+main: tofu
+addons: cheese
+sides: beans
+prep: 12
+cook: 21
+
+name: Appetizer-102 
+type: Appetizer
+cuisine: Indian
+main: shrimp shrimp beef
+addons: eggs
+sides: spinach
+prep: 28
+cook: 5
+
+name: Appetizer-103 
+type: Appetizer
+cuisine: Greek
+main: chicken
+addons: eggs
+sides: mushrooms mushrooms
+prep: 23
+cook: 24
+
+name: Appetizer-104 
+type: Appetizer
+cuisine: Chinese
+main: beef shrimp scallops
+addons: eggs
+sides: cheese
+prep: 25
+cook: 12
+
+name: Entree-105 
+type: Entree
+cuisine: Italian
+main: goat tofu
+addons: beets
+sides: cheese
+prep: 51
+cook: 22
+
+name: Salad-106 
+type: Salad
+cuisine: Greek
+main: spinach arugula chard
+addons: scallions
+sides: mushrooms mushrooms
+prep: 12
+cook: 2
+
+name: Entree-107 
+type: Entree
+cuisine: Turkish
+main: tofu
+addons: beans
+sides: cheese beans
+prep: 25
+cook: 79
+
+name: Appetizer-108 
+type: Appetizer
+cuisine: Turkish
+main: chicken beef
+addons: peas
+sides: cheese spinach
+prep: 14
+cook: 24
+
+name: Entree-109 
+type: Entree
+cuisine: Pakistan
+main: scallops salmon
+addons: potatoes
+sides: milk cheese
+prep: 40
+cook: 112
+
+name: Appetizer-110 
+type: Appetizer
+cuisine: Italian
+main: shrimp tofu tofu
+addons: rice
+sides: beans
+prep: 33
+cook: 10
+
+name: Appetizer-111 
+type: Appetizer
+cuisine: Turkish
+main: tofu
+addons: eggs
+sides: mushrooms mushrooms
+prep: 20
+cook: 13
+
+name: Entree-112 
+type: Entree
+cuisine: French
+main: scallops beef
+addons: cucumber
+sides: milk cheese
+prep: 59
+cook: 93
+
+name: Appetizer-113 
+type: Appetizer
+cuisine: Turkish
+main: beef
+addons: peas
+sides: mushrooms mushrooms
+prep: 15
+cook: 17
+
+name: Appetizer-114 
+type: Appetizer
+cuisine: Turkish
+main: shrimp
+addons: cheese
+sides: mushrooms
+prep: 10
+cook: 18
+
+name: Appetizer-115 
+type: Appetizer
+cuisine: Pakistan
+main: scallops beef
+addons: rice
+sides: beans
+prep: 38
+cook: 18
+
+name: Appetizer-116 
+type: Appetizer
+cuisine: Pakistan
+main: beef shrimp shrimp
+addons: rice
+sides: mushrooms beans
+prep: 14
+cook: 10
+
+name: Entree-117 
+type: Entree
+cuisine: Korean
+main: goat lamb scallops
+addons: rice
+sides: cheese
+prep: 28
+cook: 19
+
+name: Appetizer-118 
+type: Appetizer
+cuisine: Pakistan
+main: scallops chicken
+addons: cheese
+sides: beans cheese
+prep: 28
+cook: 18
+
+name: Salad-119 
+type: Salad
+cuisine: French
+main: mesclun chard
+addons: scallions
+sides: mushrooms
+prep: 11
+cook: 4
+
+name: Salad-120 
+type: Salad
+cuisine: Italian
+main: chard
+addons: cheese
+sides: mushrooms
+prep: 7
+cook: 6
+
+name: Appetizer-121 
+type: Appetizer
+cuisine: Chinese
+main: tofu chicken shrimp
+addons: rice
+sides: spinach
+prep: 34
+cook: 5
+
+name: Appetizer-122 
+type: Appetizer
+cuisine: French
+main: chicken shrimp
+addons: rice
+sides: spinach
+prep: 35
+cook: 24
+
+name: Salad-123 
+type: Salad
+cuisine: Turkish
+main: arugula lettuce
+addons: eggs
+sides: carrots potatoes
+prep: 15
+cook: 6
+
+name: Entree-124 
+type: Entree
+cuisine: French
+main: scallops chicken goat
+addons: rice
+sides: cheese beans
+prep: 37
+cook: 28
+
+name: Appetizer-125 
+type: Appetizer
+cuisine: Greek
+main: scallops beef
+addons: cheese
+sides: cheese
+prep: 12
+cook: 16
+
+name: Salad-126 
+type: Salad
+cuisine: Korean
+main: mesclun
+addons: eggs
+sides: potatoes
+prep: 11
+cook: 1
+
+name: Salad-127 
+type: Salad
+cuisine: Korean
+main: arugula
+addons: cheese
+sides: cucumbers
+prep: 9
+cook: 4
+
+name: Salad-128 
+type: Salad
+cuisine: Italian
+main: chard arugula
+addons: scallions
+sides: cucumbers
+prep: 19
+cook: 5
+
+name: Entree-129 
+type: Entree
+cuisine: Greek
+main: scallops salmon
+addons: peas
+sides: milk peas
+prep: 45
+cook: 104
+
+name: Appetizer-130 
+type: Appetizer
+cuisine: Italian
+main: tofu tofu chicken
+addons: peas
+sides: mushrooms
+prep: 11
+cook: 9
+
+name: Entree-131 
+type: Entree
+cuisine: Italian
+main: shrimp shrimp chicken
+addons: potatoes
+sides: beans milk
+prep: 36
+cook: 29
+
+name: Appetizer-132 
+type: Appetizer
+cuisine: Italian
+main: shrimp scallops
+addons: cheese
+sides: spinach
+prep: 16
+cook: 7
+
+name: Appetizer-133 
+type: Appetizer
+cuisine: Indian
+main: tofu beef scallops
+addons: rice
+sides: cheese
+prep: 10
+cook: 19
+
+name: Appetizer-134 
+type: Appetizer
+cuisine: Turkish
+main: beef
+addons: rice
+sides: spinach
+prep: 35
+cook: 21
+
+name: Entree-135 
+type: Entree
+cuisine: Indian
+main: goat
+addons: beets
+sides: milk
+prep: 49
+cook: 18
+
+name: Appetizer-136 
+type: Appetizer
+cuisine: Indian
+main: tofu shrimp
+addons: rice
+sides: cheese spinach
+prep: 23
+cook: 11
+
+name: Salad-137 
+type: Salad
+cuisine: Indian
+main: kale arugula
+addons: cheese
+sides: mushrooms
+prep: 13
+cook: 9
+
+name: Salad-138 
+type: Salad
+cuisine: Chinese
+main: mesclun kale
+addons: eggs
+sides: cucumbers mushrooms
+prep: 19
+cook: 2
+
+name: Salad-139 
+type: Salad
+cuisine: Indian
+main: arugula
+addons: cheese
+sides: cucumbers
+prep: 11
+cook: 3
+
+name: Entree-140 
+type: Entree
+cuisine: French
+main: salmon goat
+addons: spinach
+sides: peas
+prep: 30
+cook: 119
+
+name: Appetizer-141 
+type: Appetizer
+cuisine: Chinese
+main: beef tofu tofu
+addons: cheese
+sides: cheese mushrooms
+prep: 33
+cook: 15
+
+name: Entree-142 
+type: Entree
+cuisine: Indian
+main: salmon lamb
+addons: beets
+sides: milk cheese
+prep: 58
+cook: 47
+
+name: Entree-143 
+type: Entree
+cuisine: French
+main: tempeh
+addons: cucumber
+sides: peas
+prep: 18
+cook: 16
+
+name: Appetizer-144 
+type: Appetizer
+cuisine: French
+main: shrimp
+addons: peas
+sides: spinach cheese
+prep: 27
+cook: 19
+
+name: Appetizer-145 
+type: Appetizer
+cuisine: Korean
+main: shrimp chicken
+addons: eggs
+sides: cheese
+prep: 15
+cook: 10
+
+name: Entree-146 
+type: Entree
+cuisine: Chinese
+main: tofu
+addons: beets
+sides: beans
+prep: 23
+cook: 93
+
+name: Appetizer-147 
+type: Appetizer
+cuisine: Chinese
+main: beef shrimp beef
+addons: cheese
+sides: mushrooms spinach
+prep: 37
+cook: 23
+
+name: Entree-148 
+type: Entree
+cuisine: Pakistan
+main: salmon beef salmon
+addons: peas
+sides: eggs cheese
+prep: 17
+cook: 116
+
+name: Salad-149 
+type: Salad
+cuisine: Indian
+main: spinach spinach
+addons: radishes
+sides: carrots
+prep: 6
+cook: 1
+
+name: Appetizer-150 
+type: Appetizer
+cuisine: Greek
+main: beef chicken tofu
+addons: rice
+sides: spinach
+prep: 11
+cook: 15
+
+name: Salad-151 
+type: Salad
+cuisine: Turkish
+main: arugula
+addons: cheese
+sides: cucumbers
+prep: 18
+cook: 4
+
+name: Salad-152 
+type: Salad
+cuisine: Greek
+main: mesclun
+addons: radishes
+sides: cucumbers
+prep: 18
+cook: 9
+
+name: Salad-153 
+type: Salad
+cuisine: Pakistan
+main: lettuce kale arugula
+addons: eggs
+sides: carrots potatoes
+prep: 17
+cook: 1
+
+name: Entree-154 
+type: Entree
+cuisine: Greek
+main: salmon goat tempeh
+addons: carrots
+sides: cheese
+prep: 34
+cook: 19
+
+name: Salad-155 
+type: Salad
+cuisine: Italian
+main: spinach arugula lettuce
+addons: eggs
+sides: mushrooms cucumbers
+prep: 13
+cook: 6
+
+name: Salad-156 
+type: Salad
+cuisine: Indian
+main: kale
+addons: radishes
+sides: mushrooms
+prep: 9
+cook: 8
+
+name: Salad-157 
+type: Salad
+cuisine: Chinese
+main: mesclun mesclun spinach
+addons: scallions
+sides: carrots
+prep: 13
+cook: 2
+
+name: Entree-158 
+type: Entree
+cuisine: French
+main: tofu shrimp
+addons: beets
+sides: cheese
+prep: 57
+cook: 10
+
+name: Appetizer-159 
+type: Appetizer
+cuisine: Chinese
+main: tofu
+addons: cheese
+sides: spinach
+prep: 29
+cook: 15
+
+name: Entree-160 
+type: Entree
+cuisine: Indian
+main: shrimp tofu
+addons: mushrooms
+sides: peas
+prep: 49
+cook: 93
+
+name: Entree-161 
+type: Entree
+cuisine: Greek
+main: tempeh scallops shrimp
+addons: peas
+sides: cheese
+prep: 57
+cook: 30
+
+name: Entree-162 
+type: Entree
+cuisine: Pakistan
+main: beef lamb salmon
+addons: beets
+sides: beans milk
+prep: 57
+cook: 24
+
+name: Entree-163 
+type: Entree
+cuisine: Italian
+main: beef tempeh scallops
+addons: peas
+sides: milk
+prep: 28
+cook: 74
+
+name: Entree-164 
+type: Entree
+cuisine: Indian
+main: scallops chicken
+addons: broccoli
+sides: peas
+prep: 53
+cook: 60
+
+name: Appetizer-165 
+type: Appetizer
+cuisine: Italian
+main: scallops scallops
+addons: cheese
+sides: beans
+prep: 16
+cook: 10
+
+name: Entree-166 
+type: Entree
+cuisine: French
+main: tofu goat tempeh
+addons: rice
+sides: cheese
+prep: 51
+cook: 110
+
+name: Appetizer-167 
+type: Appetizer
+cuisine: Korean
+main: tofu tofu
+addons: peas
+sides: spinach
+prep: 26
+cook: 13
+
+name: Salad-168 
+type: Salad
+cuisine: French
+main: mesclun mesclun
+addons: eggs
+sides: mushrooms
+prep: 18
+cook: 8
+
+name: Entree-169 
+type: Entree
+cuisine: Korean
+main: salmon goat beef
+addons: mushrooms
+sides: cheese
+prep: 34
+cook: 99
+
+name: Entree-170 
+type: Entree
+cuisine: French
+main: beef
+addons: carrots
+sides: milk milk
+prep: 18
+cook: 74
+
+name: Appetizer-171 
+type: Appetizer
+cuisine: Greek
+main: tofu
+addons: peas
+sides: beans cheese
+prep: 25
+cook: 19
+
+name: Appetizer-172 
+type: Appetizer
+cuisine: Korean
+main: chicken tofu beef
+addons: rice
+sides: mushrooms beans
+prep: 26
+cook: 12
+
+name: Entree-173 
+type: Entree
+cuisine: Greek
+main: chicken scallops scallops
+addons: broccoli
+sides: beans
+prep: 31
+cook: 58
+
+name: Entree-174 
+type: Entree
+cuisine: French
+main: tempeh chicken salmon
+addons: broccoli
+sides: peas peas
+prep: 28
+cook: 52
+
+name: Entree-175 
+type: Entree
+cuisine: Pakistan
+main: tofu lamb salmon
+addons: mushrooms
+sides: milk
+prep: 25
+cook: 94
+
+name: Appetizer-176 
+type: Appetizer
+cuisine: Greek
+main: beef
+addons: rice
+sides: spinach spinach
+prep: 32
+cook: 6
+
+name: Salad-177 
+type: Salad
+cuisine: Pakistan
+main: lettuce
+addons: eggs
+sides: carrots
+prep: 16
+cook: 1
+
+name: Entree-178 
+type: Entree
+cuisine: Korean
+main: scallops
+addons: mushrooms
+sides: eggs milk
+prep: 55
+cook: 42
+
+name: Appetizer-179 
+type: Appetizer
+cuisine: Turkish
+main: shrimp
+addons: peas
+sides: spinach
+prep: 23
+cook: 13
+
+name: Salad-180 
+type: Salad
+cuisine: Indian
+main: arugula spinach
+addons: eggs
+sides: potatoes
+prep: 9
+cook: 6
+
+name: Appetizer-181 
+type: Appetizer
+cuisine: French
+main: beef beef
+addons: peas
+sides: mushrooms cheese
+prep: 10
+cook: 17
+
+name: Entree-182 
+type: Entree
+cuisine: Greek
+main: chicken goat tempeh
+addons: spinach
+sides: peas
+prep: 26
+cook: 61
+
+name: Salad-183 
+type: Salad
+cuisine: Greek
+main: lettuce lettuce
+addons: scallions
+sides: mushrooms
+prep: 15
+cook: 6
+
+name: Appetizer-184 
+type: Appetizer
+cuisine: Indian
+main: scallops
+addons: cheese
+sides: cheese
+prep: 28
+cook: 5
+
+name: Entree-185 
+type: Entree
+cuisine: Korean
+main: scallops lamb lamb
+addons: beans
+sides: cheese
+prep: 15
+cook: 62
+
+name: Salad-186 
+type: Salad
+cuisine: Italian
+main: arugula arugula kale
+addons: cheese
+sides: potatoes
+prep: 19
+cook: 10
+
+name: Entree-187 
+type: Entree
+cuisine: Turkish
+main: tempeh beef
+addons: beets
+sides: eggs eggs
+prep: 40
+cook: 123
+
+name: Salad-188 
+type: Salad
+cuisine: Chinese
+main: kale spinach spinach
+addons: scallions
+sides: carrots cucumbers
+prep: 6
+cook: 6
+
+name: Entree-189 
+type: Entree
+cuisine: Greek
+main: salmon beef
+addons: peas
+sides: eggs milk
+prep: 24
+cook: 88
+
+name: Salad-190 
+type: Salad
+cuisine: Turkish
+main: chard mesclun lettuce
+addons: eggs
+sides: cucumbers
+prep: 9
+cook: 8
+
+name: Appetizer-191 
+type: Appetizer
+cuisine: Korean
+main: chicken
+addons: peas
+sides: mushrooms
+prep: 25
+cook: 18
+
+name: Salad-192 
+type: Salad
+cuisine: Greek
+main: spinach kale chard
+addons: radishes
+sides: carrots carrots
+prep: 14
+cook: 1
+
+name: Appetizer-193 
+type: Appetizer
+cuisine: Greek
+main: scallops
+addons: cheese
+sides: cheese
+prep: 31
+cook: 22
+
+name: Entree-194 
+type: Entree
+cuisine: Korean
+main: shrimp scallops
+addons: broccoli
+sides: cheese milk
+prep: 22
+cook: 20
+
+name: Appetizer-195 
+type: Appetizer
+cuisine: Greek
+main: scallops tofu tofu
+addons: cheese
+sides: cheese
+prep: 14
+cook: 10
+
+name: Entree-196 
+type: Entree
+cuisine: French
+main: lamb scallops beef
+addons: spinach
+sides: beans milk
+prep: 52
+cook: 69
+
+name: Salad-197 
+type: Salad
+cuisine: Pakistan
+main: kale
+addons: radishes
+sides: cucumbers potatoes
+prep: 8
+cook: 7
+
+name: Entree-198 
+type: Entree
+cuisine: Indian
+main: shrimp shrimp
+addons: peas
+sides: eggs
+prep: 39
+cook: 46
+
+name: Appetizer-199 
+type: Appetizer
+cuisine: Indian
+main: tofu chicken scallops
+addons: peas
+sides: beans mushrooms
+prep: 32
+cook: 6
+
+name: Appetizer-200 
+type: Appetizer
+cuisine: Chinese
+main: tofu
+addons: cheese
+sides: cheese spinach
+prep: 33
+cook: 24
+
+name: Salad-201 
+type: Salad
+cuisine: Pakistan
+main: lettuce spinach spinach
+addons: radishes
+sides: mushrooms potatoes
+prep: 18
+cook: 6
+
+name: Appetizer-202 
+type: Appetizer
+cuisine: Greek
+main: scallops beef scallops
+addons: peas
+sides: spinach
+prep: 11
+cook: 15
+
+name: Appetizer-203 
+type: Appetizer
+cuisine: Turkish
+main: tofu chicken
+addons: rice
+sides: beans beans
+prep: 21
+cook: 12
+
+name: Salad-204 
+type: Salad
+cuisine: Turkish
+main: spinach chard
+addons: eggs
+sides: carrots
+prep: 16
+cook: 3
+
+name: Entree-205 
+type: Entree
+cuisine: Greek
+main: tofu chicken
+addons: peas
+sides: milk eggs
+prep: 34
+cook: 54
+
+name: Entree-206 
+type: Entree
+cuisine: Chinese
+main: chicken
+addons: mushrooms
+sides: eggs eggs
+prep: 25
+cook: 51
+
+name: Entree-207 
+type: Entree
+cuisine: Korean
+main: goat chicken salmon
+addons: cucumber
+sides: peas peas
+prep: 48
+cook: 50
+
+name: Salad-208 
+type: Salad
+cuisine: Pakistan
+main: lettuce lettuce arugula
+addons: eggs
+sides: carrots
+prep: 6
+cook: 5
+
+name: Entree-209 
+type: Entree
+cuisine: Pakistan
+main: salmon lamb
+addons: peas
+sides: peas eggs
+prep: 53
+cook: 73
+
+name: Salad-210 
+type: Salad
+cuisine: Indian
+main: mesclun mesclun lettuce
+addons: radishes
+sides: cucumbers mushrooms
+prep: 7
+cook: 5
+
+name: Salad-211 
+type: Salad
+cuisine: Indian
+main: chard spinach spinach
+addons: cheese
+sides: cucumbers mushrooms
+prep: 9
+cook: 4
+
+name: Entree-212 
+type: Entree
+cuisine: Greek
+main: salmon
+addons: broccoli
+sides: eggs
+prep: 59
+cook: 98
+
+name: Appetizer-213 
+type: Appetizer
+cuisine: Indian
+main: scallops tofu
+addons: peas
+sides: mushrooms cheese
+prep: 10
+cook: 18
+
+name: Salad-214 
+type: Salad
+cuisine: French
+main: arugula
+addons: scallions
+sides: mushrooms mushrooms
+prep: 7
+cook: 5
+
+name: Salad-215 
+type: Salad
+cuisine: French
+main: mesclun
+addons: eggs
+sides: cucumbers
+prep: 13
+cook: 7
+
+name: Salad-216 
+type: Salad
+cuisine: Italian
+main: spinach mesclun kale
+addons: scallions
+sides: cucumbers mushrooms
+prep: 11
+cook: 1
+
+name: Salad-217 
+type: Salad
+cuisine: French
+main: mesclun chard
+addons: cheese
+sides: carrots carrots
+prep: 7
+cook: 9
+
+name: Entree-218 
+type: Entree
+cuisine: Chinese
+main: salmon tofu scallops
+addons: cucumber
+sides: eggs
+prep: 18
+cook: 87
+
+name: Salad-219 
+type: Salad
+cuisine: Korean
+main: arugula lettuce
+addons: eggs
+sides: mushrooms
+prep: 9
+cook: 1
+
+name: Salad-220 
+type: Salad
+cuisine: Pakistan
+main: mesclun chard mesclun
+addons: eggs
+sides: carrots
+prep: 17
+cook: 3
+
+name: Salad-221 
+type: Salad
+cuisine: Korean
+main: kale kale arugula
+addons: eggs
+sides: cucumbers mushrooms
+prep: 11
+cook: 1
+
+name: Salad-222 
+type: Salad
+cuisine: Turkish
+main: mesclun kale spinach
+addons: cheese
+sides: carrots carrots
+prep: 11
+cook: 9
+
+name: Entree-223 
+type: Entree
+cuisine: Italian
+main: shrimp tofu
+addons: carrots
+sides: cheese cheese
+prep: 23
+cook: 115
+
+name: Appetizer-224 
+type: Appetizer
+cuisine: French
+main: beef tofu beef
+addons: rice
+sides: mushrooms spinach
+prep: 38
+cook: 13
+
+name: Entree-225 
+type: Entree
+cuisine: Indian
+main: beef
+addons: broccoli
+sides: beans
+prep: 35
+cook: 59
+
+name: Appetizer-226 
+type: Appetizer
+cuisine: Italian
+main: shrimp
+addons: eggs
+sides: cheese mushrooms
+prep: 15
+cook: 14
+
+name: Entree-227 
+type: Entree
+cuisine: Turkish
+main: chicken beef
+addons: rice
+sides: cheese
+prep: 38
+cook: 82
+
+name: Entree-228 
+type: Entree
+cuisine: Greek
+main: tofu beef
+addons: peas
+sides: cheese
+prep: 23
+cook: 116
+
+name: Entree-229 
+type: Entree
+cuisine: Indian
+main: tempeh goat
+addons: broccoli
+sides: beans
+prep: 28
+cook: 94
+
+name: Salad-230 
+type: Salad
+cuisine: Turkish
+main: chard kale
+addons: cheese
+sides: carrots
+prep: 16
+cook: 8
+
+name: Entree-231 
+type: Entree
+cuisine: Greek
+main: shrimp chicken
+addons: potatoes
+sides: beans
+prep: 32
+cook: 29
+
+name: Appetizer-232 
+type: Appetizer
+cuisine: Chinese
+main: chicken tofu beef
+addons: eggs
+sides: spinach
+prep: 30
+cook: 7
+
+name: Salad-233 
+type: Salad
+cuisine: Indian
+main: mesclun spinach
+addons: radishes
+sides: mushrooms
+prep: 10
+cook: 2
+
+name: Salad-234 
+type: Salad
+cuisine: Pakistan
+main: kale mesclun
+addons: eggs
+sides: mushrooms
+prep: 6
+cook: 6
+
+name: Appetizer-235 
+type: Appetizer
+cuisine: Greek
+main: tofu scallops
+addons: cheese
+sides: mushrooms beans
+prep: 27
+cook: 13
+
+name: Appetizer-236 
+type: Appetizer
+cuisine: Pakistan
+main: beef
+addons: cheese
+sides: cheese beans
+prep: 31
+cook: 5
+
+name: Salad-237 
+type: Salad
+cuisine: Chinese
+main: arugula chard mesclun
+addons: cheese
+sides: carrots carrots
+prep: 8
+cook: 7
+
+name: Appetizer-238 
+type: Appetizer
+cuisine: Indian
+main: beef shrimp shrimp
+addons: peas
+sides: cheese
+prep: 14
+cook: 12
+
+name: Entree-239 
+type: Entree
+cuisine: Italian
+main: chicken salmon
+addons: spinach
+sides: eggs
+prep: 25
+cook: 50
+
+name: Appetizer-240 
+type: Appetizer
+cuisine: Pakistan
+main: chicken
+addons: rice
+sides: mushrooms
+prep: 33
+cook: 6
+
+name: Entree-241 
+type: Entree
+cuisine: Italian
+main: tempeh goat
+addons: mushrooms
+sides: cheese
+prep: 46
+cook: 68
+
+name: Salad-242 
+type: Salad
+cuisine: Italian
+main: arugula arugula arugula
+addons: scallions
+sides: potatoes
+prep: 18
+cook: 2
+
+name: Salad-243 
+type: Salad
+cuisine: French
+main: lettuce chard chard
+addons: radishes
+sides: mushrooms
+prep: 19
+cook: 8
+
+name: Entree-244 
+type: Entree
+cuisine: Pakistan
+main: tempeh
+addons: peas
+sides: eggs
+prep: 51
+cook: 124
+
+name: Entree-245 
+type: Entree
+cuisine: Greek
+main: scallops
+addons: potatoes
+sides: milk milk
+prep: 52
+cook: 32
+
+name: Appetizer-246 
+type: Appetizer
+cuisine: Pakistan
+main: shrimp
+addons: eggs
+sides: cheese cheese
+prep: 25
+cook: 9
+
+name: Entree-247 
+type: Entree
+cuisine: French
+main: tempeh beef
+addons: cauliflower
+sides: beans milk
+prep: 55
+cook: 60
+
+name: Entree-248 
+type: Entree
+cuisine: Turkish
+main: tempeh
+addons: cauliflower
+sides: eggs
+prep: 15
+cook: 16
+
+name: Salad-249 
+type: Salad
+cuisine: Pakistan
+main: mesclun spinach
+addons: eggs
+sides: potatoes
+prep: 12
+cook: 3
+
+name: Appetizer-250 
+type: Appetizer
+cuisine: Indian
+main: tofu shrimp shrimp
+addons: rice
+sides: mushrooms cheese
+prep: 16
+cook: 22
+
+name: Salad-251 
+type: Salad
+cuisine: Korean
+main: kale chard
+addons: eggs
+sides: potatoes
+prep: 18
+cook: 4
+
+name: Salad-252 
+type: Salad
+cuisine: Pakistan
+main: lettuce arugula lettuce
+addons: eggs
+sides: carrots
+prep: 9
+cook: 4
+
+name: Entree-253 
+type: Entree
+cuisine: Chinese
+main: salmon
+addons: carrots
+sides: cheese
+prep: 31
+cook: 98
+
+name: Appetizer-254 
+type: Appetizer
+cuisine: Italian
+main: beef shrimp
+addons: eggs
+sides: mushrooms
+prep: 25
+cook: 14
+
+name: Salad-255 
+type: Salad
+cuisine: Chinese
+main: chard spinach
+addons: scallions
+sides: potatoes potatoes
+prep: 11
+cook: 3
+
+name: Appetizer-256 
+type: Appetizer
+cuisine: Korean
+main: scallops tofu beef
+addons: cheese
+sides: mushrooms cheese
+prep: 21
+cook: 18
+
+name: Appetizer-257 
+type: Appetizer
+cuisine: Chinese
+main: shrimp scallops tofu
+addons: cheese
+sides: cheese
+prep: 31
+cook: 21
+
+name: Salad-258 
+type: Salad
+cuisine: French
+main: kale
+addons: eggs
+sides: mushrooms potatoes
+prep: 14
+cook: 6
+
+name: Entree-259 
+type: Entree
+cuisine: Indian
+main: lamb scallops tofu
+addons: potatoes
+sides: cheese
+prep: 49
+cook: 95
+
+name: Entree-260 
+type: Entree
+cuisine: Italian
+main: lamb lamb shrimp
+addons: mushrooms
+sides: eggs
+prep: 34
+cook: 108
+
+name: Salad-261 
+type: Salad
+cuisine: Korean
+main: chard kale chard
+addons: cheese
+sides: carrots
+prep: 6
+cook: 10
+
+name: Entree-262 
+type: Entree
+cuisine: Greek
+main: scallops
+addons: cucumber
+sides: milk eggs
+prep: 37
+cook: 14
+
+name: Entree-263 
+type: Entree
+cuisine: Korean
+main: chicken goat tempeh
+addons: spinach
+sides: eggs cheese
+prep: 29
+cook: 94
+
+name: Appetizer-264 
+type: Appetizer
+cuisine: French
+main: beef
+addons: peas
+sides: cheese
+prep: 37
+cook: 6
+
+name: Entree-265 
+type: Entree
+cuisine: Chinese
+main: lamb
+addons: carrots
+sides: cheese
+prep: 39
+cook: 50
+
+name: Appetizer-266 
+type: Appetizer
+cuisine: Chinese
+main: tofu chicken
+addons: eggs
+sides: mushrooms
+prep: 34
+cook: 20
+
+name: Entree-267 
+type: Entree
+cuisine: Chinese
+main: tempeh goat tempeh
+addons: rice
+sides: peas
+prep: 23
+cook: 39
+
+name: Appetizer-268 
+type: Appetizer
+cuisine: Indian
+main: shrimp
+addons: peas
+sides: cheese
+prep: 28
+cook: 24
+
+name: Salad-269 
+type: Salad
+cuisine: French
+main: spinach kale lettuce
+addons: cheese
+sides: potatoes
+prep: 18
+cook: 7
+
+name: Salad-270 
+type: Salad
+cuisine: Greek
+main: mesclun
+addons: cheese
+sides: cucumbers potatoes
+prep: 12
+cook: 3
+
+name: Salad-271 
+type: Salad
+cuisine: Chinese
+main: mesclun arugula mesclun
+addons: radishes
+sides: cucumbers potatoes
+prep: 19
+cook: 9
+
+name: Appetizer-272 
+type: Appetizer
+cuisine: Pakistan
+main: tofu
+addons: rice
+sides: beans
+prep: 21
+cook: 14
+
+name: Appetizer-273 
+type: Appetizer
+cuisine: Italian
+main: chicken beef chicken
+addons: rice
+sides: mushrooms
+prep: 10
+cook: 12
+
+name: Entree-274 
+type: Entree
+cuisine: Korean
+main: beef
+addons: spinach
+sides: cheese
+prep: 59
+cook: 89
+
+name: Salad-275 
+type: Salad
+cuisine: Italian
+main: kale lettuce lettuce
+addons: radishes
+sides: cucumbers cucumbers
+prep: 11
+cook: 10
+
+name: Salad-276 
+type: Salad
+cuisine: Pakistan
+main: lettuce
+addons: eggs
+sides: carrots mushrooms
+prep: 11
+cook: 4
+
+name: Entree-277 
+type: Entree
+cuisine: Indian
+main: shrimp
+addons: beans
+sides: cheese
+prep: 49
+cook: 10
+
+name: Appetizer-278 
+type: Appetizer
+cuisine: Turkish
+main: tofu
+addons: rice
+sides: cheese
+prep: 28
+cook: 11
+
+name: Salad-279 
+type: Salad
+cuisine: Turkish
+main: mesclun kale
+addons: eggs
+sides: carrots potatoes
+prep: 5
+cook: 4
+
+name: Entree-280 
+type: Entree
+cuisine: Chinese
+main: scallops shrimp
+addons: broccoli
+sides: cheese
+prep: 27
+cook: 56
+
+name: Appetizer-281 
+type: Appetizer
+cuisine: Italian
+main: chicken
+addons: eggs
+sides: spinach cheese
+prep: 11
+cook: 19
+
+name: Entree-282 
+type: Entree
+cuisine: Turkish
+main: tofu salmon
+addons: spinach
+sides: beans
+prep: 49
+cook: 62
+
+name: Entree-283 
+type: Entree
+cuisine: Indian
+main: shrimp
+addons: potatoes
+sides: beans
+prep: 31
+cook: 119
+
+name: Entree-284 
+type: Entree
+cuisine: Korean
+main: chicken chicken goat
+addons: beans
+sides: milk
+prep: 53
+cook: 65
+
+name: Salad-285 
+type: Salad
+cuisine: French
+main: kale kale
+addons: cheese
+sides: carrots carrots
+prep: 5
+cook: 10
+
+name: Entree-286 
+type: Entree
+cuisine: Chinese
+main: scallops
+addons: rice
+sides: cheese
+prep: 32
+cook: 69
+
+name: Appetizer-287 
+type: Appetizer
+cuisine: Korean
+main: tofu tofu chicken
+addons: peas
+sides: cheese
+prep: 32
+cook: 10
+
+name: Appetizer-288 
+type: Appetizer
+cuisine: French
+main: scallops
+addons: cheese
+sides: cheese
+prep: 26
+cook: 22
+
+name: Salad-289 
+type: Salad
+cuisine: French
+main: spinach
+addons: radishes
+sides: cucumbers carrots
+prep: 14
+cook: 5
+
+name: Salad-290 
+type: Salad
+cuisine: Pakistan
+main: lettuce arugula
+addons: radishes
+sides: mushrooms
+prep: 13
+cook: 10
+
+name: Salad-291 
+type: Salad
+cuisine: Turkish
+main: spinach
+addons: cheese
+sides: mushrooms mushrooms
+prep: 7
+cook: 2
+
+name: Entree-292 
+type: Entree
+cuisine: French
+main: lamb lamb scallops
+addons: broccoli
+sides: peas
+prep: 52
+cook: 82
+
+name: Entree-293 
+type: Entree
+cuisine: French
+main: goat
+addons: peas
+sides: milk beans
+prep: 41
+cook: 74
+
+name: Entree-294 
+type: Entree
+cuisine: Turkish
+main: tempeh tofu
+addons: rice
+sides: peas peas
+prep: 44
+cook: 46
+
+name: Appetizer-295 
+type: Appetizer
+cuisine: Greek
+main: beef chicken tofu
+addons: eggs
+sides: beans mushrooms
+prep: 35
+cook: 9
+
+name: Salad-296 
+type: Salad
+cuisine: French
+main: kale
+addons: scallions
+sides: cucumbers potatoes
+prep: 18
+cook: 8
+
+name: Appetizer-297 
+type: Appetizer
+cuisine: Pakistan
+main: shrimp shrimp scallops
+addons: cheese
+sides: spinach
+prep: 16
+cook: 19
+
+name: Salad-298 
+type: Salad
+cuisine: Italian
+main: lettuce kale
+addons: scallions
+sides: cucumbers
+prep: 8
+cook: 1
+
+name: Appetizer-299 
+type: Appetizer
+cuisine: Italian
+main: chicken chicken shrimp
+addons: peas
+sides: spinach beans
+prep: 13
+cook: 6
+
+name: Salad-300 
+type: Salad
+cuisine: Italian
+main: spinach kale
+addons: eggs
+sides: mushrooms
+prep: 16
+cook: 1
+
+name: Entree-301 
+type: Entree
+cuisine: Korean
+main: goat
+addons: cucumber
+sides: cheese eggs
+prep: 26
+cook: 55
+
+name: Appetizer-302 
+type: Appetizer
+cuisine: Greek
+main: scallops
+addons: cheese
+sides: spinach beans
+prep: 30
+cook: 5
+
+name: Salad-303 
+type: Salad
+cuisine: Chinese
+main: mesclun lettuce lettuce
+addons: cheese
+sides: mushrooms cucumbers
+prep: 18
+cook: 9
+
+name: Appetizer-304 
+type: Appetizer
+cuisine: Korean
+main: beef scallops chicken
+addons: rice
+sides: beans
+prep: 35
+cook: 15
+
+name: Entree-305 
+type: Entree
+cuisine: Greek
+main: salmon lamb
+addons: cucumber
+sides: peas eggs
+prep: 31
+cook: 107
+
+name: Salad-306 
+type: Salad
+cuisine: French
+main: lettuce chard arugula
+addons: scallions
+sides: mushrooms cucumbers
+prep: 16
+cook: 4
+
+name: Appetizer-307 
+type: Appetizer
+cuisine: Italian
+main: chicken
+addons: rice
+sides: beans
+prep: 36
+cook: 5
+
+name: Entree-308 
+type: Entree
+cuisine: Greek
+main: beef
+addons: spinach
+sides: cheese
+prep: 58
+cook: 80
+
+name: Entree-309 
+type: Entree
+cuisine: Korean
+main: shrimp beef scallops
+addons: spinach
+sides: eggs
+prep: 31
+cook: 45
+
+name: Salad-310 
+type: Salad
+cuisine: Korean
+main: chard
+addons: eggs
+sides: carrots mushrooms
+prep: 15
+cook: 6
+
+name: Salad-311 
+type: Salad
+cuisine: Chinese
+main: spinach kale arugula
+addons: radishes
+sides: carrots
+prep: 15
+cook: 10
+
+name: Entree-312 
+type: Entree
+cuisine: Greek
+main: tempeh tempeh
+addons: broccoli
+sides: peas
+prep: 42
+cook: 117
+
+name: Entree-313 
+type: Entree
+cuisine: Greek
+main: shrimp scallops chicken
+addons: potatoes
+sides: beans milk
+prep: 53
+cook: 92
+
+name: Salad-314 
+type: Salad
+cuisine: French
+main: lettuce
+addons: scallions
+sides: mushrooms cucumbers
+prep: 15
+cook: 7
+
+name: Salad-315 
+type: Salad
+cuisine: French
+main: arugula
+addons: cheese
+sides: potatoes cucumbers
+prep: 12
+cook: 6
+
+name: Entree-316 
+type: Entree
+cuisine: French
+main: salmon
+addons: beets
+sides: beans milk
+prep: 42
+cook: 117
+
+name: Salad-317 
+type: Salad
+cuisine: Pakistan
+main: mesclun
+addons: scallions
+sides: carrots
+prep: 12
+cook: 7
+
+name: Entree-318 
+type: Entree
+cuisine: Turkish
+main: shrimp
+addons: peas
+sides: milk
+prep: 30
+cook: 116
+
+name: Appetizer-319 
+type: Appetizer
+cuisine: Greek
+main: beef scallops
+addons: rice
+sides: mushrooms spinach
+prep: 32
+cook: 5
+
+name: Appetizer-320 
+type: Appetizer
+cuisine: Chinese
+main: shrimp beef
+addons: cheese
+sides: mushrooms
+prep: 17
+cook: 24
+
+name: Salad-321 
+type: Salad
+cuisine: Greek
+main: chard
+addons: cheese
+sides: potatoes
+prep: 10
+cook: 7
+
+name: Salad-322 
+type: Salad
+cuisine: Korean
+main: arugula lettuce arugula
+addons: cheese
+sides: mushrooms
+prep: 16
+cook: 8
+
+name: Appetizer-323 
+type: Appetizer
+cuisine: Turkish
+main: shrimp
+addons: cheese
+sides: cheese
+prep: 26
+cook: 19
+
+name: Appetizer-324 
+type: Appetizer
+cuisine: Italian
+main: beef tofu
+addons: cheese
+sides: spinach mushrooms
+prep: 32
+cook: 8
+
+name: Salad-325 
+type: Salad
+cuisine: Indian
+main: spinach
+addons: cheese
+sides: cucumbers
+prep: 7
+cook: 10
+
+name: Salad-326 
+type: Salad
+cuisine: Korean
+main: chard chard lettuce
+addons: scallions
+sides: cucumbers potatoes
+prep: 14
+cook: 7
+
+name: Salad-327 
+type: Salad
+cuisine: Turkish
+main: arugula lettuce mesclun
+addons: cheese
+sides: potatoes
+prep: 10
+cook: 1
+
+name: Entree-328 
+type: Entree
+cuisine: Italian
+main: tempeh chicken chicken
+addons: broccoli
+sides: cheese peas
+prep: 47
+cook: 99
+
+name: Entree-329 
+type: Entree
+cuisine: Indian
+main: scallops lamb scallops
+addons: mushrooms
+sides: milk beans
+prep: 52
+cook: 94
+
+name: Salad-330 
+type: Salad
+cuisine: Korean
+main: chard mesclun kale
+addons: scallions
+sides: carrots mushrooms
+prep: 5
+cook: 3
+
+name: Appetizer-331 
+type: Appetizer
+cuisine: Turkish
+main: chicken scallops beef
+addons: rice
+sides: spinach
+prep: 12
+cook: 16
+
+name: Salad-332 
+type: Salad
+cuisine: Pakistan
+main: spinach mesclun lettuce
+addons: radishes
+sides: potatoes carrots
+prep: 13
+cook: 2
+
+name: Entree-333 
+type: Entree
+cuisine: French
+main: goat
+addons: cucumber
+sides: peas milk
+prep: 18
+cook: 89
+
+name: Entree-334 
+type: Entree
+cuisine: Chinese
+main: lamb beef tofu
+addons: rice
+sides: eggs peas
+prep: 54
+cook: 88
+
+name: Salad-335 
+type: Salad
+cuisine: Pakistan
+main: kale spinach
+addons: scallions
+sides: cucumbers
+prep: 7
+cook: 2
+
+name: Appetizer-336 
+type: Appetizer
+cuisine: Italian
+main: tofu tofu
+addons: cheese
+sides: cheese
+prep: 12
+cook: 6
+
+name: Appetizer-337 
+type: Appetizer
+cuisine: Korean
+main: tofu
+addons: eggs
+sides: beans spinach
+prep: 14
+cook: 19
+
+name: Entree-338 
+type: Entree
+cuisine: Turkish
+main: salmon
+addons: beans
+sides: milk milk
+prep: 47
+cook: 121
+
+name: Entree-339 
+type: Entree
+cuisine: Korean
+main: chicken scallops
+addons: peas
+sides: cheese
+prep: 24
+cook: 46
+
+name: Appetizer-340 
+type: Appetizer
+cuisine: Turkish
+main: tofu beef
+addons: cheese
+sides: mushrooms mushrooms
+prep: 38
+cook: 23
+
+name: Salad-341 
+type: Salad
+cuisine: Indian
+main: spinach
+addons: scallions
+sides: mushrooms potatoes
+prep: 9
+cook: 9
+
+name: Entree-342 
+type: Entree
+cuisine: Greek
+main: beef tempeh
+addons: carrots
+sides: cheese cheese
+prep: 17
+cook: 88
+
+name: Entree-343 
+type: Entree
+cuisine: Greek
+main: beef
+addons: cucumber
+sides: milk
+prep: 48
+cook: 109
+
+name: Salad-344 
+type: Salad
+cuisine: Pakistan
+main: arugula
+addons: scallions
+sides: mushrooms
+prep: 8
+cook: 9
+
+name: Entree-345 
+type: Entree
+cuisine: Chinese
+main: lamb
+addons: carrots
+sides: eggs eggs
+prep: 51
+cook: 47
+
+name: Salad-346 
+type: Salad
+cuisine: Indian
+main: lettuce arugula
+addons: eggs
+sides: cucumbers
+prep: 18
+cook: 9
+
+name: Entree-347 
+type: Entree
+cuisine: Turkish
+main: chicken
+addons: mushrooms
+sides: eggs
+prep: 35
+cook: 116
+
+name: Entree-348 
+type: Entree
+cuisine: Pakistan
+main: salmon tempeh tempeh
+addons: cauliflower
+sides: beans beans
+prep: 58
+cook: 104
+
+name: Salad-349 
+type: Salad
+cuisine: Chinese
+main: mesclun arugula
+addons: cheese
+sides: mushrooms
+prep: 14
+cook: 6
+
+name: Appetizer-350 
+type: Appetizer
+cuisine: Greek
+main: scallops shrimp scallops
+addons: cheese
+sides: mushrooms
+prep: 29
+cook: 8
+
+name: Salad-351 
+type: Salad
+cuisine: Chinese
+main: arugula mesclun mesclun
+addons: radishes
+sides: potatoes potatoes
+prep: 7
+cook: 4
+
+name: Salad-352 
+type: Salad
+cuisine: Italian
+main: chard
+addons: scallions
+sides: mushrooms cucumbers
+prep: 6
+cook: 8
+
+name: Salad-353 
+type: Salad
+cuisine: Chinese
+main: chard kale chard
+addons: cheese
+sides: cucumbers
+prep: 10
+cook: 1
+
+name: Entree-354 
+type: Entree
+cuisine: Italian
+main: chicken
+addons: rice
+sides: cheese peas
+prep: 15
+cook: 121
+
+name: Appetizer-355 
+type: Appetizer
+cuisine: French
+main: tofu scallops
+addons: rice
+sides: spinach
+prep: 36
+cook: 8
+
+name: Entree-356 
+type: Entree
+cuisine: Chinese
+main: tofu salmon shrimp
+addons: potatoes
+sides: eggs beans
+prep: 30
+cook: 32
+
+name: Entree-357 
+type: Entree
+cuisine: Chinese
+main: lamb
+addons: rice
+sides: peas
+prep: 37
+cook: 108
+
+name: Entree-358 
+type: Entree
+cuisine: Italian
+main: beef
+addons: potatoes
+sides: eggs peas
+prep: 39
+cook: 120
+
+name: Salad-359 
+type: Salad
+cuisine: French
+main: lettuce
+addons: eggs
+sides: cucumbers cucumbers
+prep: 5
+cook: 9
+
+name: Appetizer-360 
+type: Appetizer
+cuisine: Turkish
+main: beef
+addons: cheese
+sides: mushrooms spinach
+prep: 33
+cook: 16
+
+name: Appetizer-361 
+type: Appetizer
+cuisine: Chinese
+main: tofu
+addons: eggs
+sides: spinach
+prep: 10
+cook: 7
+
+name: Entree-362 
+type: Entree
+cuisine: Chinese
+main: lamb
+addons: carrots
+sides: beans milk
+prep: 54
+cook: 19
+
+name: Entree-363 
+type: Entree
+cuisine: Pakistan
+main: beef
+addons: broccoli
+sides: beans peas
+prep: 31
+cook: 104
+
+name: Salad-364 
+type: Salad
+cuisine: Korean
+main: lettuce
+addons: eggs
+sides: potatoes cucumbers
+prep: 10
+cook: 9
+
+name: Entree-365 
+type: Entree
+cuisine: Italian
+main: goat tofu tofu
+addons: peas
+sides: eggs
+prep: 22
+cook: 83
+
+name: Salad-366 
+type: Salad
+cuisine: Italian
+main: chard mesclun
+addons: cheese
+sides: carrots carrots
+prep: 5
+cook: 4
+
+name: Entree-367 
+type: Entree
+cuisine: Pakistan
+main: tofu shrimp
+addons: mushrooms
+sides: milk beans
+prep: 21
+cook: 101
+
+name: Salad-368 
+type: Salad
+cuisine: Korean
+main: lettuce arugula
+addons: scallions
+sides: carrots potatoes
+prep: 12
+cook: 5
+
+name: Appetizer-369 
+type: Appetizer
+cuisine: French
+main: tofu scallops shrimp
+addons: eggs
+sides: cheese beans
+prep: 14
+cook: 22
+
+name: Salad-370 
+type: Salad
+cuisine: Korean
+main: lettuce
+addons: scallions
+sides: cucumbers cucumbers
+prep: 9
+cook: 3
+
+name: Salad-371 
+type: Salad
+cuisine: Indian
+main: kale
+addons: cheese
+sides: carrots potatoes
+prep: 14
+cook: 8
+
+name: Salad-372 
+type: Salad
+cuisine: Italian
+main: chard arugula
+addons: cheese
+sides: cucumbers cucumbers
+prep: 19
+cook: 7
+
+name: Salad-373 
+type: Salad
+cuisine: French
+main: arugula kale
+addons: eggs
+sides: cucumbers carrots
+prep: 9
+cook: 6
+
+name: Appetizer-374 
+type: Appetizer
+cuisine: Chinese
+main: shrimp beef
+addons: peas
+sides: mushrooms beans
+prep: 19
+cook: 12
+
+name: Entree-375 
+type: Entree
+cuisine: French
+main: lamb goat
+addons: beets
+sides: peas peas
+prep: 15
+cook: 73
+
+name: Salad-376 
+type: Salad
+cuisine: Greek
+main: arugula
+addons: radishes
+sides: cucumbers
+prep: 10
+cook: 10
+
+name: Salad-377 
+type: Salad
+cuisine: Italian
+main: arugula
+addons: radishes
+sides: cucumbers carrots
+prep: 14
+cook: 10
+
+name: Appetizer-378 
+type: Appetizer
+cuisine: Italian
+main: chicken
+addons: rice
+sides: spinach
+prep: 22
+cook: 20
+
+name: Appetizer-379 
+type: Appetizer
+cuisine: Pakistan
+main: scallops
+addons: eggs
+sides: cheese mushrooms
+prep: 23
+cook: 13
+
+name: Entree-380 
+type: Entree
+cuisine: Korean
+main: scallops shrimp chicken
+addons: beans
+sides: beans cheese
+prep: 38
+cook: 40
+
+name: Entree-381 
+type: Entree
+cuisine: Chinese
+main: chicken tofu shrimp
+addons: broccoli
+sides: cheese beans
+prep: 52
+cook: 27
+
+name: Appetizer-382 
+type: Appetizer
+cuisine: Italian
+main: tofu tofu
+addons: cheese
+sides: cheese cheese
+prep: 39
+cook: 17
+
+name: Salad-383 
+type: Salad
+cuisine: Pakistan
+main: chard kale
+addons: eggs
+sides: cucumbers cucumbers
+prep: 14
+cook: 3
+
+name: Salad-384 
+type: Salad
+cuisine: Pakistan
+main: chard spinach
+addons: radishes
+sides: potatoes
+prep: 19
+cook: 5
+
+name: Salad-385 
+type: Salad
+cuisine: Italian
+main: spinach arugula mesclun
+addons: radishes
+sides: potatoes
+prep: 6
+cook: 9
+
+name: Appetizer-386 
+type: Appetizer
+cuisine: French
+main: chicken shrimp
+addons: eggs
+sides: beans
+prep: 31
+cook: 8
+
+name: Entree-387 
+type: Entree
+cuisine: French
+main: lamb
+addons: spinach
+sides: milk
+prep: 49
+cook: 115
+
+name: Entree-388 
+type: Entree
+cuisine: Indian
+main: scallops
+addons: beets
+sides: eggs
+prep: 18
+cook: 17
+
+name: Salad-389 
+type: Salad
+cuisine: Chinese
+main: lettuce
+addons: cheese
+sides: cucumbers
+prep: 14
+cook: 5
+
+name: Entree-390 
+type: Entree
+cuisine: Italian
+main: tofu
+addons: spinach
+sides: cheese
+prep: 31
+cook: 56
+
+name: Entree-391 
+type: Entree
+cuisine: Greek
+main: chicken salmon scallops
+addons: beans
+sides: milk
+prep: 35
+cook: 77
+
+name: Salad-392 
+type: Salad
+cuisine: Turkish
+main: chard arugula
+addons: radishes
+sides: carrots
+prep: 6
+cook: 1
+
+name: Salad-393 
+type: Salad
+cuisine: Indian
+main: lettuce
+addons: radishes
+sides: mushrooms cucumbers
+prep: 18
+cook: 7
+
+name: Entree-394 
+type: Entree
+cuisine: Korean
+main: salmon
+addons: rice
+sides: beans
+prep: 28
+cook: 93
+
+name: Entree-395 
+type: Entree
+cuisine: Greek
+main: tempeh beef
+addons: beets
+sides: beans
+prep: 41
+cook: 52
+
+name: Entree-396 
+type: Entree
+cuisine: French
+main: tempeh
+addons: cauliflower
+sides: beans
+prep: 30
+cook: 49
+
+name: Appetizer-397 
+type: Appetizer
+cuisine: French
+main: chicken scallops
+addons: peas
+sides: beans beans
+prep: 21
+cook: 13
+
+name: Salad-398 
+type: Salad
+cuisine: Greek
+main: chard chard spinach
+addons: scallions
+sides: mushrooms potatoes
+prep: 6
+cook: 2
+
+name: Appetizer-399 
+type: Appetizer
+cuisine: Italian
+main: tofu
+addons: eggs
+sides: beans spinach
+prep: 11
+cook: 9
+
+name: Appetizer-400 
+type: Appetizer
+cuisine: Korean
+main: scallops tofu tofu
+addons: rice
+sides: mushrooms
+prep: 28
+cook: 19
+
+name: Appetizer-401 
+type: Appetizer
+cuisine: Indian
+main: scallops scallops tofu
+addons: peas
+sides: cheese
+prep: 32
+cook: 23
+
+name: Appetizer-402 
+type: Appetizer
+cuisine: Turkish
+main: shrimp tofu
+addons: eggs
+sides: mushrooms
+prep: 20
+cook: 15
+
+name: Appetizer-403 
+type: Appetizer
+cuisine: Pakistan
+main: tofu tofu beef
+addons: rice
+sides: spinach
+prep: 11
+cook: 18
+
+name: Salad-404 
+type: Salad
+cuisine: Pakistan
+main: lettuce lettuce arugula
+addons: scallions
+sides: potatoes cucumbers
+prep: 16
+cook: 7
+
+name: Appetizer-405 
+type: Appetizer
+cuisine: Korean
+main: shrimp
+addons: cheese
+sides: mushrooms
+prep: 14
+cook: 12
+
+name: Appetizer-406 
+type: Appetizer
+cuisine: Pakistan
+main: tofu
+addons: rice
+sides: cheese
+prep: 21
+cook: 5
+
+name: Appetizer-407 
+type: Appetizer
+cuisine: Turkish
+main: chicken beef
+addons: eggs
+sides: beans beans
+prep: 10
+cook: 18
+
+name: Salad-408 
+type: Salad
+cuisine: French
+main: lettuce spinach
+addons: radishes
+sides: mushrooms
+prep: 9
+cook: 2
+
+name: Entree-409 
+type: Entree
+cuisine: Korean
+main: tofu shrimp
+addons: beans
+sides: cheese beans
+prep: 23
+cook: 124
+
+name: Entree-410 
+type: Entree
+cuisine: Chinese
+main: lamb tofu tempeh
+addons: carrots
+sides: peas eggs
+prep: 50
+cook: 47
+
+name: Appetizer-411 
+type: Appetizer
+cuisine: Chinese
+main: chicken shrimp beef
+addons: peas
+sides: spinach mushrooms
+prep: 36
+cook: 15
+
+name: Appetizer-412 
+type: Appetizer
+cuisine: Indian
+main: tofu beef
+addons: eggs
+sides: mushrooms cheese
+prep: 29
+cook: 22
+
+name: Salad-413 
+type: Salad
+cuisine: Pakistan
+main: spinach lettuce
+addons: scallions
+sides: carrots
+prep: 5
+cook: 7
+
+name: Appetizer-414 
+type: Appetizer
+cuisine: Chinese
+main: scallops chicken chicken
+addons: peas
+sides: beans beans
+prep: 21
+cook: 9
+
+name: Salad-415 
+type: Salad
+cuisine: Pakistan
+main: mesclun kale
+addons: radishes
+sides: cucumbers
+prep: 9
+cook: 8
+
+name: Appetizer-416 
+type: Appetizer
+cuisine: Greek
+main: chicken
+addons: peas
+sides: spinach cheese
+prep: 25
+cook: 6
+
+name: Salad-417 
+type: Salad
+cuisine: Italian
+main: chard
+addons: cheese
+sides: carrots carrots
+prep: 9
+cook: 3
+
+name: Salad-418 
+type: Salad
+cuisine: French
+main: mesclun
+addons: scallions
+sides: carrots cucumbers
+prep: 6
+cook: 2
+
+name: Salad-419 
+type: Salad
+cuisine: Italian
+main: mesclun kale
+addons: eggs
+sides: potatoes cucumbers
+prep: 16
+cook: 2
+
+name: Entree-420 
+type: Entree
+cuisine: Chinese
+main: tofu
+addons: peas
+sides: peas
+prep: 22
+cook: 111
+
+name: Entree-421 
+type: Entree
+cuisine: Korean
+main: chicken salmon
+addons: peas
+sides: eggs peas
+prep: 47
+cook: 57
+
+name: Entree-422 
+type: Entree
+cuisine: Turkish
+main: beef chicken
+addons: beans
+sides: milk
+prep: 58
+cook: 109
+
+name: Appetizer-423 
+type: Appetizer
+cuisine: Turkish
+main: scallops scallops
+addons: cheese
+sides: spinach mushrooms
+prep: 24
+cook: 24
+
+name: Entree-424 
+type: Entree
+cuisine: Indian
+main: shrimp shrimp scallops
+addons: potatoes
+sides: beans peas
+prep: 41
+cook: 15
+
+name: Appetizer-425 
+type: Appetizer
+cuisine: Chinese
+main: shrimp chicken beef
+addons: peas
+sides: cheese beans
+prep: 27
+cook: 16
+
+name: Appetizer-426 
+type: Appetizer
+cuisine: Italian
+main: scallops tofu beef
+addons: rice
+sides: spinach mushrooms
+prep: 11
+cook: 24
+
+name: Entree-427 
+type: Entree
+cuisine: Chinese
+main: shrimp lamb
+addons: cucumber
+sides: beans eggs
+prep: 45
+cook: 123
+
+name: Salad-428 
+type: Salad
+cuisine: Italian
+main: spinach
+addons: scallions
+sides: carrots
+prep: 12
+cook: 4
+
+name: Appetizer-429 
+type: Appetizer
+cuisine: Greek
+main: shrimp scallops
+addons: eggs
+sides: beans
+prep: 20
+cook: 17
+
+name: Entree-430 
+type: Entree
+cuisine: French
+main: tempeh
+addons: beets
+sides: cheese cheese
+prep: 18
+cook: 58
+
+name: Salad-431 
+type: Salad
+cuisine: French
+main: mesclun mesclun kale
+addons: scallions
+sides: potatoes potatoes
+prep: 16
+cook: 2
+
+name: Salad-432 
+type: Salad
+cuisine: Italian
+main: arugula mesclun arugula
+addons: scallions
+sides: potatoes
+prep: 17
+cook: 7
+
+name: Salad-433 
+type: Salad
+cuisine: Chinese
+main: kale
+addons: radishes
+sides: carrots
+prep: 11
+cook: 7
+
+name: Entree-434 
+type: Entree
+cuisine: Pakistan
+main: tempeh tofu lamb
+addons: beans
+sides: eggs eggs
+prep: 23
+cook: 60
+
+name: Entree-435 
+type: Entree
+cuisine: Italian
+main: scallops goat tofu
+addons: rice
+sides: milk milk
+prep: 35
+cook: 31
+
+name: Appetizer-436 
+type: Appetizer
+cuisine: Indian
+main: beef scallops
+addons: rice
+sides: beans cheese
+prep: 12
+cook: 11
+
+name: Appetizer-437 
+type: Appetizer
+cuisine: Italian
+main: tofu
+addons: cheese
+sides: cheese
+prep: 23
+cook: 21
+
+name: Entree-438 
+type: Entree
+cuisine: Turkish
+main: goat
+addons: peas
+sides: peas peas
+prep: 45
+cook: 18
+
+name: Entree-439 
+type: Entree
+cuisine: Korean
+main: tempeh tempeh
+addons: mushrooms
+sides: eggs beans
+prep: 35
+cook: 112
+
+name: Entree-440 
+type: Entree
+cuisine: Chinese
+main: chicken
+addons: broccoli
+sides: peas eggs
+prep: 56
+cook: 77
+
+name: Salad-441 
+type: Salad
+cuisine: Italian
+main: kale kale mesclun
+addons: scallions
+sides: carrots
+prep: 11
+cook: 2
+
+name: Entree-442 
+type: Entree
+cuisine: Turkish
+main: chicken scallops shrimp
+addons: peas
+sides: peas eggs
+prep: 55
+cook: 13
+
+name: Entree-443 
+type: Entree
+cuisine: Indian
+main: scallops salmon
+addons: cucumber
+sides: beans peas
+prep: 17
+cook: 8
+
+name: Entree-444 
+type: Entree
+cuisine: Turkish
+main: lamb scallops salmon
+addons: potatoes
+sides: eggs beans
+prep: 28
+cook: 38
+
+name: Salad-445 
+type: Salad
+cuisine: Korean
+main: kale arugula
+addons: scallions
+sides: carrots potatoes
+prep: 18
+cook: 5
+
+name: Salad-446 
+type: Salad
+cuisine: Turkish
+main: kale
+addons: eggs
+sides: mushrooms cucumbers
+prep: 6
+cook: 2
+
+name: Appetizer-447 
+type: Appetizer
+cuisine: French
+main: tofu shrimp
+addons: cheese
+sides: cheese
+prep: 15
+cook: 19
+
+name: Appetizer-448 
+type: Appetizer
+cuisine: Greek
+main: chicken tofu scallops
+addons: eggs
+sides: beans spinach
+prep: 15
+cook: 23
+
+name: Appetizer-449 
+type: Appetizer
+cuisine: Turkish
+main: beef
+addons: peas
+sides: spinach
+prep: 31
+cook: 13
+
+name: Entree-450 
+type: Entree
+cuisine: Italian
+main: beef shrimp
+addons: broccoli
+sides: eggs
+prep: 49
+cook: 23
+
+name: Salad-451 
+type: Salad
+cuisine: Greek
+main: chard
+addons: radishes
+sides: cucumbers cucumbers
+prep: 6
+cook: 5
+
+name: Salad-452 
+type: Salad
+cuisine: Korean
+main: kale chard
+addons: cheese
+sides: cucumbers
+prep: 18
+cook: 6
+
+name: Entree-453 
+type: Entree
+cuisine: Italian
+main: goat chicken tempeh
+addons: beans
+sides: beans beans
+prep: 47
+cook: 10
+
+name: Appetizer-454 
+type: Appetizer
+cuisine: Turkish
+main: chicken tofu
+addons: rice
+sides: cheese
+prep: 26
+cook: 23
+
+name: Salad-455 
+type: Salad
+cuisine: Korean
+main: lettuce
+addons: radishes
+sides: potatoes mushrooms
+prep: 11
+cook: 1
+
+name: Entree-456 
+type: Entree
+cuisine: French
+main: tempeh
+addons: carrots
+sides: eggs
+prep: 47
+cook: 72
+
+name: Salad-457 
+type: Salad
+cuisine: Korean
+main: chard mesclun
+addons: scallions
+sides: carrots carrots
+prep: 18
+cook: 2
+
+name: Appetizer-458 
+type: Appetizer
+cuisine: Korean
+main: shrimp
+addons: cheese
+sides: beans
+prep: 32
+cook: 17
+
+name: Salad-459 
+type: Salad
+cuisine: Korean
+main: lettuce
+addons: scallions
+sides: cucumbers
+prep: 5
+cook: 3
+
+name: Salad-460 
+type: Salad
+cuisine: Chinese
+main: kale
+addons: eggs
+sides: carrots
+prep: 9
+cook: 8
+
+name: Salad-461 
+type: Salad
+cuisine: Pakistan
+main: kale
+addons: cheese
+sides: potatoes potatoes
+prep: 6
+cook: 6
+
+name: Appetizer-462 
+type: Appetizer
+cuisine: Italian
+main: beef beef chicken
+addons: rice
+sides: spinach
+prep: 34
+cook: 22
+
+name: Appetizer-463 
+type: Appetizer
+cuisine: Korean
+main: beef
+addons: eggs
+sides: cheese mushrooms
+prep: 11
+cook: 23
+
+name: Entree-464 
+type: Entree
+cuisine: Italian
+main: tofu lamb
+addons: mushrooms
+sides: milk
+prep: 26
+cook: 47
+
+name: Salad-465 
+type: Salad
+cuisine: French
+main: lettuce
+addons: radishes
+sides: cucumbers
+prep: 14
+cook: 10
+
+name: Salad-466 
+type: Salad
+cuisine: Italian
+main: lettuce arugula
+addons: scallions
+sides: cucumbers cucumbers
+prep: 6
+cook: 9
+
+name: Salad-467 
+type: Salad
+cuisine: Italian
+main: mesclun lettuce chard
+addons: cheese
+sides: mushrooms
+prep: 14
+cook: 8
+
+name: Appetizer-468 
+type: Appetizer
+cuisine: Greek
+main: tofu
+addons: eggs
+sides: spinach
+prep: 31
+cook: 22
+
+name: Salad-469 
+type: Salad
+cuisine: Greek
+main: kale chard arugula
+addons: scallions
+sides: cucumbers carrots
+prep: 13
+cook: 4
+
+name: Appetizer-470 
+type: Appetizer
+cuisine: Turkish
+main: chicken
+addons: eggs
+sides: beans
+prep: 36
+cook: 23
+
+name: Entree-471 
+type: Entree
+cuisine: Chinese
+main: tempeh salmon tofu
+addons: cucumber
+sides: eggs
+prep: 57
+cook: 56
+
+name: Entree-472 
+type: Entree
+cuisine: Turkish
+main: shrimp salmon shrimp
+addons: beans
+sides: eggs eggs
+prep: 33
+cook: 71
+
+name: Salad-473 
+type: Salad
+cuisine: Greek
+main: lettuce lettuce spinach
+addons: radishes
+sides: mushrooms potatoes
+prep: 13
+cook: 6
+
+name: Appetizer-474 
+type: Appetizer
+cuisine: Pakistan
+main: chicken chicken beef
+addons: rice
+sides: cheese mushrooms
+prep: 29
+cook: 23
+
+name: Entree-475 
+type: Entree
+cuisine: Indian
+main: beef
+addons: potatoes
+sides: beans
+prep: 28
+cook: 46
+
+name: Appetizer-476 
+type: Appetizer
+cuisine: Greek
+main: chicken
+addons: eggs
+sides: beans mushrooms
+prep: 25
+cook: 20
+
+name: Salad-477 
+type: Salad
+cuisine: Chinese
+main: kale kale
+addons: cheese
+sides: carrots mushrooms
+prep: 19
+cook: 10
+
+name: Appetizer-478 
+type: Appetizer
+cuisine: Indian
+main: beef beef
+addons: eggs
+sides: beans mushrooms
+prep: 30
+cook: 14
+
+name: Entree-479 
+type: Entree
+cuisine: Italian
+main: scallops salmon
+addons: beets
+sides: cheese cheese
+prep: 18
+cook: 55
+
+name: Salad-480 
+type: Salad
+cuisine: Greek
+main: arugula
+addons: scallions
+sides: mushrooms
+prep: 11
+cook: 9
+
+name: Salad-481 
+type: Salad
+cuisine: French
+main: mesclun kale
+addons: eggs
+sides: mushrooms
+prep: 13
+cook: 6
+
+name: Salad-482 
+type: Salad
+cuisine: Korean
+main: mesclun chard
+addons: cheese
+sides: carrots
+prep: 15
+cook: 4
+
+name: Appetizer-483 
+type: Appetizer
+cuisine: Turkish
+main: scallops
+addons: cheese
+sides: spinach mushrooms
+prep: 14
+cook: 24
+
+name: Entree-484 
+type: Entree
+cuisine: Greek
+main: beef
+addons: beets
+sides: cheese
+prep: 59
+cook: 92
+
+name: Appetizer-485 
+type: Appetizer
+cuisine: Korean
+main: beef shrimp shrimp
+addons: rice
+sides: cheese
+prep: 21
+cook: 8
+
+name: Entree-486 
+type: Entree
+cuisine: Chinese
+main: tofu lamb
+addons: mushrooms
+sides: eggs
+prep: 19
+cook: 63
+
+name: Entree-487 
+type: Entree
+cuisine: Pakistan
+main: chicken
+addons: cucumber
+sides: peas peas
+prep: 43
+cook: 67
+
+name: Salad-488 
+type: Salad
+cuisine: Italian
+main: chard kale mesclun
+addons: radishes
+sides: potatoes potatoes
+prep: 5
+cook: 7
+
+name: Entree-489 
+type: Entree
+cuisine: Greek
+main: tempeh
+addons: rice
+sides: cheese
+prep: 25
+cook: 98
+
+name: Appetizer-490 
+type: Appetizer
+cuisine: French
+main: beef shrimp
+addons: peas
+sides: mushrooms
+prep: 14
+cook: 9
+
+name: Salad-491 
+type: Salad
+cuisine: Korean
+main: arugula
+addons: radishes
+sides: carrots
+prep: 11
+cook: 6
+
+name: Salad-492 
+type: Salad
+cuisine: Korean
+main: kale
+addons: radishes
+sides: carrots
+prep: 19
+cook: 7
+
+name: Salad-493 
+type: Salad
+cuisine: Korean
+main: arugula spinach
+addons: radishes
+sides: cucumbers
+prep: 16
+cook: 2
+
+name: Appetizer-494 
+type: Appetizer
+cuisine: Pakistan
+main: chicken beef
+addons: cheese
+sides: cheese spinach
+prep: 21
+cook: 7
+
+name: Appetizer-495 
+type: Appetizer
+cuisine: Indian
+main: tofu beef
+addons: rice
+sides: beans
+prep: 39
+cook: 19
+
+name: Appetizer-496 
+type: Appetizer
+cuisine: Indian
+main: tofu
+addons: peas
+sides: spinach
+prep: 39
+cook: 5
+
+name: Salad-497 
+type: Salad
+cuisine: Italian
+main: chard
+addons: radishes
+sides: carrots
+prep: 14
+cook: 8
+
+name: Entree-498 
+type: Entree
+cuisine: Turkish
+main: lamb tempeh tofu
+addons: peas
+sides: milk peas
+prep: 41
+cook: 92
+
+name: Salad-499 
+type: Salad
+cuisine: French
+main: spinach kale kale
+addons: radishes
+sides: mushrooms
+prep: 5
+cook: 3
+
+name: Appetizer-500 
+type: Appetizer
+cuisine: Turkish
+main: tofu tofu beef
+addons: eggs
+sides: mushrooms
+prep: 39
+cook: 20
+
+name: Appetizer-501 
+type: Appetizer
+cuisine: Greek
+main: scallops tofu
+addons: cheese
+sides: mushrooms
+prep: 12
+cook: 14
+
+name: Appetizer-502 
+type: Appetizer
+cuisine: Korean
+main: scallops shrimp
+addons: eggs
+sides: cheese mushrooms
+prep: 37
+cook: 14
+
+name: Appetizer-503 
+type: Appetizer
+cuisine: French
+main: scallops chicken
+addons: peas
+sides: mushrooms
+prep: 11
+cook: 13
+
+name: Salad-504 
+type: Salad
+cuisine: Turkish
+main: kale lettuce
+addons: cheese
+sides: mushrooms mushrooms
+prep: 19
+cook: 2
+
+name: Appetizer-505 
+type: Appetizer
+cuisine: Korean
+main: chicken
+addons: eggs
+sides: mushrooms beans
+prep: 21
+cook: 11
+
+name: Entree-506 
+type: Entree
+cuisine: Korean
+main: chicken scallops shrimp
+addons: broccoli
+sides: cheese eggs
+prep: 59
+cook: 36
+
+name: Appetizer-507 
+type: Appetizer
+cuisine: Turkish
+main: scallops shrimp
+addons: rice
+sides: spinach
+prep: 23
+cook: 13
+
+name: Salad-508 
+type: Salad
+cuisine: Italian
+main: chard chard mesclun
+addons: scallions
+sides: carrots mushrooms
+prep: 14
+cook: 5
+
+name: Salad-509 
+type: Salad
+cuisine: Indian
+main: lettuce
+addons: eggs
+sides: potatoes carrots
+prep: 12
+cook: 6
+
+name: Appetizer-510 
+type: Appetizer
+cuisine: Indian
+main: scallops shrimp
+addons: eggs
+sides: spinach
+prep: 14
+cook: 19
+
+name: Salad-511 
+type: Salad
+cuisine: French
+main: lettuce
+addons: cheese
+sides: carrots
+prep: 17
+cook: 4
+
+name: Salad-512 
+type: Salad
+cuisine: Turkish
+main: lettuce
+addons: cheese
+sides: carrots carrots
+prep: 6
+cook: 10
+
+name: Entree-513 
+type: Entree
+cuisine: Indian
+main: tofu tempeh beef
+addons: potatoes
+sides: beans
+prep: 39
+cook: 58
+
+name: Appetizer-514 
+type: Appetizer
+cuisine: Indian
+main: chicken tofu shrimp
+addons: cheese
+sides: spinach mushrooms
+prep: 17
+cook: 22
+
+name: Entree-515 
+type: Entree
+cuisine: Turkish
+main: goat chicken lamb
+addons: spinach
+sides: milk beans
+prep: 41
+cook: 85
+
+name: Appetizer-516 
+type: Appetizer
+cuisine: French
+main: chicken
+addons: cheese
+sides: beans cheese
+prep: 17
+cook: 11
+
+name: Appetizer-517 
+type: Appetizer
+cuisine: Pakistan
+main: shrimp shrimp
+addons: eggs
+sides: mushrooms
+prep: 29
+cook: 24
+
+name: Salad-518 
+type: Salad
+cuisine: Italian
+main: arugula arugula lettuce
+addons: cheese
+sides: mushrooms
+prep: 19
+cook: 10
+
+name: Entree-519 
+type: Entree
+cuisine: Greek
+main: salmon goat
+addons: peas
+sides: beans cheese
+prep: 21
+cook: 64
+
+name: Salad-520 
+type: Salad
+cuisine: Korean
+main: chard kale arugula
+addons: scallions
+sides: mushrooms
+prep: 9
+cook: 4
+
+name: Salad-521 
+type: Salad
+cuisine: Turkish
+main: kale spinach kale
+addons: radishes
+sides: cucumbers
+prep: 16
+cook: 3
+
+name: Salad-522 
+type: Salad
+cuisine: Italian
+main: spinach
+addons: eggs
+sides: cucumbers carrots
+prep: 5
+cook: 7
+
+name: Entree-523 
+type: Entree
+cuisine: Chinese
+main: salmon beef
+addons: spinach
+sides: peas
+prep: 46
+cook: 121
+
+name: Entree-524 
+type: Entree
+cuisine: Turkish
+main: goat salmon
+addons: peas
+sides: milk cheese
+prep: 56
+cook: 88
+
+name: Entree-525 
+type: Entree
+cuisine: Pakistan
+main: beef lamb
+addons: mushrooms
+sides: peas milk
+prep: 59
+cook: 82
+
+name: Salad-526 
+type: Salad
+cuisine: Indian
+main: lettuce
+addons: eggs
+sides: potatoes
+prep: 10
+cook: 3
+
+name: Salad-527 
+type: Salad
+cuisine: Indian
+main: chard chard arugula
+addons: cheese
+sides: cucumbers
+prep: 19
+cook: 5
+
+name: Entree-528 
+type: Entree
+cuisine: Chinese
+main: beef shrimp
+addons: peas
+sides: eggs
+prep: 26
+cook: 82
+
+name: Appetizer-529 
+type: Appetizer
+cuisine: Pakistan
+main: tofu scallops
+addons: peas
+sides: beans
+prep: 12
+cook: 23
+
+name: Entree-530 
+type: Entree
+cuisine: Pakistan
+main: beef shrimp
+addons: potatoes
+sides: cheese
+prep: 48
+cook: 72
+
+name: Salad-531 
+type: Salad
+cuisine: Greek
+main: arugula lettuce chard
+addons: scallions
+sides: carrots carrots
+prep: 17
+cook: 4
+
+name: Entree-532 
+type: Entree
+cuisine: Greek
+main: salmon chicken
+addons: spinach
+sides: beans
+prep: 50
+cook: 54
+
+name: Appetizer-533 
+type: Appetizer
+cuisine: Italian
+main: tofu
+addons: eggs
+sides: spinach
+prep: 17
+cook: 17
+
+name: Entree-534 
+type: Entree
+cuisine: Pakistan
+main: salmon
+addons: peas
+sides: peas
+prep: 46
+cook: 11
+
+name: Entree-535 
+type: Entree
+cuisine: Pakistan
+main: tofu chicken salmon
+addons: peas
+sides: peas beans
+prep: 17
+cook: 73
+
+name: Entree-536 
+type: Entree
+cuisine: Greek
+main: shrimp
+addons: peas
+sides: eggs
+prep: 38
+cook: 91
+
+name: Entree-537 
+type: Entree
+cuisine: Pakistan
+main: scallops
+addons: rice
+sides: milk
+prep: 27
+cook: 41
+
+name: Salad-538 
+type: Salad
+cuisine: Korean
+main: chard
+addons: eggs
+sides: potatoes
+prep: 15
+cook: 5
+
+name: Appetizer-539 
+type: Appetizer
+cuisine: Korean
+main: beef chicken
+addons: eggs
+sides: spinach
+prep: 35
+cook: 24
+
+name: Entree-540 
+type: Entree
+cuisine: Korean
+main: tempeh tempeh shrimp
+addons: beets
+sides: eggs beans
+prep: 36
+cook: 17
+
+name: Salad-541 
+type: Salad
+cuisine: Turkish
+main: chard kale
+addons: radishes
+sides: cucumbers
+prep: 15
+cook: 3
+
+name: Salad-542 
+type: Salad
+cuisine: Indian
+main: mesclun arugula lettuce
+addons: radishes
+sides: mushrooms cucumbers
+prep: 10
+cook: 5
+
+name: Entree-543 
+type: Entree
+cuisine: Korean
+main: beef
+addons: broccoli
+sides: beans beans
+prep: 35
+cook: 124
+
+name: Entree-544 
+type: Entree
+cuisine: Pakistan
+main: scallops
+addons: peas
+sides: eggs eggs
+prep: 44
+cook: 70
+
+name: Entree-545 
+type: Entree
+cuisine: Indian
+main: beef
+addons: broccoli
+sides: beans beans
+prep: 29
+cook: 73
+
+name: Entree-546 
+type: Entree
+cuisine: Chinese
+main: tempeh salmon
+addons: broccoli
+sides: milk eggs
+prep: 45
+cook: 63
+
+name: Appetizer-547 
+type: Appetizer
+cuisine: Italian
+main: shrimp
+addons: peas
+sides: cheese cheese
+prep: 19
+cook: 7
+
+name: Entree-548 
+type: Entree
+cuisine: Indian
+main: beef scallops chicken
+addons: potatoes
+sides: eggs
+prep: 15
+cook: 48
+
+name: Appetizer-549 
+type: Appetizer
+cuisine: Korean
+main: chicken
+addons: rice
+sides: beans
+prep: 32
+cook: 19
+
+name: Appetizer-550 
+type: Appetizer
+cuisine: Pakistan
+main: shrimp
+addons: peas
+sides: spinach
+prep: 10
+cook: 7
+
+name: Entree-551 
+type: Entree
+cuisine: Chinese
+main: tofu
+addons: cauliflower
+sides: beans
+prep: 27
+cook: 122
+
+name: Entree-552 
+type: Entree
+cuisine: Pakistan
+main: beef goat
+addons: peas
+sides: cheese
+prep: 18
+cook: 59
+
+name: Salad-553 
+type: Salad
+cuisine: Korean
+main: spinach
+addons: scallions
+sides: mushrooms
+prep: 5
+cook: 6
+
+name: Entree-554 
+type: Entree
+cuisine: Greek
+main: beef beef lamb
+addons: beets
+sides: cheese
+prep: 47
+cook: 123
+
+name: Appetizer-555 
+type: Appetizer
+cuisine: Italian
+main: chicken tofu
+addons: eggs
+sides: spinach beans
+prep: 13
+cook: 13
+
+name: Appetizer-556 
+type: Appetizer
+cuisine: Turkish
+main: scallops tofu chicken
+addons: eggs
+sides: mushrooms cheese
+prep: 36
+cook: 15
+
+name: Entree-557 
+type: Entree
+cuisine: Turkish
+main: beef tofu shrimp
+addons: beans
+sides: beans
+prep: 53
+cook: 22
+
+name: Salad-558 
+type: Salad
+cuisine: Indian
+main: lettuce mesclun mesclun
+addons: scallions
+sides: carrots
+prep: 18
+cook: 2
+
+name: Entree-559 
+type: Entree
+cuisine: Italian
+main: beef shrimp
+addons: peas
+sides: milk peas
+prep: 53
+cook: 27
+
+name: Appetizer-560 
+type: Appetizer
+cuisine: Turkish
+main: tofu tofu
+addons: cheese
+sides: spinach
+prep: 27
+cook: 11
+
+name: Entree-561 
+type: Entree
+cuisine: French
+main: goat chicken goat
+addons: cauliflower
+sides: eggs beans
+prep: 33
+cook: 71
+
+name: Salad-562 
+type: Salad
+cuisine: Greek
+main: chard arugula arugula
+addons: radishes
+sides: cucumbers mushrooms
+prep: 5
+cook: 5
+
+name: Salad-563 
+type: Salad
+cuisine: Korean
+main: chard lettuce
+addons: radishes
+sides: mushrooms
+prep: 8
+cook: 2
+
+name: Salad-564 
+type: Salad
+cuisine: French
+main: mesclun mesclun
+addons: cheese
+sides: cucumbers mushrooms
+prep: 5
+cook: 5
+
+name: Entree-565 
+type: Entree
+cuisine: Korean
+main: chicken
+addons: spinach
+sides: peas
+prep: 33
+cook: 93
+
+name: Appetizer-566 
+type: Appetizer
+cuisine: Turkish
+main: scallops
+addons: rice
+sides: mushrooms
+prep: 12
+cook: 15
+
+name: Appetizer-567 
+type: Appetizer
+cuisine: Pakistan
+main: chicken chicken
+addons: peas
+sides: cheese
+prep: 10
+cook: 15
+
+name: Entree-568 
+type: Entree
+cuisine: Turkish
+main: salmon chicken
+addons: cucumber
+sides: eggs cheese
+prep: 36
+cook: 22
+
+name: Appetizer-569 
+type: Appetizer
+cuisine: Indian
+main: scallops
+addons: cheese
+sides: cheese
+prep: 34
+cook: 8
+
+name: Entree-570 
+type: Entree
+cuisine: Pakistan
+main: goat chicken beef
+addons: cauliflower
+sides: eggs milk
+prep: 31
+cook: 40
+
+name: Appetizer-571 
+type: Appetizer
+cuisine: Korean
+main: shrimp shrimp shrimp
+addons: peas
+sides: cheese
+prep: 30
+cook: 6
+
+name: Salad-572 
+type: Salad
+cuisine: Indian
+main: kale
+addons: eggs
+sides: potatoes
+prep: 5
+cook: 5
+
+name: Appetizer-573 
+type: Appetizer
+cuisine: Indian
+main: scallops tofu shrimp
+addons: eggs
+sides: spinach mushrooms
+prep: 16
+cook: 15
+
+name: Entree-574 
+type: Entree
+cuisine: Italian
+main: scallops chicken tempeh
+addons: spinach
+sides: peas
+prep: 56
+cook: 87
+
+name: Entree-575 
+type: Entree
+cuisine: Italian
+main: chicken lamb salmon
+addons: mushrooms
+sides: peas milk
+prep: 25
+cook: 23
+
+name: Appetizer-576 
+type: Appetizer
+cuisine: French
+main: shrimp
+addons: cheese
+sides: beans beans
+prep: 10
+cook: 19
+
+name: Salad-577 
+type: Salad
+cuisine: Turkish
+main: lettuce
+addons: radishes
+sides: mushrooms
+prep: 13
+cook: 5
+
+name: Salad-578 
+type: Salad
+cuisine: French
+main: kale
+addons: eggs
+sides: mushrooms mushrooms
+prep: 19
+cook: 3
+
+name: Appetizer-579 
+type: Appetizer
+cuisine: Chinese
+main: tofu shrimp chicken
+addons: peas
+sides: cheese mushrooms
+prep: 14
+cook: 16
+
+name: Salad-580 
+type: Salad
+cuisine: Italian
+main: mesclun chard chard
+addons: scallions
+sides: mushrooms
+prep: 18
+cook: 3
+
+name: Appetizer-581 
+type: Appetizer
+cuisine: Indian
+main: chicken beef
+addons: eggs
+sides: cheese cheese
+prep: 33
+cook: 15
+
+name: Appetizer-582 
+type: Appetizer
+cuisine: Indian
+main: tofu
+addons: cheese
+sides: cheese spinach
+prep: 32
+cook: 14
+
+name: Entree-583 
+type: Entree
+cuisine: Korean
+main: scallops beef
+addons: potatoes
+sides: eggs cheese
+prep: 53
+cook: 21
+
+name: Appetizer-584 
+type: Appetizer
+cuisine: French
+main: chicken scallops
+addons: cheese
+sides: beans beans
+prep: 37
+cook: 18
+
+name: Appetizer-585 
+type: Appetizer
+cuisine: Korean
+main: chicken beef shrimp
+addons: peas
+sides: beans
+prep: 30
+cook: 21
+
+name: Salad-586 
+type: Salad
+cuisine: Pakistan
+main: kale
+addons: scallions
+sides: mushrooms
+prep: 16
+cook: 8
+
+name: Entree-587 
+type: Entree
+cuisine: Korean
+main: shrimp scallops
+addons: mushrooms
+sides: eggs
+prep: 22
+cook: 55
+
+name: Appetizer-588 
+type: Appetizer
+cuisine: Italian
+main: tofu
+addons: rice
+sides: beans spinach
+prep: 31
+cook: 9
+
+name: Appetizer-589 
+type: Appetizer
+cuisine: Indian
+main: scallops
+addons: eggs
+sides: spinach cheese
+prep: 38
+cook: 5
+
+name: Salad-590 
+type: Salad
+cuisine: Korean
+main: spinach lettuce
+addons: scallions
+sides: mushrooms cucumbers
+prep: 17
+cook: 6
+
+name: Salad-591 
+type: Salad
+cuisine: French
+main: chard chard
+addons: eggs
+sides: carrots
+prep: 19
+cook: 4
+
+name: Entree-592 
+type: Entree
+cuisine: Pakistan
+main: scallops lamb
+addons: peas
+sides: beans beans
+prep: 27
+cook: 121
+
+name: Salad-593 
+type: Salad
+cuisine: Korean
+main: mesclun
+addons: radishes
+sides: cucumbers
+prep: 12
+cook: 1
+
+name: Salad-594 
+type: Salad
+cuisine: Chinese
+main: spinach lettuce mesclun
+addons: scallions
+sides: cucumbers potatoes
+prep: 7
+cook: 8
+
+name: Salad-595 
+type: Salad
+cuisine: Korean
+main: kale
+addons: scallions
+sides: carrots potatoes
+prep: 11
+cook: 2
+
+name: Entree-596 
+type: Entree
+cuisine: Indian
+main: shrimp beef shrimp
+addons: carrots
+sides: peas cheese
+prep: 51
+cook: 72
+
+name: Salad-597 
+type: Salad
+cuisine: Korean
+main: arugula lettuce arugula
+addons: radishes
+sides: mushrooms
+prep: 19
+cook: 6
+
+name: Appetizer-598 
+type: Appetizer
+cuisine: Pakistan
+main: shrimp shrimp tofu
+addons: peas
+sides: mushrooms mushrooms
+prep: 38
+cook: 7
+
+name: Salad-599 
+type: Salad
+cuisine: Chinese
+main: chard spinach arugula
+addons: radishes
+sides: mushrooms
+prep: 6
+cook: 7
+
+name: Appetizer-600 
+type: Appetizer
+cuisine: Korean
+main: tofu
+addons: cheese
+sides: mushrooms spinach
+prep: 22
+cook: 13
+
+name: Entree-601 
+type: Entree
+cuisine: Greek
+main: scallops
+addons: spinach
+sides: peas
+prep: 50
+cook: 11
+
+name: Entree-602 
+type: Entree
+cuisine: French
+main: salmon goat scallops
+addons: beets
+sides: peas eggs
+prep: 54
+cook: 68
+
+name: Salad-603 
+type: Salad
+cuisine: Pakistan
+main: arugula spinach spinach
+addons: scallions
+sides: mushrooms
+prep: 5
+cook: 5
+
+name: Entree-604 
+type: Entree
+cuisine: Indian
+main: scallops scallops tempeh
+addons: potatoes
+sides: peas
+prep: 37
+cook: 39
+
+name: Appetizer-605 
+type: Appetizer
+cuisine: Greek
+main: tofu
+addons: peas
+sides: spinach
+prep: 35
+cook: 21
+
+name: Appetizer-606 
+type: Appetizer
+cuisine: Indian
+main: scallops beef
+addons: rice
+sides: spinach
+prep: 19
+cook: 19
+
+name: Salad-607 
+type: Salad
+cuisine: Italian
+main: chard kale
+addons: scallions
+sides: potatoes
+prep: 18
+cook: 8
+
+name: Salad-608 
+type: Salad
+cuisine: Italian
+main: chard
+addons: eggs
+sides: carrots
+prep: 13
+cook: 5
+
+name: Appetizer-609 
+type: Appetizer
+cuisine: Italian
+main: scallops shrimp
+addons: peas
+sides: mushrooms spinach
+prep: 35
+cook: 7
+
+name: Appetizer-610 
+type: Appetizer
+cuisine: Greek
+main: tofu chicken
+addons: eggs
+sides: spinach mushrooms
+prep: 17
+cook: 21
+
+name: Salad-611 
+type: Salad
+cuisine: Indian
+main: kale
+addons: scallions
+sides: carrots
+prep: 18
+cook: 2
+
+name: Entree-612 
+type: Entree
+cuisine: Korean
+main: salmon tempeh
+addons: peas
+sides: cheese
+prep: 34
+cook: 124
+
+name: Salad-613 
+type: Salad
+cuisine: Italian
+main: kale lettuce
+addons: cheese
+sides: potatoes mushrooms
+prep: 10
+cook: 7
+
+name: Salad-614 
+type: Salad
+cuisine: French
+main: kale
+addons: radishes
+sides: mushrooms
+prep: 19
+cook: 6
+
+name: Appetizer-615 
+type: Appetizer
+cuisine: Greek
+main: chicken
+addons: cheese
+sides: cheese mushrooms
+prep: 37
+cook: 9
+
+name: Salad-616 
+type: Salad
+cuisine: Italian
+main: lettuce kale
+addons: scallions
+sides: mushrooms carrots
+prep: 9
+cook: 4
+
+name: Appetizer-617 
+type: Appetizer
+cuisine: Chinese
+main: chicken
+addons: peas
+sides: spinach cheese
+prep: 35
+cook: 21
+
+name: Entree-618 
+type: Entree
+cuisine: Indian
+main: shrimp
+addons: carrots
+sides: eggs
+prep: 30
+cook: 96
+
+name: Appetizer-619 
+type: Appetizer
+cuisine: Italian
+main: scallops
+addons: cheese
+sides: mushrooms cheese
+prep: 22
+cook: 8
+
+name: Salad-620 
+type: Salad
+cuisine: Turkish
+main: arugula arugula mesclun
+addons: radishes
+sides: carrots carrots
+prep: 19
+cook: 1
+
+name: Salad-621 
+type: Salad
+cuisine: Korean
+main: spinach lettuce kale
+addons: radishes
+sides: mushrooms
+prep: 16
+cook: 4
+
+name: Entree-622 
+type: Entree
+cuisine: French
+main: shrimp lamb
+addons: mushrooms
+sides: peas peas
+prep: 55
+cook: 24
+
+name: Appetizer-623 
+type: Appetizer
+cuisine: Korean
+main: shrimp scallops shrimp
+addons: rice
+sides: cheese
+prep: 39
+cook: 19
+
+name: Salad-624 
+type: Salad
+cuisine: Italian
+main: arugula kale
+addons: eggs
+sides: mushrooms mushrooms
+prep: 14
+cook: 3
+
+name: Appetizer-625 
+type: Appetizer
+cuisine: Turkish
+main: scallops
+addons: peas
+sides: mushrooms
+prep: 28
+cook: 8
+
+name: Entree-626 
+type: Entree
+cuisine: Greek
+main: tempeh
+addons: mushrooms
+sides: milk cheese
+prep: 47
+cook: 105
+
+name: Appetizer-627 
+type: Appetizer
+cuisine: Chinese
+main: shrimp scallops
+addons: rice
+sides: spinach
+prep: 20
+cook: 19
+
+name: Salad-628 
+type: Salad
+cuisine: Italian
+main: arugula kale
+addons: scallions
+sides: potatoes
+prep: 18
+cook: 8
+
+name: Entree-629 
+type: Entree
+cuisine: Indian
+main: shrimp
+addons: broccoli
+sides: milk
+prep: 27
+cook: 36
+
+name: Appetizer-630 
+type: Appetizer
+cuisine: French
+main: scallops scallops chicken
+addons: rice
+sides: mushrooms
+prep: 27
+cook: 16
+
+name: Entree-631 
+type: Entree
+cuisine: Turkish
+main: scallops goat lamb
+addons: spinach
+sides: beans peas
+prep: 44
+cook: 59
+
+name: Salad-632 
+type: Salad
+cuisine: Turkish
+main: mesclun arugula
+addons: radishes
+sides: potatoes carrots
+prep: 16
+cook: 10
+
+name: Entree-633 
+type: Entree
+cuisine: Indian
+main: salmon
+addons: peas
+sides: peas peas
+prep: 41
+cook: 53
+
+name: Salad-634 
+type: Salad
+cuisine: Italian
+main: mesclun mesclun spinach
+addons: eggs
+sides: mushrooms
+prep: 15
+cook: 1
+
+name: Entree-635 
+type: Entree
+cuisine: French
+main: tofu salmon
+addons: peas
+sides: beans
+prep: 59
+cook: 15
+
+name: Appetizer-636 
+type: Appetizer
+cuisine: French
+main: beef
+addons: peas
+sides: beans
+prep: 33
+cook: 13
+
+name: Salad-637 
+type: Salad
+cuisine: French
+main: chard spinach
+addons: scallions
+sides: carrots mushrooms
+prep: 9
+cook: 5
+
+name: Salad-638 
+type: Salad
+cuisine: Korean
+main: arugula arugula
+addons: scallions
+sides: cucumbers potatoes
+prep: 11
+cook: 9
+
+name: Appetizer-639 
+type: Appetizer
+cuisine: Turkish
+main: beef beef scallops
+addons: rice
+sides: mushrooms
+prep: 17
+cook: 23
+
+name: Appetizer-640 
+type: Appetizer
+cuisine: Chinese
+main: shrimp
+addons: eggs
+sides: mushrooms
+prep: 38
+cook: 13
+
+name: Appetizer-641 
+type: Appetizer
+cuisine: Pakistan
+main: beef
+addons: cheese
+sides: cheese
+prep: 30
+cook: 7
+
+name: Appetizer-642 
+type: Appetizer
+cuisine: Indian
+main: beef chicken
+addons: peas
+sides: mushrooms spinach
+prep: 16
+cook: 12
+
+name: Appetizer-643 
+type: Appetizer
+cuisine: Italian
+main: scallops
+addons: rice
+sides: beans
+prep: 37
+cook: 6
+
+name: Entree-644 
+type: Entree
+cuisine: Pakistan
+main: tofu
+addons: carrots
+sides: eggs
+prep: 57
+cook: 96
+
+name: Entree-645 
+type: Entree
+cuisine: Italian
+main: beef beef
+addons: cucumber
+sides: cheese
+prep: 32
+cook: 54
+
+name: Appetizer-646 
+type: Appetizer
+cuisine: Indian
+main: shrimp chicken chicken
+addons: eggs
+sides: spinach
+prep: 31
+cook: 9
+
+name: Appetizer-647 
+type: Appetizer
+cuisine: French
+main: beef
+addons: rice
+sides: mushrooms spinach
+prep: 20
+cook: 12
+
+name: Entree-648 
+type: Entree
+cuisine: Korean
+main: goat tofu
+addons: potatoes
+sides: milk peas
+prep: 44
+cook: 123
+
+name: Salad-649 
+type: Salad
+cuisine: Korean
+main: spinach
+addons: cheese
+sides: potatoes cucumbers
+prep: 18
+cook: 4
+
+name: Entree-650 
+type: Entree
+cuisine: Greek
+main: tofu chicken lamb
+addons: cauliflower
+sides: cheese
+prep: 58
+cook: 11
+
+name: Salad-651 
+type: Salad
+cuisine: Chinese
+main: mesclun kale arugula
+addons: radishes
+sides: mushrooms
+prep: 6
+cook: 10
+
+name: Appetizer-652 
+type: Appetizer
+cuisine: Greek
+main: chicken
+addons: cheese
+sides: cheese beans
+prep: 32
+cook: 11
+
+name: Appetizer-653 
+type: Appetizer
+cuisine: Korean
+main: shrimp tofu tofu
+addons: cheese
+sides: cheese mushrooms
+prep: 12
+cook: 16
+
+name: Appetizer-654 
+type: Appetizer
+cuisine: Pakistan
+main: shrimp
+addons: rice
+sides: cheese
+prep: 31
+cook: 15
+
+name: Appetizer-655 
+type: Appetizer
+cuisine: Korean
+main: chicken beef
+addons: cheese
+sides: spinach spinach
+prep: 34
+cook: 14
+
+name: Appetizer-656 
+type: Appetizer
+cuisine: Indian
+main: tofu tofu shrimp
+addons: eggs
+sides: mushrooms
+prep: 26
+cook: 12
+
+name: Appetizer-657 
+type: Appetizer
+cuisine: Turkish
+main: chicken
+addons: rice
+sides: mushrooms
+prep: 24
+cook: 17
+
+name: Salad-658 
+type: Salad
+cuisine: Greek
+main: chard mesclun mesclun
+addons: eggs
+sides: carrots cucumbers
+prep: 7
+cook: 4
+
+name: Entree-659 
+type: Entree
+cuisine: French
+main: scallops beef chicken
+addons: cauliflower
+sides: eggs
+prep: 51
+cook: 57
+
+name: Appetizer-660 
+type: Appetizer
+cuisine: Turkish
+main: shrimp beef
+addons: eggs
+sides: cheese
+prep: 20
+cook: 10
+
+name: Entree-661 
+type: Entree
+cuisine: Greek
+main: beef salmon chicken
+addons: carrots
+sides: milk cheese
+prep: 34
+cook: 112
+
+name: Salad-662 
+type: Salad
+cuisine: Chinese
+main: kale
+addons: eggs
+sides: cucumbers
+prep: 13
+cook: 10
+
+name: Salad-663 
+type: Salad
+cuisine: Pakistan
+main: lettuce mesclun
+addons: cheese
+sides: cucumbers potatoes
+prep: 16
+cook: 2
+
+name: Salad-664 
+type: Salad
+cuisine: Chinese
+main: spinach arugula spinach
+addons: eggs
+sides: cucumbers
+prep: 18
+cook: 4
+
+name: Appetizer-665 
+type: Appetizer
+cuisine: Turkish
+main: beef chicken beef
+addons: rice
+sides: mushrooms spinach
+prep: 21
+cook: 22
+
+name: Salad-666 
+type: Salad
+cuisine: Pakistan
+main: spinach arugula
+addons: radishes
+sides: carrots potatoes
+prep: 6
+cook: 5
+
+name: Salad-667 
+type: Salad
+cuisine: Korean
+main: chard arugula
+addons: radishes
+sides: carrots
+prep: 11
+cook: 1
+
+name: Entree-668 
+type: Entree
+cuisine: Korean
+main: beef chicken salmon
+addons: beans
+sides: eggs peas
+prep: 22
+cook: 10
+
+name: Appetizer-669 
+type: Appetizer
+cuisine: Chinese
+main: chicken shrimp
+addons: eggs
+sides: beans
+prep: 39
+cook: 11
+
+name: Salad-670 
+type: Salad
+cuisine: French
+main: kale
+addons: cheese
+sides: carrots carrots
+prep: 16
+cook: 6
+
+name: Appetizer-671 
+type: Appetizer
+cuisine: Turkish
+main: beef tofu
+addons: rice
+sides: spinach
+prep: 36
+cook: 11
+
+name: Appetizer-672 
+type: Appetizer
+cuisine: Indian
+main: scallops
+addons: rice
+sides: spinach
+prep: 28
+cook: 9
+
+name: Salad-673 
+type: Salad
+cuisine: Pakistan
+main: kale arugula
+addons: cheese
+sides: mushrooms
+prep: 18
+cook: 9
+
+name: Salad-674 
+type: Salad
+cuisine: Greek
+main: kale chard lettuce
+addons: scallions
+sides: carrots carrots
+prep: 18
+cook: 10
+
+name: Entree-675 
+type: Entree
+cuisine: French
+main: tofu chicken tempeh
+addons: beets
+sides: cheese
+prep: 51
+cook: 64
+
+name: Entree-676 
+type: Entree
+cuisine: Italian
+main: salmon tofu lamb
+addons: peas
+sides: eggs
+prep: 31
+cook: 33
+
+name: Appetizer-677 
+type: Appetizer
+cuisine: Turkish
+main: chicken
+addons: peas
+sides: spinach cheese
+prep: 32
+cook: 16
+
+name: Entree-678 
+type: Entree
+cuisine: French
+main: scallops
+addons: potatoes
+sides: cheese
+prep: 48
+cook: 49
+
+name: Appetizer-679 
+type: Appetizer
+cuisine: Indian
+main: chicken chicken
+addons: cheese
+sides: mushrooms
+prep: 13
+cook: 19
+
+name: Entree-680 
+type: Entree
+cuisine: Pakistan
+main: salmon scallops
+addons: beets
+sides: milk eggs
+prep: 28
+cook: 122
+
+name: Appetizer-681 
+type: Appetizer
+cuisine: Korean
+main: chicken chicken
+addons: peas
+sides: beans cheese
+prep: 35
+cook: 20
+
+name: Salad-682 
+type: Salad
+cuisine: Greek
+main: lettuce
+addons: radishes
+sides: cucumbers mushrooms
+prep: 10
+cook: 10
+
+name: Entree-683 
+type: Entree
+cuisine: Chinese
+main: lamb chicken lamb
+addons: peas
+sides: peas
+prep: 45
+cook: 64
+
+name: Appetizer-684 
+type: Appetizer
+cuisine: Greek
+main: shrimp
+addons: cheese
+sides: beans beans
+prep: 28
+cook: 6
+
+name: Appetizer-685 
+type: Appetizer
+cuisine: Turkish
+main: shrimp tofu chicken
+addons: rice
+sides: mushrooms cheese
+prep: 30
+cook: 20
+
+name: Appetizer-686 
+type: Appetizer
+cuisine: Turkish
+main: chicken shrimp
+addons: peas
+sides: mushrooms
+prep: 12
+cook: 20
+
+name: Salad-687 
+type: Salad
+cuisine: French
+main: spinach mesclun lettuce
+addons: cheese
+sides: cucumbers
+prep: 19
+cook: 6
+
+name: Appetizer-688 
+type: Appetizer
+cuisine: Italian
+main: chicken shrimp
+addons: eggs
+sides: cheese
+prep: 25
+cook: 18
+
+name: Entree-689 
+type: Entree
+cuisine: Greek
+main: beef
+addons: beets
+sides: milk
+prep: 51
+cook: 117
+
+name: Appetizer-690 
+type: Appetizer
+cuisine: Korean
+main: beef
+addons: cheese
+sides: mushrooms cheese
+prep: 18
+cook: 14
+
+name: Salad-691 
+type: Salad
+cuisine: Pakistan
+main: chard arugula kale
+addons: radishes
+sides: mushrooms
+prep: 16
+cook: 6
+
+name: Appetizer-692 
+type: Appetizer
+cuisine: Italian
+main: beef scallops chicken
+addons: rice
+sides: cheese
+prep: 31
+cook: 7
+
+name: Appetizer-693 
+type: Appetizer
+cuisine: Turkish
+main: shrimp scallops shrimp
+addons: eggs
+sides: cheese spinach
+prep: 10
+cook: 8
+
+name: Appetizer-694 
+type: Appetizer
+cuisine: Italian
+main: tofu shrimp
+addons: rice
+sides: spinach spinach
+prep: 35
+cook: 7
+
+name: Entree-695 
+type: Entree
+cuisine: Pakistan
+main: lamb
+addons: potatoes
+sides: milk milk
+prep: 40
+cook: 60
+
+name: Entree-696 
+type: Entree
+cuisine: Indian
+main: beef beef salmon
+addons: spinach
+sides: eggs cheese
+prep: 51
+cook: 103
+
+name: Salad-697 
+type: Salad
+cuisine: French
+main: mesclun lettuce
+addons: radishes
+sides: cucumbers
+prep: 10
+cook: 7
+
+name: Entree-698 
+type: Entree
+cuisine: Greek
+main: beef
+addons: peas
+sides: beans
+prep: 46
+cook: 34
+
+name: Salad-699 
+type: Salad
+cuisine: French
+main: chard lettuce
+addons: scallions
+sides: carrots
+prep: 19
+cook: 5
+
+name: Entree-700 
+type: Entree
+cuisine: Korean
+main: scallops chicken
+addons: mushrooms
+sides: eggs milk
+prep: 41
+cook: 102
+
+name: Entree-701 
+type: Entree
+cuisine: Greek
+main: scallops tofu
+addons: mushrooms
+sides: cheese milk
+prep: 48
+cook: 107
+
+name: Entree-702 
+type: Entree
+cuisine: Greek
+main: tofu beef
+addons: beans
+sides: beans
+prep: 57
+cook: 108
+
+name: Entree-703 
+type: Entree
+cuisine: Italian
+main: goat salmon
+addons: carrots
+sides: eggs
+prep: 37
+cook: 93
+
+name: Appetizer-704 
+type: Appetizer
+cuisine: French
+main: beef beef tofu
+addons: peas
+sides: cheese
+prep: 21
+cook: 12
+
+name: Appetizer-705 
+type: Appetizer
+cuisine: French
+main: chicken
+addons: cheese
+sides: mushrooms
+prep: 37
+cook: 21
+
+name: Salad-706 
+type: Salad
+cuisine: Pakistan
+main: arugula
+addons: cheese
+sides: potatoes
+prep: 14
+cook: 6
+
+name: Entree-707 
+type: Entree
+cuisine: Pakistan
+main: goat
+addons: mushrooms
+sides: peas
+prep: 20
+cook: 112
+
+name: Appetizer-708 
+type: Appetizer
+cuisine: Greek
+main: scallops shrimp shrimp
+addons: peas
+sides: mushrooms
+prep: 13
+cook: 21
+
+name: Salad-709 
+type: Salad
+cuisine: Chinese
+main: lettuce kale lettuce
+addons: eggs
+sides: cucumbers potatoes
+prep: 18
+cook: 2
+
+name: Appetizer-710 
+type: Appetizer
+cuisine: French
+main: beef shrimp chicken
+addons: eggs
+sides: beans spinach
+prep: 20
+cook: 17
+
+name: Salad-711 
+type: Salad
+cuisine: Korean
+main: kale lettuce
+addons: eggs
+sides: potatoes
+prep: 16
+cook: 5
+
+name: Salad-712 
+type: Salad
+cuisine: Indian
+main: kale
+addons: cheese
+sides: carrots carrots
+prep: 5
+cook: 9
+
+name: Entree-713 
+type: Entree
+cuisine: Italian
+main: salmon
+addons: beans
+sides: peas cheese
+prep: 29
+cook: 14
+
+name: Entree-714 
+type: Entree
+cuisine: Indian
+main: tempeh shrimp beef
+addons: broccoli
+sides: peas cheese
+prep: 40
+cook: 14
+
+name: Appetizer-715 
+type: Appetizer
+cuisine: Korean
+main: scallops shrimp
+addons: peas
+sides: beans beans
+prep: 30
+cook: 17
+
+name: Appetizer-716 
+type: Appetizer
+cuisine: Pakistan
+main: shrimp beef
+addons: rice
+sides: spinach spinach
+prep: 10
+cook: 19
+
+name: Salad-717 
+type: Salad
+cuisine: Indian
+main: arugula
+addons: radishes
+sides: potatoes mushrooms
+prep: 11
+cook: 9
+
+name: Appetizer-718 
+type: Appetizer
+cuisine: Korean
+main: shrimp chicken
+addons: peas
+sides: spinach mushrooms
+prep: 38
+cook: 8
+
+name: Appetizer-719 
+type: Appetizer
+cuisine: Greek
+main: shrimp scallops
+addons: peas
+sides: cheese
+prep: 13
+cook: 12
+
+name: Salad-720 
+type: Salad
+cuisine: Greek
+main: lettuce lettuce
+addons: scallions
+sides: cucumbers potatoes
+prep: 15
+cook: 8
+
+name: Salad-721 
+type: Salad
+cuisine: Pakistan
+main: mesclun lettuce mesclun
+addons: eggs
+sides: mushrooms
+prep: 16
+cook: 3
+
+name: Appetizer-722 
+type: Appetizer
+cuisine: French
+main: chicken shrimp
+addons: rice
+sides: cheese
+prep: 35
+cook: 20
+
+name: Salad-723 
+type: Salad
+cuisine: Chinese
+main: arugula
+addons: scallions
+sides: potatoes
+prep: 17
+cook: 5
+
+name: Entree-724 
+type: Entree
+cuisine: Turkish
+main: tofu scallops shrimp
+addons: potatoes
+sides: beans
+prep: 30
+cook: 32
+
+name: Appetizer-725 
+type: Appetizer
+cuisine: Italian
+main: shrimp
+addons: cheese
+sides: mushrooms
+prep: 34
+cook: 20
+
+name: Entree-726 
+type: Entree
+cuisine: Indian
+main: salmon
+addons: carrots
+sides: cheese
+prep: 36
+cook: 73
+
+name: Salad-727 
+type: Salad
+cuisine: Korean
+main: arugula arugula
+addons: cheese
+sides: mushrooms
+prep: 13
+cook: 2
+
+name: Entree-728 
+type: Entree
+cuisine: Chinese
+main: scallops salmon
+addons: cauliflower
+sides: eggs
+prep: 43
+cook: 40
+
+name: Appetizer-729 
+type: Appetizer
+cuisine: Indian
+main: scallops
+addons: eggs
+sides: spinach
+prep: 25
+cook: 16
+
+name: Appetizer-730 
+type: Appetizer
+cuisine: French
+main: shrimp shrimp shrimp
+addons: rice
+sides: spinach mushrooms
+prep: 24
+cook: 14
+
+name: Salad-731 
+type: Salad
+cuisine: Pakistan
+main: chard
+addons: scallions
+sides: carrots carrots
+prep: 12
+cook: 1
+
+name: Appetizer-732 
+type: Appetizer
+cuisine: Italian
+main: chicken tofu
+addons: cheese
+sides: cheese mushrooms
+prep: 17
+cook: 7
+
+name: Appetizer-733 
+type: Appetizer
+cuisine: Greek
+main: beef
+addons: eggs
+sides: mushrooms
+prep: 35
+cook: 6
+
+name: Entree-734 
+type: Entree
+cuisine: Italian
+main: tofu tofu
+addons: spinach
+sides: milk cheese
+prep: 45
+cook: 9
+
+name: Appetizer-735 
+type: Appetizer
+cuisine: French
+main: shrimp beef chicken
+addons: rice
+sides: cheese beans
+prep: 13
+cook: 15
+
+name: Appetizer-736 
+type: Appetizer
+cuisine: Pakistan
+main: chicken tofu
+addons: peas
+sides: beans spinach
+prep: 30
+cook: 6
+
+name: Salad-737 
+type: Salad
+cuisine: French
+main: lettuce spinach arugula
+addons: radishes
+sides: carrots mushrooms
+prep: 11
+cook: 7
+
+name: Entree-738 
+type: Entree
+cuisine: Korean
+main: lamb tempeh tempeh
+addons: mushrooms
+sides: peas peas
+prep: 45
+cook: 101
+
+name: Appetizer-739 
+type: Appetizer
+cuisine: French
+main: scallops
+addons: cheese
+sides: cheese
+prep: 35
+cook: 13
+
+name: Salad-740 
+type: Salad
+cuisine: French
+main: chard arugula chard
+addons: radishes
+sides: carrots
+prep: 18
+cook: 7
+
+name: Appetizer-741 
+type: Appetizer
+cuisine: Korean
+main: chicken shrimp
+addons: eggs
+sides: beans cheese
+prep: 31
+cook: 15
+
+name: Salad-742 
+type: Salad
+cuisine: Indian
+main: lettuce mesclun
+addons: scallions
+sides: cucumbers mushrooms
+prep: 8
+cook: 9
+
+name: Salad-743 
+type: Salad
+cuisine: Turkish
+main: kale
+addons: radishes
+sides: potatoes potatoes
+prep: 15
+cook: 8
+
+name: Salad-744 
+type: Salad
+cuisine: Pakistan
+main: chard chard arugula
+addons: eggs
+sides: carrots mushrooms
+prep: 11
+cook: 2
+
+name: Appetizer-745 
+type: Appetizer
+cuisine: Pakistan
+main: chicken beef tofu
+addons: rice
+sides: spinach
+prep: 20
+cook: 5
+
+name: Appetizer-746 
+type: Appetizer
+cuisine: Chinese
+main: shrimp
+addons: cheese
+sides: beans beans
+prep: 18
+cook: 13
+
+name: Entree-747 
+type: Entree
+cuisine: Korean
+main: shrimp scallops salmon
+addons: rice
+sides: cheese milk
+prep: 52
+cook: 8
+
+name: Appetizer-748 
+type: Appetizer
+cuisine: Pakistan
+main: beef
+addons: peas
+sides: mushrooms
+prep: 36
+cook: 6
+
+name: Appetizer-749 
+type: Appetizer
+cuisine: Chinese
+main: beef
+addons: rice
+sides: spinach
+prep: 26
+cook: 21
+
+name: Appetizer-750 
+type: Appetizer
+cuisine: Greek
+main: scallops scallops
+addons: rice
+sides: spinach
+prep: 35
+cook: 18
+
+name: Entree-751 
+type: Entree
+cuisine: Pakistan
+main: shrimp shrimp
+addons: carrots
+sides: milk eggs
+prep: 36
+cook: 6
+
+name: Appetizer-752 
+type: Appetizer
+cuisine: Italian
+main: tofu shrimp
+addons: peas
+sides: spinach
+prep: 25
+cook: 22
+
+name: Entree-753 
+type: Entree
+cuisine: Turkish
+main: beef tofu
+addons: carrots
+sides: milk
+prep: 53
+cook: 101
+
+name: Salad-754 
+type: Salad
+cuisine: Greek
+main: chard kale arugula
+addons: cheese
+sides: cucumbers
+prep: 8
+cook: 7
+
+name: Appetizer-755 
+type: Appetizer
+cuisine: Chinese
+main: beef beef
+addons: rice
+sides: beans
+prep: 23
+cook: 18
+
+name: Salad-756 
+type: Salad
+cuisine: Chinese
+main: arugula mesclun arugula
+addons: cheese
+sides: potatoes cucumbers
+prep: 11
+cook: 2
+
+name: Salad-757 
+type: Salad
+cuisine: Indian
+main: mesclun arugula
+addons: cheese
+sides: carrots carrots
+prep: 19
+cook: 8
+
+name: Entree-758 
+type: Entree
+cuisine: Chinese
+main: beef scallops scallops
+addons: peas
+sides: cheese
+prep: 46
+cook: 63
+
+name: Appetizer-759 
+type: Appetizer
+cuisine: Greek
+main: scallops shrimp
+addons: cheese
+sides: cheese
+prep: 38
+cook: 13
+
+name: Salad-760 
+type: Salad
+cuisine: Korean
+main: kale lettuce kale
+addons: scallions
+sides: mushrooms
+prep: 11
+cook: 10
+
+name: Entree-761 
+type: Entree
+cuisine: Pakistan
+main: salmon chicken tempeh
+addons: broccoli
+sides: milk
+prep: 15
+cook: 104
+
+name: Entree-762 
+type: Entree
+cuisine: Italian
+main: tofu lamb salmon
+addons: mushrooms
+sides: beans
+prep: 40
+cook: 86
+
+name: Entree-763 
+type: Entree
+cuisine: Turkish
+main: goat chicken salmon
+addons: spinach
+sides: cheese peas
+prep: 54
+cook: 79
+
+name: Salad-764 
+type: Salad
+cuisine: Pakistan
+main: kale lettuce
+addons: eggs
+sides: mushrooms
+prep: 5
+cook: 7
+
+name: Entree-765 
+type: Entree
+cuisine: Pakistan
+main: goat tofu
+addons: spinach
+sides: beans cheese
+prep: 27
+cook: 15
+
+name: Salad-766 
+type: Salad
+cuisine: Italian
+main: lettuce kale kale
+addons: radishes
+sides: potatoes mushrooms
+prep: 16
+cook: 10
+
+name: Salad-767 
+type: Salad
+cuisine: Greek
+main: chard arugula
+addons: eggs
+sides: cucumbers
+prep: 11
+cook: 7
+
+name: Appetizer-768 
+type: Appetizer
+cuisine: Greek
+main: tofu scallops
+addons: peas
+sides: beans
+prep: 27
+cook: 8
+
+name: Entree-769 
+type: Entree
+cuisine: Pakistan
+main: lamb chicken shrimp
+addons: beets
+sides: cheese
+prep: 27
+cook: 82
+
+name: Salad-770 
+type: Salad
+cuisine: Italian
+main: lettuce spinach mesclun
+addons: scallions
+sides: mushrooms
+prep: 5
+cook: 1
+
+name: Entree-771 
+type: Entree
+cuisine: Chinese
+main: lamb scallops tempeh
+addons: rice
+sides: beans
+prep: 39
+cook: 81
+
+name: Salad-772 
+type: Salad
+cuisine: Chinese
+main: spinach lettuce
+addons: scallions
+sides: cucumbers carrots
+prep: 16
+cook: 7
+
+name: Appetizer-773 
+type: Appetizer
+cuisine: French
+main: scallops
+addons: peas
+sides: spinach
+prep: 29
+cook: 24
+
+name: Entree-774 
+type: Entree
+cuisine: French
+main: scallops shrimp
+addons: carrots
+sides: cheese
+prep: 55
+cook: 83
+
+name: Salad-775 
+type: Salad
+cuisine: Korean
+main: arugula mesclun arugula
+addons: scallions
+sides: mushrooms potatoes
+prep: 12
+cook: 2
+
+name: Appetizer-776 
+type: Appetizer
+cuisine: Pakistan
+main: tofu
+addons: peas
+sides: mushrooms spinach
+prep: 33
+cook: 11
+
+name: Appetizer-777 
+type: Appetizer
+cuisine: Chinese
+main: shrimp chicken beef
+addons: cheese
+sides: mushrooms
+prep: 27
+cook: 20
+
+name: Salad-778 
+type: Salad
+cuisine: Greek
+main: chard mesclun kale
+addons: radishes
+sides: mushrooms
+prep: 11
+cook: 3
+
+name: Entree-779 
+type: Entree
+cuisine: Chinese
+main: tofu tofu scallops
+addons: mushrooms
+sides: milk eggs
+prep: 42
+cook: 119
+
+name: Entree-780 
+type: Entree
+cuisine: French
+main: beef tempeh
+addons: peas
+sides: eggs beans
+prep: 45
+cook: 37
+
+name: Appetizer-781 
+type: Appetizer
+cuisine: Korean
+main: tofu scallops chicken
+addons: peas
+sides: spinach
+prep: 11
+cook: 24
+
+name: Appetizer-782 
+type: Appetizer
+cuisine: Indian
+main: chicken chicken beef
+addons: rice
+sides: cheese beans
+prep: 20
+cook: 7
+
+name: Salad-783 
+type: Salad
+cuisine: Greek
+main: mesclun chard lettuce
+addons: eggs
+sides: mushrooms
+prep: 8
+cook: 6
+
+name: Salad-784 
+type: Salad
+cuisine: Turkish
+main: arugula lettuce kale
+addons: scallions
+sides: mushrooms
+prep: 13
+cook: 8
+
+name: Appetizer-785 
+type: Appetizer
+cuisine: Chinese
+main: beef shrimp
+addons: eggs
+sides: spinach
+prep: 21
+cook: 23
+
+name: Entree-786 
+type: Entree
+cuisine: Pakistan
+main: lamb tempeh tofu
+addons: peas
+sides: beans cheese
+prep: 41
+cook: 99
+
+name: Entree-787 
+type: Entree
+cuisine: Chinese
+main: scallops chicken
+addons: spinach
+sides: milk cheese
+prep: 37
+cook: 8
+
+name: Entree-788 
+type: Entree
+cuisine: Turkish
+main: shrimp shrimp
+addons: cucumber
+sides: cheese peas
+prep: 51
+cook: 85
+
+name: Appetizer-789 
+type: Appetizer
+cuisine: Turkish
+main: beef
+addons: cheese
+sides: mushrooms
+prep: 38
+cook: 23
+
+name: Entree-790 
+type: Entree
+cuisine: Chinese
+main: goat
+addons: potatoes
+sides: beans cheese
+prep: 28
+cook: 59
+
+name: Entree-791 
+type: Entree
+cuisine: Turkish
+main: beef tempeh
+addons: potatoes
+sides: eggs eggs
+prep: 16
+cook: 69
+
+name: Salad-792 
+type: Salad
+cuisine: Turkish
+main: kale
+addons: eggs
+sides: cucumbers mushrooms
+prep: 8
+cook: 9
+
+name: Appetizer-793 
+type: Appetizer
+cuisine: Greek
+main: chicken chicken
+addons: peas
+sides: beans beans
+prep: 22
+cook: 12
+
+name: Entree-794 
+type: Entree
+cuisine: Pakistan
+main: goat
+addons: mushrooms
+sides: milk
+prep: 46
+cook: 36
+
+name: Entree-795 
+type: Entree
+cuisine: Turkish
+main: tempeh
+addons: broccoli
+sides: milk milk
+prep: 17
+cook: 16
+
+name: Entree-796 
+type: Entree
+cuisine: Indian
+main: chicken salmon tofu
+addons: cucumber
+sides: milk eggs
+prep: 46
+cook: 12
+
+name: Appetizer-797 
+type: Appetizer
+cuisine: Italian
+main: beef shrimp
+addons: eggs
+sides: beans beans
+prep: 15
+cook: 13
+
+name: Appetizer-798 
+type: Appetizer
+cuisine: Greek
+main: scallops beef
+addons: peas
+sides: cheese cheese
+prep: 38
+cook: 21
+
+name: Appetizer-799 
+type: Appetizer
+cuisine: Chinese
+main: beef
+addons: cheese
+sides: beans spinach
+prep: 20
+cook: 10
+
+name: Appetizer-800 
+type: Appetizer
+cuisine: Greek
+main: shrimp shrimp beef
+addons: eggs
+sides: mushrooms beans
+prep: 10
+cook: 15
+
+name: Salad-801 
+type: Salad
+cuisine: French
+main: lettuce mesclun
+addons: eggs
+sides: carrots
+prep: 9
+cook: 5
+
+name: Entree-802 
+type: Entree
+cuisine: Greek
+main: goat
+addons: peas
+sides: eggs
+prep: 31
+cook: 88
+
+name: Appetizer-803 
+type: Appetizer
+cuisine: Italian
+main: tofu scallops chicken
+addons: cheese
+sides: mushrooms
+prep: 21
+cook: 20
+
+name: Entree-804 
+type: Entree
+cuisine: Greek
+main: chicken tempeh
+addons: broccoli
+sides: eggs
+prep: 45
+cook: 43
+
+name: Appetizer-805 
+type: Appetizer
+cuisine: Pakistan
+main: shrimp tofu
+addons: cheese
+sides: cheese
+prep: 12
+cook: 9
+
+name: Entree-806 
+type: Entree
+cuisine: Italian
+main: shrimp salmon beef
+addons: beans
+sides: eggs cheese
+prep: 38
+cook: 76
+
+name: Entree-807 
+type: Entree
+cuisine: Pakistan
+main: tempeh tofu
+addons: potatoes
+sides: cheese
+prep: 21
+cook: 89
+
+name: Salad-808 
+type: Salad
+cuisine: French
+main: lettuce kale
+addons: scallions
+sides: potatoes
+prep: 16
+cook: 9
+
+name: Entree-809 
+type: Entree
+cuisine: Korean
+main: beef
+addons: peas
+sides: eggs peas
+prep: 36
+cook: 54
+
+name: Salad-810 
+type: Salad
+cuisine: Turkish
+main: spinach
+addons: scallions
+sides: potatoes cucumbers
+prep: 14
+cook: 5
+
+name: Entree-811 
+type: Entree
+cuisine: Italian
+main: shrimp tofu
+addons: peas
+sides: beans
+prep: 54
+cook: 117
+
+name: Salad-812 
+type: Salad
+cuisine: Indian
+main: kale spinach lettuce
+addons: eggs
+sides: potatoes potatoes
+prep: 8
+cook: 6
+
+name: Salad-813 
+type: Salad
+cuisine: Greek
+main: chard
+addons: cheese
+sides: potatoes mushrooms
+prep: 7
+cook: 2
+
+name: Salad-814 
+type: Salad
+cuisine: Italian
+main: lettuce
+addons: eggs
+sides: carrots mushrooms
+prep: 5
+cook: 3
+
+name: Salad-815 
+type: Salad
+cuisine: Italian
+main: kale spinach
+addons: cheese
+sides: mushrooms mushrooms
+prep: 7
+cook: 5
+
+name: Salad-816 
+type: Salad
+cuisine: Italian
+main: lettuce
+addons: scallions
+sides: cucumbers
+prep: 18
+cook: 6
+
+name: Entree-817 
+type: Entree
+cuisine: Indian
+main: lamb tempeh shrimp
+addons: spinach
+sides: eggs milk
+prep: 32
+cook: 13
+
+name: Salad-818 
+type: Salad
+cuisine: Chinese
+main: chard
+addons: cheese
+sides: potatoes
+prep: 12
+cook: 6
+
+name: Salad-819 
+type: Salad
+cuisine: Pakistan
+main: chard mesclun lettuce
+addons: scallions
+sides: cucumbers
+prep: 8
+cook: 10
+
+name: Entree-820 
+type: Entree
+cuisine: Italian
+main: goat shrimp
+addons: peas
+sides: eggs peas
+prep: 32
+cook: 58
+
+name: Appetizer-821 
+type: Appetizer
+cuisine: Chinese
+main: tofu
+addons: cheese
+sides: beans beans
+prep: 16
+cook: 18
+
+name: Entree-822 
+type: Entree
+cuisine: French
+main: lamb scallops
+addons: cauliflower
+sides: beans milk
+prep: 25
+cook: 111
+
+name: Salad-823 
+type: Salad
+cuisine: Italian
+main: spinach spinach arugula
+addons: radishes
+sides: cucumbers
+prep: 8
+cook: 10
+
+name: Appetizer-824 
+type: Appetizer
+cuisine: Indian
+main: tofu
+addons: cheese
+sides: mushrooms
+prep: 28
+cook: 24
+
+name: Entree-825 
+type: Entree
+cuisine: Pakistan
+main: salmon chicken scallops
+addons: broccoli
+sides: beans
+prep: 51
+cook: 94
+
+name: Salad-826 
+type: Salad
+cuisine: Greek
+main: kale
+addons: cheese
+sides: mushrooms
+prep: 11
+cook: 3
+
+name: Entree-827 
+type: Entree
+cuisine: Greek
+main: chicken
+addons: peas
+sides: milk
+prep: 39
+cook: 21
+
+name: Appetizer-828 
+type: Appetizer
+cuisine: Indian
+main: chicken
+addons: eggs
+sides: spinach spinach
+prep: 30
+cook: 19
+
+name: Salad-829 
+type: Salad
+cuisine: Chinese
+main: kale mesclun
+addons: scallions
+sides: mushrooms potatoes
+prep: 17
+cook: 2
+
+name: Salad-830 
+type: Salad
+cuisine: Indian
+main: mesclun spinach
+addons: eggs
+sides: carrots carrots
+prep: 14
+cook: 2
+
+name: Entree-831 
+type: Entree
+cuisine: Pakistan
+main: lamb tofu scallops
+addons: beans
+sides: cheese
+prep: 20
+cook: 80
+
+name: Salad-832 
+type: Salad
+cuisine: Greek
+main: chard
+addons: cheese
+sides: mushrooms
+prep: 9
+cook: 1
+
+name: Salad-833 
+type: Salad
+cuisine: Italian
+main: chard
+addons: eggs
+sides: carrots
+prep: 11
+cook: 9
+
+name: Salad-834 
+type: Salad
+cuisine: Chinese
+main: mesclun chard
+addons: cheese
+sides: mushrooms
+prep: 13
+cook: 9
+
+name: Salad-835 
+type: Salad
+cuisine: French
+main: chard lettuce spinach
+addons: radishes
+sides: potatoes
+prep: 10
+cook: 3
+
+name: Appetizer-836 
+type: Appetizer
+cuisine: Pakistan
+main: scallops shrimp
+addons: eggs
+sides: spinach
+prep: 20
+cook: 15
+
+name: Salad-837 
+type: Salad
+cuisine: Turkish
+main: kale arugula mesclun
+addons: scallions
+sides: cucumbers
+prep: 12
+cook: 6
+
+name: Entree-838 
+type: Entree
+cuisine: Pakistan
+main: lamb beef scallops
+addons: rice
+sides: cheese
+prep: 15
+cook: 124
+
+name: Salad-839 
+type: Salad
+cuisine: Greek
+main: kale kale
+addons: eggs
+sides: cucumbers mushrooms
+prep: 16
+cook: 3
+
+name: Salad-840 
+type: Salad
+cuisine: Turkish
+main: kale kale
+addons: radishes
+sides: cucumbers
+prep: 14
+cook: 2
+
+name: Salad-841 
+type: Salad
+cuisine: French
+main: spinach lettuce
+addons: cheese
+sides: carrots
+prep: 7
+cook: 3
+
+name: Entree-842 
+type: Entree
+cuisine: Pakistan
+main: chicken beef
+addons: mushrooms
+sides: beans milk
+prep: 25
+cook: 50
+
+name: Appetizer-843 
+type: Appetizer
+cuisine: Chinese
+main: chicken shrimp
+addons: rice
+sides: cheese spinach
+prep: 29
+cook: 16
+
+name: Entree-844 
+type: Entree
+cuisine: Pakistan
+main: salmon tofu
+addons: peas
+sides: cheese milk
+prep: 29
+cook: 42
+
+name: Salad-845 
+type: Salad
+cuisine: Pakistan
+main: arugula
+addons: scallions
+sides: mushrooms
+prep: 5
+cook: 8
+
+name: Entree-846 
+type: Entree
+cuisine: Greek
+main: shrimp
+addons: broccoli
+sides: peas
+prep: 52
+cook: 22
+
+name: Salad-847 
+type: Salad
+cuisine: Indian
+main: arugula lettuce
+addons: radishes
+sides: potatoes
+prep: 11
+cook: 7
+
+name: Appetizer-848 
+type: Appetizer
+cuisine: French
+main: shrimp scallops
+addons: eggs
+sides: beans
+prep: 29
+cook: 18
+
+name: Salad-849 
+type: Salad
+cuisine: Turkish
+main: spinach
+addons: scallions
+sides: mushrooms
+prep: 9
+cook: 9
+
+name: Entree-850 
+type: Entree
+cuisine: Chinese
+main: tofu
+addons: beets
+sides: beans beans
+prep: 16
+cook: 14
+
+name: Salad-851 
+type: Salad
+cuisine: Turkish
+main: lettuce
+addons: scallions
+sides: potatoes carrots
+prep: 15
+cook: 4
+
+name: Appetizer-852 
+type: Appetizer
+cuisine: Greek
+main: tofu shrimp
+addons: rice
+sides: spinach cheese
+prep: 36
+cook: 18
+
+name: Salad-853 
+type: Salad
+cuisine: Greek
+main: lettuce lettuce
+addons: scallions
+sides: mushrooms
+prep: 15
+cook: 10
+
+name: Salad-854 
+type: Salad
+cuisine: Pakistan
+main: spinach
+addons: scallions
+sides: cucumbers carrots
+prep: 9
+cook: 1
+
+name: Appetizer-855 
+type: Appetizer
+cuisine: French
+main: beef
+addons: peas
+sides: spinach
+prep: 38
+cook: 16
+
+name: Salad-856 
+type: Salad
+cuisine: Chinese
+main: chard
+addons: scallions
+sides: carrots
+prep: 5
+cook: 10
+
+name: Entree-857 
+type: Entree
+cuisine: Pakistan
+main: tempeh
+addons: rice
+sides: eggs peas
+prep: 48
+cook: 63
+
+name: Appetizer-858 
+type: Appetizer
+cuisine: Italian
+main: beef
+addons: cheese
+sides: cheese beans
+prep: 13
+cook: 22
+
+name: Salad-859 
+type: Salad
+cuisine: Korean
+main: mesclun
+addons: eggs
+sides: carrots cucumbers
+prep: 5
+cook: 9
+
+name: Entree-860 
+type: Entree
+cuisine: Indian
+main: lamb lamb shrimp
+addons: spinach
+sides: beans
+prep: 45
+cook: 122
+
+name: Salad-861 
+type: Salad
+cuisine: Pakistan
+main: mesclun spinach
+addons: radishes
+sides: cucumbers
+prep: 14
+cook: 4
+
+name: Appetizer-862 
+type: Appetizer
+cuisine: French
+main: scallops
+addons: eggs
+sides: beans beans
+prep: 36
+cook: 12
+
+name: Salad-863 
+type: Salad
+cuisine: Turkish
+main: mesclun
+addons: radishes
+sides: carrots carrots
+prep: 8
+cook: 4
+
+name: Salad-864 
+type: Salad
+cuisine: Pakistan
+main: kale
+addons: scallions
+sides: cucumbers
+prep: 16
+cook: 1
+
+name: Salad-865 
+type: Salad
+cuisine: Pakistan
+main: lettuce mesclun mesclun
+addons: cheese
+sides: cucumbers carrots
+prep: 14
+cook: 2
+
+name: Salad-866 
+type: Salad
+cuisine: Greek
+main: chard
+addons: radishes
+sides: cucumbers
+prep: 11
+cook: 10
+
+name: Salad-867 
+type: Salad
+cuisine: Turkish
+main: spinach
+addons: cheese
+sides: cucumbers potatoes
+prep: 8
+cook: 3
+
+name: Entree-868 
+type: Entree
+cuisine: Indian
+main: scallops goat
+addons: cucumber
+sides: beans
+prep: 56
+cook: 46
+
+name: Entree-869 
+type: Entree
+cuisine: Indian
+main: scallops
+addons: carrots
+sides: beans
+prep: 33
+cook: 10
+
+name: Entree-870 
+type: Entree
+cuisine: Indian
+main: lamb
+addons: peas
+sides: peas peas
+prep: 27
+cook: 63
+
+name: Appetizer-871 
+type: Appetizer
+cuisine: Chinese
+main: scallops shrimp chicken
+addons: rice
+sides: cheese
+prep: 18
+cook: 21
+
+name: Salad-872 
+type: Salad
+cuisine: Turkish
+main: arugula kale
+addons: eggs
+sides: potatoes
+prep: 18
+cook: 1
+
+name: Appetizer-873 
+type: Appetizer
+cuisine: Korean
+main: scallops beef
+addons: eggs
+sides: mushrooms mushrooms
+prep: 15
+cook: 6
+
+name: Appetizer-874 
+type: Appetizer
+cuisine: Pakistan
+main: tofu beef shrimp
+addons: cheese
+sides: cheese spinach
+prep: 30
+cook: 12
+
+name: Appetizer-875 
+type: Appetizer
+cuisine: Chinese
+main: beef
+addons: rice
+sides: beans cheese
+prep: 38
+cook: 13
+
+name: Entree-876 
+type: Entree
+cuisine: Italian
+main: tofu scallops
+addons: broccoli
+sides: eggs
+prep: 53
+cook: 70
+
+name: Entree-877 
+type: Entree
+cuisine: Greek
+main: lamb tempeh tempeh
+addons: cucumber
+sides: peas cheese
+prep: 22
+cook: 119
+
+name: Entree-878 
+type: Entree
+cuisine: Indian
+main: chicken goat chicken
+addons: carrots
+sides: peas peas
+prep: 38
+cook: 92
+
+name: Entree-879 
+type: Entree
+cuisine: Chinese
+main: tempeh tempeh goat
+addons: rice
+sides: cheese eggs
+prep: 50
+cook: 58
+
+name: Entree-880 
+type: Entree
+cuisine: Chinese
+main: beef chicken chicken
+addons: mushrooms
+sides: milk
+prep: 31
+cook: 60
+
+name: Salad-881 
+type: Salad
+cuisine: Chinese
+main: kale
+addons: cheese
+sides: mushrooms cucumbers
+prep: 10
+cook: 7
+
+name: Appetizer-882 
+type: Appetizer
+cuisine: French
+main: shrimp beef chicken
+addons: rice
+sides: mushrooms
+prep: 17
+cook: 7
+
+name: Entree-883 
+type: Entree
+cuisine: Pakistan
+main: beef
+addons: cucumber
+sides: peas
+prep: 40
+cook: 29
+
+name: Entree-884 
+type: Entree
+cuisine: Korean
+main: salmon
+addons: peas
+sides: milk milk
+prep: 52
+cook: 87
+
+name: Appetizer-885 
+type: Appetizer
+cuisine: Indian
+main: scallops tofu
+addons: peas
+sides: spinach
+prep: 31
+cook: 21
+
+name: Appetizer-886 
+type: Appetizer
+cuisine: Chinese
+main: tofu shrimp
+addons: peas
+sides: beans spinach
+prep: 27
+cook: 14
+
+name: Entree-887 
+type: Entree
+cuisine: Korean
+main: goat tempeh
+addons: peas
+sides: eggs
+prep: 22
+cook: 7
+
+name: Entree-888 
+type: Entree
+cuisine: Turkish
+main: scallops goat salmon
+addons: broccoli
+sides: beans beans
+prep: 22
+cook: 92
+
+name: Appetizer-889 
+type: Appetizer
+cuisine: Pakistan
+main: tofu beef
+addons: rice
+sides: cheese cheese
+prep: 16
+cook: 12
+
+name: Salad-890 
+type: Salad
+cuisine: Korean
+main: mesclun chard mesclun
+addons: radishes
+sides: cucumbers mushrooms
+prep: 14
+cook: 7
+
+name: Salad-891 
+type: Salad
+cuisine: Korean
+main: spinach chard arugula
+addons: radishes
+sides: potatoes
+prep: 12
+cook: 2
+
+name: Entree-892 
+type: Entree
+cuisine: French
+main: goat goat
+addons: potatoes
+sides: milk peas
+prep: 41
+cook: 30
+
+name: Salad-893 
+type: Salad
+cuisine: Korean
+main: kale chard
+addons: cheese
+sides: potatoes cucumbers
+prep: 18
+cook: 1
+
+name: Entree-894 
+type: Entree
+cuisine: Indian
+main: tofu
+addons: rice
+sides: beans
+prep: 41
+cook: 39
+
+name: Appetizer-895 
+type: Appetizer
+cuisine: Chinese
+main: scallops chicken
+addons: rice
+sides: mushrooms spinach
+prep: 30
+cook: 12
+
+name: Salad-896 
+type: Salad
+cuisine: Turkish
+main: lettuce
+addons: scallions
+sides: carrots
+prep: 16
+cook: 4
+
+name: Entree-897 
+type: Entree
+cuisine: Korean
+main: lamb scallops
+addons: beets
+sides: eggs beans
+prep: 59
+cook: 10
+
+name: Entree-898 
+type: Entree
+cuisine: Korean
+main: salmon lamb tofu
+addons: carrots
+sides: beans milk
+prep: 17
+cook: 18
+
+name: Entree-899 
+type: Entree
+cuisine: Chinese
+main: salmon
+addons: carrots
+sides: beans milk
+prep: 18
+cook: 66
+
+name: Entree-900 
+type: Entree
+cuisine: Indian
+main: salmon
+addons: mushrooms
+sides: beans eggs
+prep: 46
+cook: 22
+
+name: Appetizer-901 
+type: Appetizer
+cuisine: Pakistan
+main: scallops
+addons: peas
+sides: mushrooms
+prep: 14
+cook: 11
+
+name: Appetizer-902 
+type: Appetizer
+cuisine: Korean
+main: chicken chicken
+addons: rice
+sides: mushrooms
+prep: 29
+cook: 20
+
+name: Appetizer-903 
+type: Appetizer
+cuisine: Pakistan
+main: beef
+addons: peas
+sides: spinach
+prep: 19
+cook: 23
+
+name: Appetizer-904 
+type: Appetizer
+cuisine: Korean
+main: scallops shrimp
+addons: rice
+sides: cheese mushrooms
+prep: 31
+cook: 7
+
+name: Salad-905 
+type: Salad
+cuisine: French
+main: mesclun
+addons: scallions
+sides: potatoes
+prep: 8
+cook: 9
+
+name: Entree-906 
+type: Entree
+cuisine: Korean
+main: chicken
+addons: cucumber
+sides: milk milk
+prep: 20
+cook: 59
+
+name: Entree-907 
+type: Entree
+cuisine: Pakistan
+main: lamb scallops
+addons: rice
+sides: cheese eggs
+prep: 17
+cook: 21
+
+name: Appetizer-908 
+type: Appetizer
+cuisine: Korean
+main: shrimp
+addons: peas
+sides: spinach
+prep: 39
+cook: 15
+
+name: Appetizer-909 
+type: Appetizer
+cuisine: Korean
+main: tofu
+addons: cheese
+sides: spinach
+prep: 19
+cook: 10
+
+name: Salad-910 
+type: Salad
+cuisine: French
+main: chard mesclun
+addons: eggs
+sides: mushrooms cucumbers
+prep: 9
+cook: 10
+
+name: Appetizer-911 
+type: Appetizer
+cuisine: Indian
+main: shrimp beef
+addons: eggs
+sides: beans
+prep: 17
+cook: 16
+
+name: Appetizer-912 
+type: Appetizer
+cuisine: Pakistan
+main: scallops
+addons: rice
+sides: cheese cheese
+prep: 13
+cook: 12
+
+name: Appetizer-913 
+type: Appetizer
+cuisine: Greek
+main: chicken
+addons: rice
+sides: spinach cheese
+prep: 38
+cook: 11
+
+name: Salad-914 
+type: Salad
+cuisine: Indian
+main: arugula arugula
+addons: cheese
+sides: carrots
+prep: 12
+cook: 5
+
+name: Appetizer-915 
+type: Appetizer
+cuisine: French
+main: scallops tofu beef
+addons: cheese
+sides: spinach spinach
+prep: 37
+cook: 20
+
+name: Appetizer-916 
+type: Appetizer
+cuisine: Korean
+main: beef shrimp beef
+addons: peas
+sides: mushrooms
+prep: 31
+cook: 24
+
+name: Salad-917 
+type: Salad
+cuisine: Pakistan
+main: arugula
+addons: radishes
+sides: potatoes mushrooms
+prep: 5
+cook: 2
+
+name: Salad-918 
+type: Salad
+cuisine: Pakistan
+main: lettuce spinach chard
+addons: radishes
+sides: cucumbers mushrooms
+prep: 16
+cook: 7
+
+name: Entree-919 
+type: Entree
+cuisine: Pakistan
+main: tofu beef
+addons: peas
+sides: beans
+prep: 32
+cook: 123
+
+name: Salad-920 
+type: Salad
+cuisine: Italian
+main: kale spinach
+addons: scallions
+sides: carrots potatoes
+prep: 9
+cook: 8
+
+name: Salad-921 
+type: Salad
+cuisine: Italian
+main: spinach chard
+addons: cheese
+sides: cucumbers mushrooms
+prep: 18
+cook: 2
+
+name: Entree-922 
+type: Entree
+cuisine: Indian
+main: tempeh
+addons: spinach
+sides: eggs eggs
+prep: 20
+cook: 109
+
+name: Appetizer-923 
+type: Appetizer
+cuisine: Turkish
+main: shrimp
+addons: peas
+sides: spinach
+prep: 39
+cook: 11
+
+name: Appetizer-924 
+type: Appetizer
+cuisine: Chinese
+main: tofu scallops shrimp
+addons: peas
+sides: spinach
+prep: 37
+cook: 18
+
+name: Entree-925 
+type: Entree
+cuisine: Turkish
+main: scallops chicken chicken
+addons: rice
+sides: eggs beans
+prep: 25
+cook: 114
+
+name: Appetizer-926 
+type: Appetizer
+cuisine: Pakistan
+main: tofu tofu
+addons: peas
+sides: spinach
+prep: 22
+cook: 16
+
+name: Entree-927 
+type: Entree
+cuisine: Italian
+main: scallops chicken shrimp
+addons: cauliflower
+sides: cheese
+prep: 56
+cook: 76
+
+name: Salad-928 
+type: Salad
+cuisine: Italian
+main: chard chard
+addons: cheese
+sides: potatoes mushrooms
+prep: 5
+cook: 1
+
+name: Appetizer-929 
+type: Appetizer
+cuisine: Turkish
+main: chicken shrimp
+addons: cheese
+sides: spinach beans
+prep: 13
+cook: 14
+
+name: Entree-930 
+type: Entree
+cuisine: Chinese
+main: chicken scallops lamb
+addons: cauliflower
+sides: beans
+prep: 22
+cook: 91
+
+name: Salad-931 
+type: Salad
+cuisine: French
+main: arugula lettuce
+addons: scallions
+sides: mushrooms carrots
+prep: 8
+cook: 3
+
+name: Salad-932 
+type: Salad
+cuisine: Chinese
+main: lettuce kale
+addons: cheese
+sides: potatoes potatoes
+prep: 19
+cook: 3
+
+name: Appetizer-933 
+type: Appetizer
+cuisine: Indian
+main: shrimp shrimp beef
+addons: cheese
+sides: spinach spinach
+prep: 39
+cook: 15
+
+name: Appetizer-934 
+type: Appetizer
+cuisine: Greek
+main: shrimp
+addons: cheese
+sides: beans beans
+prep: 29
+cook: 10
+
+name: Salad-935 
+type: Salad
+cuisine: French
+main: spinach kale arugula
+addons: scallions
+sides: cucumbers cucumbers
+prep: 12
+cook: 3
+
+name: Appetizer-936 
+type: Appetizer
+cuisine: French
+main: scallops
+addons: eggs
+sides: cheese
+prep: 16
+cook: 24
+
+name: Salad-937 
+type: Salad
+cuisine: French
+main: lettuce lettuce spinach
+addons: scallions
+sides: potatoes
+prep: 16
+cook: 3
+
+name: Entree-938 
+type: Entree
+cuisine: Italian
+main: tofu
+addons: broccoli
+sides: milk eggs
+prep: 34
+cook: 51
+
+name: Salad-939 
+type: Salad
+cuisine: Greek
+main: chard lettuce
+addons: cheese
+sides: cucumbers potatoes
+prep: 18
+cook: 3
+
+name: Appetizer-940 
+type: Appetizer
+cuisine: Pakistan
+main: beef tofu
+addons: peas
+sides: spinach
+prep: 20
+cook: 6
+
+name: Entree-941 
+type: Entree
+cuisine: French
+main: goat tempeh
+addons: peas
+sides: peas
+prep: 26
+cook: 100
+
+name: Appetizer-942 
+type: Appetizer
+cuisine: French
+main: chicken shrimp
+addons: cheese
+sides: spinach cheese
+prep: 29
+cook: 15
+
+name: Salad-943 
+type: Salad
+cuisine: Indian
+main: arugula lettuce
+addons: eggs
+sides: potatoes
+prep: 18
+cook: 8
+
+name: Salad-944 
+type: Salad
+cuisine: Greek
+main: spinach
+addons: radishes
+sides: mushrooms
+prep: 10
+cook: 8
+
+name: Appetizer-945 
+type: Appetizer
+cuisine: Greek
+main: beef
+addons: rice
+sides: mushrooms
+prep: 17
+cook: 23
+
+name: Salad-946 
+type: Salad
+cuisine: Greek
+main: lettuce
+addons: cheese
+sides: carrots
+prep: 12
+cook: 3
+
+name: Appetizer-947 
+type: Appetizer
+cuisine: Pakistan
+main: chicken beef
+addons: rice
+sides: beans
+prep: 18
+cook: 16
+
+name: Salad-948 
+type: Salad
+cuisine: French
+main: arugula arugula
+addons: radishes
+sides: potatoes cucumbers
+prep: 7
+cook: 3
+
+name: Salad-949 
+type: Salad
+cuisine: Pakistan
+main: chard arugula
+addons: cheese
+sides: carrots
+prep: 8
+cook: 4
+
+name: Appetizer-950 
+type: Appetizer
+cuisine: French
+main: chicken
+addons: peas
+sides: cheese
+prep: 18
+cook: 20
+
+name: Salad-951 
+type: Salad
+cuisine: Greek
+main: arugula
+addons: scallions
+sides: mushrooms
+prep: 11
+cook: 2
+
+name: Entree-952 
+type: Entree
+cuisine: Chinese
+main: tempeh chicken
+addons: cauliflower
+sides: milk peas
+prep: 52
+cook: 20
+
+name: Appetizer-953 
+type: Appetizer
+cuisine: Indian
+main: shrimp
+addons: peas
+sides: beans
+prep: 19
+cook: 15
+
+name: Appetizer-954 
+type: Appetizer
+cuisine: Greek
+main: scallops tofu
+addons: cheese
+sides: beans spinach
+prep: 34
+cook: 24
+
+name: Appetizer-955 
+type: Appetizer
+cuisine: Indian
+main: scallops
+addons: rice
+sides: mushrooms
+prep: 31
+cook: 18
+
+name: Salad-956 
+type: Salad
+cuisine: Italian
+main: lettuce chard
+addons: radishes
+sides: potatoes
+prep: 19
+cook: 9
+
+name: Salad-957 
+type: Salad
+cuisine: Pakistan
+main: arugula chard
+addons: scallions
+sides: potatoes mushrooms
+prep: 17
+cook: 5
+
+name: Appetizer-958 
+type: Appetizer
+cuisine: Italian
+main: beef scallops scallops
+addons: cheese
+sides: mushrooms
+prep: 15
+cook: 19
+
+name: Appetizer-959 
+type: Appetizer
+cuisine: Turkish
+main: beef scallops tofu
+addons: peas
+sides: beans
+prep: 16
+cook: 22
+
+name: Salad-960 
+type: Salad
+cuisine: Chinese
+main: spinach chard mesclun
+addons: eggs
+sides: potatoes
+prep: 17
+cook: 2
+
+name: Entree-961 
+type: Entree
+cuisine: Pakistan
+main: goat
+addons: cauliflower
+sides: milk
+prep: 34
+cook: 123
+
+name: Entree-962 
+type: Entree
+cuisine: Indian
+main: goat
+addons: mushrooms
+sides: peas eggs
+prep: 20
+cook: 119
+
+name: Salad-963 
+type: Salad
+cuisine: Indian
+main: chard
+addons: eggs
+sides: mushrooms cucumbers
+prep: 8
+cook: 4
+
+name: Entree-964 
+type: Entree
+cuisine: French
+main: tofu goat beef
+addons: potatoes
+sides: eggs
+prep: 28
+cook: 74
+
+name: Entree-965 
+type: Entree
+cuisine: Italian
+main: chicken
+addons: carrots
+sides: beans
+prep: 28
+cook: 12
+
+name: Appetizer-966 
+type: Appetizer
+cuisine: Greek
+main: chicken shrimp
+addons: rice
+sides: mushrooms
+prep: 34
+cook: 17
+
+name: Entree-967 
+type: Entree
+cuisine: Korean
+main: beef
+addons: rice
+sides: beans
+prep: 17
+cook: 120
+
+name: Entree-968 
+type: Entree
+cuisine: Turkish
+main: goat chicken
+addons: cauliflower
+sides: eggs cheese
+prep: 32
+cook: 92
+
+name: Appetizer-969 
+type: Appetizer
+cuisine: French
+main: beef scallops
+addons: rice
+sides: mushrooms
+prep: 36
+cook: 11
+
+name: Salad-970 
+type: Salad
+cuisine: Indian
+main: chard mesclun chard
+addons: eggs
+sides: cucumbers mushrooms
+prep: 11
+cook: 8
+
+name: Salad-971 
+type: Salad
+cuisine: Pakistan
+main: arugula mesclun
+addons: cheese
+sides: carrots cucumbers
+prep: 17
+cook: 5
+
+name: Salad-972 
+type: Salad
+cuisine: French
+main: lettuce kale chard
+addons: eggs
+sides: cucumbers
+prep: 10
+cook: 5
+
+name: Entree-973 
+type: Entree
+cuisine: French
+main: lamb
+addons: broccoli
+sides: beans eggs
+prep: 43
+cook: 58
+
+name: Salad-974 
+type: Salad
+cuisine: Greek
+main: lettuce arugula kale
+addons: eggs
+sides: cucumbers
+prep: 19
+cook: 9
+
+name: Appetizer-975 
+type: Appetizer
+cuisine: Italian
+main: shrimp scallops
+addons: cheese
+sides: beans beans
+prep: 25
+cook: 13
+
+name: Entree-976 
+type: Entree
+cuisine: French
+main: tofu scallops
+addons: rice
+sides: milk
+prep: 39
+cook: 98
+
+name: Appetizer-977 
+type: Appetizer
+cuisine: Pakistan
+main: tofu tofu chicken
+addons: rice
+sides: beans beans
+prep: 32
+cook: 21
+
+name: Salad-978 
+type: Salad
+cuisine: Chinese
+main: chard
+addons: eggs
+sides: mushrooms carrots
+prep: 14
+cook: 4
+
+name: Appetizer-979 
+type: Appetizer
+cuisine: Indian
+main: shrimp beef
+addons: cheese
+sides: spinach beans
+prep: 18
+cook: 17
+
+name: Salad-980 
+type: Salad
+cuisine: Greek
+main: arugula lettuce spinach
+addons: scallions
+sides: cucumbers
+prep: 14
+cook: 5
+
+name: Appetizer-981 
+type: Appetizer
+cuisine: Greek
+main: tofu shrimp
+addons: rice
+sides: beans
+prep: 25
+cook: 13
+
+name: Salad-982 
+type: Salad
+cuisine: Indian
+main: kale lettuce
+addons: radishes
+sides: mushrooms
+prep: 15
+cook: 8
+
+name: Salad-983 
+type: Salad
+cuisine: Turkish
+main: mesclun spinach
+addons: eggs
+sides: cucumbers mushrooms
+prep: 7
+cook: 9
+
+name: Appetizer-984 
+type: Appetizer
+cuisine: French
+main: tofu tofu tofu
+addons: eggs
+sides: mushrooms spinach
+prep: 15
+cook: 10
+
+name: Salad-985 
+type: Salad
+cuisine: Greek
+main: kale kale chard
+addons: scallions
+sides: potatoes cucumbers
+prep: 15
+cook: 10
+
+name: Entree-986 
+type: Entree
+cuisine: Pakistan
+main: salmon shrimp
+addons: potatoes
+sides: eggs
+prep: 26
+cook: 117
+
+name: Salad-987 
+type: Salad
+cuisine: Chinese
+main: spinach spinach
+addons: cheese
+sides: carrots mushrooms
+prep: 11
+cook: 9
+
+name: Entree-988 
+type: Entree
+cuisine: Korean
+main: shrimp beef
+addons: beans
+sides: eggs
+prep: 26
+cook: 19
+
+name: Entree-989 
+type: Entree
+cuisine: Pakistan
+main: scallops shrimp tempeh
+addons: potatoes
+sides: beans peas
+prep: 16
+cook: 60
+
+name: Salad-990 
+type: Salad
+cuisine: Greek
+main: arugula spinach
+addons: cheese
+sides: mushrooms
+prep: 18
+cook: 8
+
+name: Appetizer-991 
+type: Appetizer
+cuisine: Greek
+main: tofu beef scallops
+addons: eggs
+sides: spinach beans
+prep: 28
+cook: 11
+
+name: Appetizer-992 
+type: Appetizer
+cuisine: Chinese
+main: tofu shrimp tofu
+addons: peas
+sides: spinach
+prep: 22
+cook: 22
+
+name: Entree-993 
+type: Entree
+cuisine: Indian
+main: scallops chicken chicken
+addons: cucumber
+sides: peas
+prep: 31
+cook: 31
+
+name: Entree-994 
+type: Entree
+cuisine: Pakistan
+main: salmon shrimp
+addons: beets
+sides: peas
+prep: 26
+cook: 7
+
+name: Entree-995 
+type: Entree
+cuisine: Chinese
+main: chicken beef chicken
+addons: peas
+sides: eggs
+prep: 53
+cook: 16
+
+name: Entree-996 
+type: Entree
+cuisine: Korean
+main: shrimp
+addons: spinach
+sides: milk
+prep: 42
+cook: 107
+
+name: Appetizer-997 
+type: Appetizer
+cuisine: Pakistan
+main: shrimp shrimp chicken
+addons: peas
+sides: spinach cheese
+prep: 16
+cook: 6
+
+name: Appetizer-998 
+type: Appetizer
+cuisine: Pakistan
+main: tofu shrimp shrimp
+addons: eggs
+sides: spinach
+prep: 32
+cook: 21
+
+name: Appetizer-999 
+type: Appetizer
+cuisine: Italian
+main: scallops
+addons: peas
+sides: mushrooms
+prep: 34
+cook: 11
+
+name: Salad-1000 
+type: Salad
+cuisine: Chinese
+main: spinach arugula
+addons: eggs
+sides: mushrooms
+prep: 10
+cook: 7
+

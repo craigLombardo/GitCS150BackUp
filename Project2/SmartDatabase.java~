@@ -1,0 +1,44 @@
+import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.TreeSet;
+
+public class SmartDatabase{
+  
+  //Cousine type
+  private final int ITALIAN=0,CHINESE=1,GREEK=2,TURKISH=3,INDIAN=4,PAKISTAN=5,FRENCH=6,KOREAN=7, 
+    ASIAN=8, MIDDLE_EASTERN=9, SOUTH_ASIAN=10, ALLTYPES=11;
+  private FoodRules ruleBook;
+  
+  public SmartDatabase(FoodRules rules){
+    ruleBook = rules;
+  }
+  
+  private int getCuisineVal(Recipe rec){
+    String type = rec.getType();
+    if(type.equals("Italian")) return ITALIAN;
+    else if(type.equals("Chinese")) return CHINESE;
+    else if(type.equals("Greek")) return GREEK;
+    else if(type.equals("Turkish")) return TURKISH;
+    else if(type.equals("Indian")) return INDIAN;
+    else if(type.equals("Pakistan")) return PAKISTAN;
+    else if(type.equals("French")) return FRENCH;
+    else if(type.equals("Korean")) return KOREAN;
+    else if(type.equals("Asian")) return ASIAN;
+    else if(type.equals("MiddleEastern")) return MIDDLE_EASTERN;
+    else if(type.equals("SouthAsian")) return SOUTH_ASIAN;
+    else return ALLTYPES;
+  }
+  
+  public static void main(String[] args){
+    SmartDatabase test = new SmartDatabase(new FoodRules("ingredients.txt"));
+    Recipe tmp = new Recipe("scallions","appetizer","French","peas","eggs", "lettuce", 9, 9);
+    System.out.println("one " + tmp);
+    //test.add(tmp);
+    tmp = new Recipe("scallions3","appetizer","Italian","peas","eggs eggs eggs eggs", "lettuce mesclun", 9, 9);
+    System.out.println("two " + tmp);
+    //test.add(tmp);
+    tmp = new Recipe("scallions2","appetizer","Italian","scallions cauliflower","chicken", "spinach", 9, 9);
+    System.out.println("two " + tmp + " " + tmp.getIngredients().get(0) +"\n");
+    //test.add(tmp);
+  }
+}

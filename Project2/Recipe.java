@@ -1,17 +1,20 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.TreeSet;
 
 /**
  * This class serves as a Recipe in our ingredient book. Each recipe will have a name,
  * a course type, the ingredients it's made of, and the prep/cook time of the recipe.
  * @author Craig Lombardo
  */
-public class Recipe{
+public class Recipe implements Comparable<Recipe>{
   
-  private String myName, myCourse, myType, myMain, myAddons, mySides, myPrepTime, myCookTime;
+  private String myName, myCourse, myType, myMain, myAddons, mySides;
+  private int myPrepTime, myCookTime;
   private ArrayList<String> myIngredients;
   private boolean hasMeat = false, hasSeafood = false, hasDairy = false;
   private boolean hasShellfish = false, hasEggs = false;
+  private ArrayList<TreeSet<Recipe>> myLocations;
   
   /**
    * This constructor method creates a Recipe with a specified name,
@@ -22,7 +25,7 @@ public class Recipe{
    * @param prepTime How long it takes to prep the Recipe (Minutes).
    * @param cookTime How long it takes to cook the Recipe (Minutes).
    */
-  public Recipe(String name, String course, String type, String main, String addons, String sides, String prepTime, String cookTime){
+  public Recipe(String name, String course, String type, String main, String addons, String sides, int prepTime, int cookTime){
     myName = name;
     myCourse = course;
     myType = type;
@@ -52,7 +55,9 @@ public class Recipe{
     
     for(int i=0; i<myIngredients.size(); i++){
       for(int j=0; j<meats.size() && myIngredients.get(i).compareTo(meats.get(j)) >= 0 && !hasMeat; j++){
-        if(myIngredients.get(i).compareTo(meats.get(j))==0) hasMeat = true;
+        if(myIngredients.get(i).compareTo(meats.get(j))==0){
+          hasMeat = true;
+        }
       }
       
       for(int j=0; j<seafood.size() && myIngredients.get(i).compareTo(seafood.get(j)) >= 0 && !hasSeafood; j++){
@@ -69,6 +74,7 @@ public class Recipe{
       
       if(!hasEggs && myIngredients.get(i).compareTo("eggs") == 0) hasEggs = true;
     }
+    myLocations = new ArrayList<TreeSet<Recipe>>();
   }
   
   /**
@@ -121,17 +127,17 @@ public class Recipe{
   
   /**
    * This method returns the prep time of the Recipe.
-   * @return int The prep time of the Recipe.
+   * @return The prep time of the Recipe.
    */
-  public String getPrepTime(){
+  public int getPrepTime(){
     return myPrepTime;
   }
   
   /**
    * This method returns the cook time of the Recipe.
-   * @return int The cook time of the Recipe.
+   * @return The cook time of the Recipe.
    */
-  public String getCookTime(){
+  public int getCookTime(){
     return myCookTime;
   } 
   
@@ -192,32 +198,45 @@ public class Recipe{
     return isVegetarian() && !hasDairy && !hasEggs;
   }
   
-  public void getInfo(){
-    System.out.println("name: " + getName());
-    System.out.println("type: " + getCourse());
-    System.out.println("cuisine: " + getType());
-    System.out.println("main: " + getMain());
-    System.out.println("addons: " + getAddons());
-    System.out.println("sides: " + getSides());
-    System.out.println("prep: " + getPrepTime());
-    System.out.println("cook: " + getCookTime());
-    System.out.println();
-    System.out.println("meat: " + containsMeat());
-    System.out.println("seafood: " + containsSeafood());
-    System.out.println("dairy: " + containsDairy());
-    System.out.println("vegan: " + isVegan());
-    System.out.println("vegetarian: " + isVegetarian());
-    System.out.println("shellfish: " + containsShellfish());
-    System.out.println("eggs: " + containsEggs());
+  public int compareTo(Recipe other){
+    int total1 = myPrepTime + myCookTime;
+    int total2 = other.getPrepTime() + other.getCookTime();
+    if(total1 == total2) return 0; 
+   else return  total1 > total2 ? 1 : -1;
+  }
+  
+  public void addLocation(TreeSet<Recipe> location){
+    myLocations.add(location);
+  }
+  
+  public ArrayList<TreeSet<Recipe>> getLocations(){
+    return myLocations;
+  }
+  
+  public void delete(){
+    for(int i=0; i<myLocations.size(); i++){
+      myLocations.get(i).remove(this);
+    }
+  }
+  
+  public String getInfo(){
+    String output = "";
+    output = output + "name: " + getName() + "\n";
+    output = output + "type: " + getCourse() + "\n";
+    output = output + "cuisine: " + getType() + "\n";
+    output = output + "main: " + getMain() + "\n";
+    output = output + "addons: " + getAddons() + "\n";
+    output = output + "sides: " + getSides() + "\n";
+    output = output + "prep: " + getPrepTime() + "\n";
+    output = output + "cook: " + getCookTime() + "\n";
+    return output;
   }
   
   public static void main(String[] args){
-    Recipe tmp = new Recipe("1","2","3","no","peas eggs", "lettuce Sides", "9", "9");
-    /*ArrayList<String> test = tmp.getIngredients();
-    for(int i=0; i<test.size(); i++){
-      System.out.println(test.get(i));
-    }*/
-    tmp.getInfo();
+    Recipe tmp = new Recipe("1","2","3","no","peas eggs", "lettuce Sides", 9, 9);
+    tmp = new Recipe("scallions","appetizer","French","peas","eggs", "lettuce", 9, 9);
+    System.out.println(tmp.getInfo());
+    System.out.println(tmp.isVegetarian());
   }
   
 }

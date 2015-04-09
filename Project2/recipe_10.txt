@@ -1,0 +1,90 @@
+name: Entree-1 
+type: Entree
+cuisine: Italian
+main: tofu salmon salmon
+addons: peas
+sides: cheese cheese
+prep: 28
+cook: 18
+
+name: Salad-2 
+type: Salad
+cuisine: Chinese
+main: mesclun kale
+addons: radishes
+sides: cucumbers mushrooms
+prep: 19
+cook: 6
+
+name: Appetizer-3 
+type: Appetizer
+cuisine: Turkish
+main: shrimp
+addons: rice
+sides: mushrooms cheese
+prep: 29
+cook: 19
+
+name: Appetizer-4 
+type: Appetizer
+cuisine: Pakistan
+main: scallops shrimp
+addons: cheese
+sides: cheese beans
+prep: 11
+cook: 18
+
+name: Entree-5 
+type: Entree
+cuisine: Greek
+main: tempeh
+addons: cucumber
+sides: eggs
+prep: 28
+cook: 27
+
+name: Entree-6 
+type: Entree
+cuisine: Turkish
+main: chicken scallops
+addons: peas
+sides: cheese beans
+prep: 45
+cook: 91
+
+name: Entree-7 
+type: Entree
+cuisine: Chinese
+main: scallops chicken tofu
+addons: beets
+sides: milk cheese
+prep: 49
+cook: 106
+
+name: Salad-8 
+type: Salad
+cuisine: Korean
+main: kale
+addons: cheese
+sides: cucumbers cucumbers
+prep: 17
+cook: 7
+
+name: Entree-9 
+type: Entree
+cuisine: Chinese
+main: tempeh tempeh
+addons: spinach
+sides: cheese milk
+prep: 19
+cook: 122
+
+name: Salad-10 
+type: Salad
+cuisine: Greek
+main: kale chard spinach
+addons: radishes
+sides: carrots
+prep: 11
+cook: 9
+

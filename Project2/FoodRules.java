@@ -10,7 +10,7 @@ import java.util.Collections;
 public class FoodRules{
   
   private ArrayList<String> meat, seafood, shellfish, vegetables, dairy, soy, other, cuisineType;
-  private ArrayList<String> allIngredients;
+  private ArrayList<String> allIngredients, allCourses;
   
   /**
    * This constructor method takes no parameters and sets all of the items included
@@ -82,15 +82,26 @@ public class FoodRules{
     cuisineType.add("Pakistan");
     cuisineType.add("French");
     cuisineType.add("Korean");
+    cuisineType.add("Asian");
+    cuisineType.add("MiddleEastern");
+    cuisineType.add("SouthAsian");
     Collections.sort(cuisineType);
     
-    allIngredients = meat;
+    allCourses = new ArrayList<String>();
+
+    allCourses.add("appetizer");
+    allCourses.add("entree");
+    allCourses.add("salad");
+
+    allIngredients = new ArrayList<String>();
+
+    for(int i=0; i<meat.size(); i++) allIngredients.add(meat.get(i));
     for(int i=0; i<seafood.size(); i++) allIngredients.add(seafood.get(i));
+    for(int i=0; i<shellfish.size(); i++) allIngredients.add(shellfish.get(i));
+    for(int i=0; i<soy.size(); i++) allIngredients.add(soy.get(i));
     for(int i=0; i<vegetables.size(); i++) allIngredients.add(vegetables.get(i));
     for(int i=0; i<dairy.size(); i++) allIngredients.add(dairy.get(i));
     for(int i=0; i<other.size(); i++) allIngredients.add(other.get(i));
-    for(int i=0; i<soy.size(); i++) allIngredients.add(soy.get(i));
-    Collections.sort(allIngredients);
   }
   
   /**
@@ -190,10 +201,13 @@ public class FoodRules{
     return allIngredients;
   }
   
-  public static void main(String[] args){
-    FoodRules test = new FoodRules();
-    for(int i=0; i< test.allIngredients.size(); i++) System.out.println(test.allIngredients.get(i));
-    
+  public void addIngredient(String ingredient){
+    allIngredients.add(ingredient);
+    Collections.sort(allIngredients);
+  }
+  
+  public ArrayList<String> getCourses(){
+    return allCourses;
   }
   
 }
