@@ -187,11 +187,10 @@ public class InputReader{
   
   private void quit(){
     //write data out to file
-    ruleBook.exportIngredients();
   }
   
   public static void main(String[] args){
-    FoodRules ruleBook = new FoodRules("ingredients.txt");
+    FoodRules ruleBook = new FoodRules();
     InputReader test = new InputReader(/*new DecisionDatabase(ruleBook),*/ new MasterDatabase(), ruleBook);
     test.getCommand();
   }

@@ -1,6 +1,4 @@
 import java.util.Scanner;
-import java.util.Iterator;
-import java.util.ArrayList;
 import java.io.File;
 
 public class DataHandler{
@@ -8,15 +6,16 @@ public class DataHandler{
   private Scanner dataScanner;
   private SmartDatabase smartDatabase;
   private MasterDatabase masterDatabase;
+  String output;
   
   public DataHandler(String inputFile, String outputFile, SmartDatabase smart, MasterDatabase master){
+    output = outputFile;
     try{
       dataScanner = new Scanner(new File(inputFile));
     }
     catch(java.io.FileNotFoundException e){
       System.out.println("\nFile error, the file you have chosen does not exist!\n");
     }
-    
     smartDatabase = smart;
     masterDatabase = master;
   }
@@ -46,14 +45,7 @@ public class DataHandler{
   }
   
   public void writeData(){
-    
-  }
- 
-  public static void main(String[] args){
-    FoodRules ruleBook = new FoodRules();
-    DataHandler test = new DataHandler("recipe_10.txt","test.txt",new SmartDatabase(ruleBook), new MasterDatabase());
-    test.getData();
-    test.writeData();
+    masterDatabase.printOut(output);
   }
   
 }

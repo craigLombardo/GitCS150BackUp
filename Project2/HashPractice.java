@@ -1,14 +1,14 @@
 import java.util.HashMap;
+import java.util.TreeMap;
 
 public class HashPractice{
 
   public static void main(String[] args){
-    HashMap<String,String> test = new HashMap<String,String>();
-    test.put("a","apple");
-    test.put("boy", "burn");
-    test.put("bat","big");
-    test.put("c","cow");
-    
-    System.out.println(test.get("bat"));
+    TreeMap<String,Recipe> test = new TreeMap<String,Recipe>();
+    Recipe tmp = new Recipe("","","","","","",9,9);
+    test.put("a",tmp);
+    test.put("b",tmp);
+    System.out.println(test);
+    System.out.println(test.remove("a"));
   }
 }

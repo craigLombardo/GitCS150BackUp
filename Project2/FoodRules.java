@@ -10,7 +10,7 @@ import java.util.Collections;
 public class FoodRules{
   
   private ArrayList<String> meat, seafood, shellfish, vegetables, dairy, soy, other, cuisineType;
-  private ArrayList<String> allIngredients, allCourses;
+  private ArrayList<String> allIngredients, allCourses, validInclusions;
   
   /**
    * This constructor method takes no parameters and sets all of the items included
@@ -102,6 +102,15 @@ public class FoodRules{
     for(int i=0; i<vegetables.size(); i++) allIngredients.add(vegetables.get(i));
     for(int i=0; i<dairy.size(); i++) allIngredients.add(dairy.get(i));
     for(int i=0; i<other.size(); i++) allIngredients.add(other.get(i));
+    
+    validInclusions = new ArrayList<String>();
+    
+    validInclusions.add("meat");
+    validInclusions.add("seafood");
+    validInclusions.add("vegetarian");
+    validInclusions.add("vegan");
+    validInclusions.add("dairy");
+    validInclusions.add("shellfish");
   }
   
   /**
@@ -168,8 +177,9 @@ public class FoodRules{
    * @return A list of all possible vegetarian options.
    */
   public ArrayList<String> getVegetarian(){
-    ArrayList<String> arr = vegetables;
+    ArrayList<String> arr = new ArrayList<String>();
     
+    for(int i=0; i<vegetables.size(); i++) arr.add(vegetables.get(i));
     for(int i=0; i<dairy.size(); i++) arr.add(dairy.get(i));
     for(int i=0; i<other.size(); i++) arr.add(other.get(i));
     
@@ -208,6 +218,10 @@ public class FoodRules{
   
   public ArrayList<String> getCourses(){
     return allCourses;
+  }
+  
+  public ArrayList<String> getInclusions(){
+    return validInclusions;
   }
   
 }

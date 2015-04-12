@@ -1,8 +1,5 @@
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Scanner;
-import java.io.File;
-import java.io.PrintWriter;
 
 /**
  * This class will handle the food rules used by our cookbook. This class will
@@ -14,15 +11,12 @@ public class FoodRules{
   
   private ArrayList<String> meat, seafood, shellfish, vegetables, dairy, soy, other, cuisineType;
   private ArrayList<String> allIngredients, allCourses;
-  private String file;
   
   /**
    * This constructor method takes no parameters and sets all of the items included
    * in each category, as specified in the class description.
    */
-  public FoodRules(String input){
-    file = input;
-    
+  public FoodRules(){
     meat = new ArrayList<String>();
     
     meat.add("beef");
@@ -88,6 +82,9 @@ public class FoodRules{
     cuisineType.add("Pakistan");
     cuisineType.add("French");
     cuisineType.add("Korean");
+    cuisineType.add("Asian");
+    cuisineType.add("MiddleEastern");
+    cuisineType.add("SouthAsian");
     Collections.sort(cuisineType);
     
     allCourses = new ArrayList<String>();
@@ -97,30 +94,14 @@ public class FoodRules{
     allCourses.add("salad");
 
     allIngredients = new ArrayList<String>();
-    makeIngredientList();
-  }
-  
-  public void makeIngredientList(){
-    try{
-      Scanner sc = new Scanner(new File(file));
-      while(sc.hasNext()) allIngredients.add(sc.next());
-      Collections.sort(allIngredients);
-    }
-    catch(java.io.FileNotFoundException e){
-    
-    }
-    
-  }
-  
-  public void exportIngredients(){
-    try{
-      PrintWriter writer = new PrintWriter(new File(file));
-      for(int i=0; i<allIngredients.size(); i++) writer.println(allIngredients.get(i));
-      writer.close();
-    }
-    catch(java.io.FileNotFoundException e){
-    
-    }
+
+    for(int i=0; i<meat.size(); i++) allIngredients.add(meat.get(i));
+    for(int i=0; i<seafood.size(); i++) allIngredients.add(seafood.get(i));
+    for(int i=0; i<shellfish.size(); i++) allIngredients.add(shellfish.get(i));
+    for(int i=0; i<soy.size(); i++) allIngredients.add(soy.get(i));
+    for(int i=0; i<vegetables.size(); i++) allIngredients.add(vegetables.get(i));
+    for(int i=0; i<dairy.size(); i++) allIngredients.add(dairy.get(i));
+    for(int i=0; i<other.size(); i++) allIngredients.add(other.get(i));
   }
   
   /**
@@ -227,12 +208,6 @@ public class FoodRules{
   
   public ArrayList<String> getCourses(){
     return allCourses;
-  }
-  
-  public static void main(String[] args){
-    FoodRules test = new FoodRules("ingredients.txt");
-    System.out.println(test.getIngredients());
-    test.exportIngredients();
   }
   
 }

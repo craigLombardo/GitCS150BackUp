@@ -2,9 +2,8 @@ import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.io.PrintWriter;
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.Map;
+import java.util.Collections;
 
 public class MasterDatabase{
   
@@ -16,7 +15,8 @@ public class MasterDatabase{
   
   public boolean add(Recipe newR){
     ensureAvailable(newR.getName().substring(0,1));
-    map.get(newR.getName().substring(0,1)).add(newR);
+    ArrayList<Recipe> current = map.get(newR.getName().substring(0,1));
+    current.add(newR);
     return true;
   }
   
@@ -61,9 +61,10 @@ public class MasterDatabase{
   public Recipe find(String name){
     ensureAvailable(name.substring(0,1));  
     ArrayList<Recipe> list = map.get(name.substring(0,1)); 
+    Collections.sort(list,new RecipeTreeNameComparator());
     return binarySearch(list, name, 0, list.size()-1);
   }
-  
+  //http://stackoverflow.com/questions/1066589/iterate-through-a-hashmap
   public void printOut(String outputFile) {
     PrintWriter dataWriter = null;
     try{
@@ -80,9 +81,13 @@ public class MasterDatabase{
           Recipe rec = (Recipe) current.get(i);
           dataWriter.println(rec.getInfo());
         }
-       // it.remove(); // avoids a ConcurrentModificationException
+       it.remove();
     }
     dataWriter.close();
+  }
+  
+  public ArrayList<Recipe> hihi(String name){
+    return map.get(name.substring(0,1));
   }
   
   public static void main(String[] args){
@@ -97,7 +102,7 @@ public class MasterDatabase{
     if(found!=null) System.out.println(found.getInfo());
     else System.out.println("No recipes were found with that name");
     //test.remove(found);
-    found = test.find("testing");
+    found = test.find("testing21");
     if(found!=null) System.out.println(found.getInfo());
     else System.out.println("No recipes were found with that name");
     test.printOut("ppppptmp.txt");

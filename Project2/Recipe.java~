@@ -46,7 +46,7 @@ public class Recipe implements Comparable<Recipe>{
     }
     Collections.sort(myIngredients);
     
-    FoodRules rules = new FoodRules("ingredients.txt");
+    FoodRules rules = new FoodRules();
     
     ArrayList<String> meats = rules.getMeats();
     ArrayList<String> seafood = rules.getSeafood();
@@ -221,20 +221,22 @@ public class Recipe implements Comparable<Recipe>{
   
   public String getInfo(){
     String output = "";
-    output = output + "name: " + getName();
-    output = output + "type: " + getCourse();
-    output = output + "cuisine: " + getType();
-    output = output + "main: " + getMain();
-    output = output + "addons: " + getAddons();
-    output = output + "sides: " + getSides();
-    output = output + "prep: " + getPrepTime();
-    output = output + "cook: " + getCookTime();
+    output = output + "name: " + getName() + "\n";
+    output = output + "type: " + getCourse() + "\n";
+    output = output + "cuisine: " + getType() + "\n";
+    output = output + "main: " + getMain() + "\n";
+    output = output + "addons: " + getAddons() + "\n";
+    output = output + "sides: " + getSides() + "\n";
+    output = output + "prep: " + getPrepTime() + "\n";
+    output = output + "cook: " + getCookTime() + "\n";
     return output;
   }
   
   public static void main(String[] args){
     Recipe tmp = new Recipe("1","2","3","no","peas eggs", "lettuce Sides", 9, 9);
-    tmp.getInfo();
+    tmp = new Recipe("scallions","appetizer","French","peas","eggs", "lettuce", 9, 9);
+    System.out.println(tmp.getInfo());
+    System.out.println(tmp.isVegetarian());
   }
   
 }

@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.TreeSet;
+import java.util.TreeMap;
 
 /**
  * This class serves as a Recipe in our ingredient book. Each recipe will have a name,
@@ -14,7 +14,7 @@ public class Recipe implements Comparable<Recipe>{
   private ArrayList<String> myIngredients;
   private boolean hasMeat = false, hasSeafood = false, hasDairy = false;
   private boolean hasShellfish = false, hasEggs = false;
-  private ArrayList<TreeSet<Recipe>> myLocations;
+  private ArrayList<TreeMap<Integer,Recipe>> myLocations;
   
   /**
    * This constructor method creates a Recipe with a specified name,
@@ -74,7 +74,7 @@ public class Recipe implements Comparable<Recipe>{
       
       if(!hasEggs && myIngredients.get(i).compareTo("eggs") == 0) hasEggs = true;
     }
-    myLocations = new ArrayList<TreeSet<Recipe>>();
+    myLocations = new ArrayList<TreeMap<Integer,Recipe>>();
   }
   
   /**
@@ -141,6 +141,10 @@ public class Recipe implements Comparable<Recipe>{
     return myCookTime;
   } 
   
+  public int getTotalTime(){
+    return (myPrepTime + myCookTime);
+  }
+  
   /**
    * This method returns the ingredient list of the Recipe.
    * @return ArrayList The ingredient list of the Recipe.
@@ -205,17 +209,17 @@ public class Recipe implements Comparable<Recipe>{
    else return  total1 > total2 ? 1 : -1;
   }
   
-  public void addLocation(TreeSet<Recipe> location){
+  public void addLocation(TreeMap<Integer,Recipe> location){
     myLocations.add(location);
   }
   
-  public ArrayList<TreeSet<Recipe>> getLocations(){
+  public ArrayList<TreeMap<Integer,Recipe>> getLocations(){
     return myLocations;
   }
   
   public void delete(){
     for(int i=0; i<myLocations.size(); i++){
-      myLocations.get(i).remove(this);
+      myLocations.get(i).remove(myPrepTime+myCookTime);
     }
   }
   
