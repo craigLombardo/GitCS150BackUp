@@ -1,6 +1,10 @@
 import java.util.Comparator;
 
-public class RecipeTreeNameComparator implements Comparator<String>{
+/**
+ * This Comparator is used to impose a comparison of names on a given Recipe.
+ * @author Craig Lombardo
+ */
+public class RecipeTreeNameComparator implements Comparator<Recipe>{
 
   public int compare(Recipe one, Recipe two){
    return one.getName().compareTo(two.getName());

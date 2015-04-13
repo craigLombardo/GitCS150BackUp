@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.TreeMap;
+import java.util.TreeSet;
 
 /**
  * This class serves as a Recipe in our ingredient book. Each recipe will have a name,
@@ -14,14 +14,17 @@ public class Recipe implements Comparable<Recipe>{
   private ArrayList<String> myIngredients;
   private boolean hasMeat = false, hasSeafood = false, hasDairy = false;
   private boolean hasShellfish = false, hasEggs = false;
-  private ArrayList<TreeMap<Integer,Recipe>> myLocations;
+  private ArrayList<TreeSet<Recipe>> myLocations;
   
   /**
    * This constructor method creates a Recipe with a specified name,
    * course type, ingredients, and the prep/cook time of the recipe.
    * @param name The name of the recipe.
    * @param course The course type: Appetizer, Salad, Entree or Dessert.
-   * @param ingredients The ingredients required to make this Recipe.
+   * @param type The cuisine type of the Recipe.
+   * @param main The main ingredients of the Recipe.
+   * @param addons The addon ingredients of the Recipe.
+   * @param sides The side ingredients of the Recipe.
    * @param prepTime How long it takes to prep the Recipe (Minutes).
    * @param cookTime How long it takes to cook the Recipe (Minutes).
    */
@@ -74,7 +77,7 @@ public class Recipe implements Comparable<Recipe>{
       
       if(!hasEggs && myIngredients.get(i).compareTo("eggs") == 0) hasEggs = true;
     }
-    myLocations = new ArrayList<TreeMap<Integer,Recipe>>();
+    myLocations = new ArrayList<TreeSet<Recipe>>();
   }
   
   /**
@@ -141,6 +144,10 @@ public class Recipe implements Comparable<Recipe>{
     return myCookTime;
   } 
   
+  /**
+   * This method returns the total time required to make this Recipe.
+   * @return The time it takes to prepare and cook this meal.
+   */
   public int getTotalTime(){
     return (myPrepTime + myCookTime);
   }
@@ -155,6 +162,7 @@ public class Recipe implements Comparable<Recipe>{
   
   /**
    * This method returns true if the recipe has meat, false if it does not.
+   * @return true if it has it, false if it does not
    */
   public boolean containsMeat(){
     return hasMeat;
@@ -162,6 +170,7 @@ public class Recipe implements Comparable<Recipe>{
   
   /**
    * This method returns true if the recipe has seafood, false if it does not.
+   * @return true if it has it, false if it does not
    */
   public boolean containsSeafood(){
     return hasSeafood;
@@ -169,6 +178,7 @@ public class Recipe implements Comparable<Recipe>{
   
   /**
    * This method returns true if the recipe has shellfish, false if it does not.
+   * @return true if it has it, false if it does not
    */
   public boolean containsShellfish(){
     return hasShellfish;
@@ -176,6 +186,7 @@ public class Recipe implements Comparable<Recipe>{
   
   /**
    * This method returns true if the recipe has dairy, false if it does not.
+   * @return true if it has it, false if it does not
    */
   public boolean containsDairy(){
     return hasDairy;
@@ -183,6 +194,7 @@ public class Recipe implements Comparable<Recipe>{
   
   /**
    * This method returns true if the recipe has eggs, false if it does not.
+   * @return true if it has it, false if it does not
    */
   public boolean containsEggs(){
     return hasEggs;
@@ -190,6 +202,7 @@ public class Recipe implements Comparable<Recipe>{
   
   /**
    * This method returns true if the recipe is vegetarian, false if it is not.
+   * @return true if it is, false if it is not
    */
   public boolean isVegetarian(){
     return !hasMeat && !hasSeafood;
@@ -197,32 +210,52 @@ public class Recipe implements Comparable<Recipe>{
   
   /**
    * This method returns true if the recipe is vegan, false if it is not.
+   * @return true if it is, false if it is not
    */
   public boolean isVegan(){
     return isVegetarian() && !hasDairy && !hasEggs;
   }
   
+  /**
+   * This method compares this Recipe's total time to another.
+   * @return 0 if they are the same, 1 if it is greater, -1 if the other is greater.
+   * @param other The other Recipe to compare to.
+   */
   public int compareTo(Recipe other){
-    int total1 = myPrepTime + myCookTime;
-    int total2 = other.getPrepTime() + other.getCookTime();
+    int total1 = getTotalTime();
+    int total2 = other.getTotalTime();
     if(total1 == total2) return 0; 
-   else return  total1 > total2 ? 1 : -1;
+    else return  total1 > total2 ? 1 : -1;
   }
   
-  public void addLocation(TreeMap<Integer,Recipe> location){
+  /**
+   * This method adds to the list of save locations of this Recipe.
+   * @param location The new location this Recipe was stored at.
+   */
+  public void addLocation(TreeSet<Recipe> location){
     myLocations.add(location);
   }
   
-  public ArrayList<TreeMap<Integer,Recipe>> getLocations(){
-    return myLocations;
-  }
-  
-  public void delete(){
-    for(int i=0; i<myLocations.size(); i++){
-      myLocations.get(i).remove(myPrepTime+myCookTime);
+  /**
+   * This method removes the recipe from all of it's save locations.
+   * @return true if all instances are removed, false if there was an error
+   */
+  public boolean delete(){
+    try{
+      for(int i=0; i<myLocations.size(); i++){
+        myLocations.get(i).remove(myPrepTime+myCookTime);
+      }
+      return true;
+    }
+    catch(Exception e){
+      return false;
     }
   }
   
+  /**
+   * This method returns a String corresponding to the information of this recipe.
+   * @return A string corresponding to all of the info of the recipe
+   */
   public String getInfo(){
     String output = "";
     output = output + "name: " + getName() + "\n";
@@ -234,13 +267,6 @@ public class Recipe implements Comparable<Recipe>{
     output = output + "prep: " + getPrepTime() + "\n";
     output = output + "cook: " + getCookTime() + "\n";
     return output;
-  }
-  
-  public static void main(String[] args){
-    Recipe tmp = new Recipe("1","2","3","no","peas eggs", "lettuce Sides", 9, 9);
-    tmp = new Recipe("scallions","appetizer","French","peas","eggs", "lettuce", 9, 9);
-    System.out.println(tmp.getInfo());
-    System.out.println(tmp.isVegetarian());
   }
   
 }

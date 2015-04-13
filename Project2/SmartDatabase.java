@@ -1,9 +1,14 @@
 import java.util.HashMap;
 import java.util.ArrayList;
-import java.util.TreeMap;
+import java.util.TreeSet;
 import java.util.Iterator;
 import java.util.Map;
 
+/**
+ * This class serves as the "SmartDatabase" it will store all of it's elements
+ * based on their total times.
+ * @author Craig Lombardo
+ */
 public class SmartDatabase{
   
   //Cousine type
@@ -16,12 +21,16 @@ public class SmartDatabase{
     EXVEGAN=5, EXALL=6;
   
   private FoodRules ruleBook;
-  private HashMap<String, ArrayList<ArrayList<ArrayList<TreeMap<Integer,Recipe>>>>> map;
+  private HashMap<String, ArrayList<ArrayList<ArrayList<TreeSet<Recipe>>>>> map;
   private ArrayList<String> validIngredients;
   
+  /**
+   * This constructor creates a new SmartDatabase with a specified ruleset.
+   * @param rules The ruleset imposed on this database.
+   */
   public SmartDatabase(FoodRules rules){
     ruleBook = rules;
-    map = new HashMap<String, ArrayList<ArrayList<ArrayList<TreeMap<Integer,Recipe>>>>>();
+    map = new HashMap<String, ArrayList<ArrayList<ArrayList<TreeSet<Recipe>>>>>();
     validIngredients = ruleBook.getIngredients();
     for(int i=0; i<validIngredients.size(); i++){
       addNewIngredient(validIngredients.get(i));
@@ -29,71 +38,100 @@ public class SmartDatabase{
     addNewIngredient("all");
   }
   
+  /**
+   * This method adds a new Recipe to the database.
+   * @param newR The new Recipe to add to the database.
+   */
   public void add(Recipe newR){
     ArrayList<String> ingred = new ArrayList<String>();
     for(int i=0; i<validIngredients.size(); i++) ingred.add(validIngredients.get(i));
+    //adds a default all to the ingred list
     ingred.add("all");
     for(int i=0; i<ingred.size(); i++){
       String current = ingred.get(i);
-      ArrayList<ArrayList<ArrayList<TreeMap<Integer,Recipe>>>> chooseType = map.get(current);
+      //chooseType = the list that allows us to choose the type
+      ArrayList<ArrayList<ArrayList<TreeSet<Recipe>>>> chooseType = map.get(current);
       if(chooseType == null){
+        //if null then we know this is an ingredient we have not yet encountered and therefor needs a spot allocated to it
         addNewIngredient(current);
         chooseType = map.get(current);
       }
       int cuisine = getCuisineVal(newR.getType());
-      int course = getCourseVal(newR.getCourse());
-      ArrayList<ArrayList<TreeMap<Integer,Recipe>>> chooseCourse = chooseType.get(cuisine);
-      ArrayList<TreeMap<Integer,Recipe>> chooseExclusions = chooseCourse.get(course);
-      addToExclusions(newR,chooseExclusions);
-      if(course!=ALLFOODTYPES){
-        chooseExclusions = chooseCourse.get(ALLFOODTYPES);
-        addToExclusions(newR,chooseExclusions);
+      //this is a list of places we need to add the recipe to in addition to the all block
+      //only applicable if 
+      ArrayList<Integer> addTo = new ArrayList<Integer>();
+      addTo.add(cuisine);
+      //if the type is not one of these, then we must check and see if it falls in one of 
+      //these categories, hence added save locations.
+      if(cuisine != ASIAN && cuisine != MIDDLE_EASTERN && cuisine != SOUTH_ASIAN){
+        String type = newR.getType();
+        ArrayList<String> asian = ruleBook.getAsian();
+        ArrayList<String> middleEastern = ruleBook.getMiddleEastern();
+        ArrayList<String> southAsian = ruleBook.getSouthAsian();
+        for(int p=0; p<asian.size(); p++) if(type.equals(asian.get(p))) addTo.add(ASIAN);
+        for(int p=0; p<middleEastern.size(); p++) if(type.equals(middleEastern.get(p))) addTo.add(MIDDLE_EASTERN);
+        for(int p=0; p<southAsian.size(); p++) if(type.equals(southAsian.get(p))) addTo.add(SOUTH_ASIAN);
       }
-      if(cuisine!=ALLCUISINETYPES){
-        chooseCourse = chooseType.get(ALLCUISINETYPES);
-        chooseExclusions = chooseCourse.get(course);
+      for(int c=0; c<addTo.size(); c++){
+        //cuisine val
+        cuisine = addTo.get(c);
+        int course = getCourseVal(newR.getCourse());
+        ArrayList<ArrayList<TreeSet<Recipe>>> chooseCourse = chooseType.get(cuisine);
+        ArrayList<TreeSet<Recipe>> chooseExclusions = chooseCourse.get(course);
+        //The exclusions are the step before the trees which have the information.
         addToExclusions(newR,chooseExclusions);
         if(course!=ALLFOODTYPES){
           chooseExclusions = chooseCourse.get(ALLFOODTYPES);
           addToExclusions(newR,chooseExclusions);
         }
+        //if all cuisine types then we must also add to all courses in that block
+        if(cuisine!=ALLCUISINETYPES){
+          chooseCourse = chooseType.get(ALLCUISINETYPES);
+          chooseExclusions = chooseCourse.get(course);
+          addToExclusions(newR,chooseExclusions);
+          if(course!=ALLFOODTYPES){
+            chooseExclusions = chooseCourse.get(ALLFOODTYPES);
+            addToExclusions(newR,chooseExclusions);
+          }
+        }
       }
     }
   }
   
-  private void addToExclusions(Recipe newR, ArrayList<TreeMap<Integer,Recipe>> exclusions){
+  private void addToExclusions(Recipe newR, ArrayList<TreeSet<Recipe>> exclusions){
     boolean meat = newR.containsMeat();
     boolean seafood = newR.containsSeafood();
     boolean shellfish = newR.containsShellfish();
     boolean dairy = newR.containsDairy();
     boolean vegetarian = newR.isVegetarian();
     boolean vegan = newR.isVegan();
-    
+    //these exclusions are the last step before the trees
+    //each exclusion tree contains recipes that contain that exclusion
     if(meat){
-      exclusions.get(EXMEAT).put(newR.getTotalTime(),newR);
+      exclusions.get(EXMEAT).add(newR);
       newR.addLocation(exclusions.get(EXMEAT));
     }
     if(seafood){
-      exclusions.get(EXSEAFOOD).put(newR.getTotalTime(),newR);
+      exclusions.get(EXSEAFOOD).add(newR);
       newR.addLocation(exclusions.get(EXSEAFOOD));
     }
     if(shellfish){
-      exclusions.get(EXSHELLFISH).put(newR.getTotalTime(),newR);
+      exclusions.get(EXSHELLFISH).add(newR);
       newR.addLocation(exclusions.get(EXSHELLFISH));
     }
     if(dairy){
-      exclusions.get(EXDAIRY).put(newR.getTotalTime(),newR);
+      exclusions.get(EXDAIRY).add(newR);
       newR.addLocation(exclusions.get(EXDAIRY));
     }
     if(vegetarian){
-      exclusions.get(EXVEGETARIAN).put(newR.getTotalTime(),newR);
+      exclusions.get(EXVEGETARIAN).add(newR);
       newR.addLocation(exclusions.get(EXVEGETARIAN));
     }
     if(vegan){
-      exclusions.get(EXVEGAN).put(newR.getTotalTime(),newR);
+      exclusions.get(EXVEGAN).add(newR);
       newR.addLocation(exclusions.get(EXVEGAN));
     }
-    exclusions.get(EXALL).put(newR.getTotalTime(),newR);
+    exclusions.get(EXALL).add(newR);
     newR.addLocation(exclusions.get(EXALL));
   }
   
@@ -113,23 +151,24 @@ public class SmartDatabase{
   }
   
   private int getCourseVal(String course){
-    if(course.equals("salad")) return SALAD;
-    else if(course.equals("appetizer")) return APPETIZER;
-    else if(course.equals("entree")) return ENTREE;
+    if(course.equals("Salad")) return SALAD;
+    else if(course.equals("Appetizer")) return APPETIZER;
+    else if(course.equals("Entree")) return ENTREE;
     else return ALLFOODTYPES;
   }
   
-  public void addNewIngredient(String name){
-    ArrayList<ArrayList<ArrayList<TreeMap<Integer,Recipe>>>> chooseType = new ArrayList<ArrayList<ArrayList<TreeMap<Integer,Recipe>>>>();
-    ArrayList<ArrayList<TreeMap<Integer,Recipe>>> chooseCourse;
-    ArrayList<TreeMap<Integer,Recipe>> chooseExclusions;
-    TreeMap<Integer,Recipe> dataHolder;
+  private void addNewIngredient(String name){
+    //This essentially creates a new recipe option choice and gives it an appropriate path.
+    ArrayList<ArrayList<ArrayList<TreeSet<Recipe>>>> chooseType = new ArrayList<ArrayList<ArrayList<TreeSet<Recipe>>>>();
+    ArrayList<ArrayList<TreeSet<Recipe>>> chooseCourse;
+    ArrayList<TreeSet<Recipe>> chooseExclusions;
+    TreeSet<Recipe> dataHolder;
     for(int i=0; i<12; i++){
-      chooseCourse = new ArrayList<ArrayList<TreeMap<Integer,Recipe>>>();
+      chooseCourse = new ArrayList<ArrayList<TreeSet<Recipe>>>();
       for(int j=0; j<4; j++){
-        chooseExclusions = new ArrayList<TreeMap<Integer,Recipe>>();
+        chooseExclusions = new ArrayList<TreeSet<Recipe>>();
         for(int k=0; k<7; k++){
-          dataHolder = new TreeMap<Integer,Recipe>();
+          dataHolder = new TreeSet<Recipe>(new RecipeTreeTimeComparator());
           chooseExclusions.add(dataHolder);
         }
         chooseCourse.add(chooseExclusions);
@@ -139,53 +178,138 @@ public class SmartDatabase{
     map.put(name,chooseType);
   }
   
-  public void find(int time, ArrayList<String> ingred, ArrayList<String> exclude, String type, String course){
-    ArrayList<TreeMap<Integer,Recipe>> options = getListOfTrees(time, ingred, exclude, type, course);
-    System.out.println(options);
+  /**
+   * This method finds and returns the information of the first recipe that matches the inclusions
+   * exclusions and time, or closest time with correct inclusions/exclusions if no exact time match.
+   * @param time The time of the recipe you would like it to be under.
+   * @param include The list of things that must be included.
+   * @param exclude The list of things that must be excluded.
+   * @param type The cuisine type of the Recipe
+   * @param plan A boolean corresponding to whether or not the search is for a meal plan.
+   * @param course The course of the Recipe.
+   * @return The info of the Recipe with the best match.
+   */
+  public Recipe find(int time, ArrayList<String> include, ArrayList<String> exclude, String type, boolean plan, String course){
+    ArrayList<TreeSet<Recipe>> options = getListOfTrees(time, include, exclude, type, course);
+    //will be used to find best match
     MyStack<Recipe> stack = new MyStack<Recipe>();
+    //for meal plan
+    Recipe bestRecipe = null;
+    int bestMax = 0;
     for(int i=0; i<options.size(); i++){
-      TreeMap<Integer,Recipe> looking = options.get(i);
-      Iterator it = looking.entrySet().iterator();
+      TreeSet<Recipe> looking = options.get(i);
+      Iterator<Recipe> it = looking.iterator();
       while(it.hasNext()){
-        Map.Entry pair = (Map.Entry)it.next();
-        Recipe current = (Recipe) pair.getValue();
+        Recipe current = it.next();
+        //if the total time of this recipe is greater than the time we are looking for then we know we have gone too far
         if(time>=current.getTotalTime()){
-          ArrayList<String> myIngred = current.getIngredients();
-          ArrayList<Boolean> matches = new ArrayList<Boolean>();
-          for(int j=0; j<ingred.size(); j++) matches.add(false);
-          for(int k=0; k<myIngred.size(); k++){
-            for(int j=0;j<ingred.size();j++){
-              if(matches.get(j)!=true){
-                if(ingred.get(j).equals(myIngred.get(k))){
-                  matches.set(j,true);
-                  break;
+          ArrayList<String> theseInclusions = new ArrayList<String>();
+          for(int p=0; p<include.size(); p++) theseInclusions.add(include.get(p));
+          boolean good = checkInclusions(theseInclusions,current);
+          //good means it includes the ingredients it should have
+          if(good){
+            ArrayList<String> myIngred = current.getIngredients();
+            //matches corresponds to the ingredients we have found
+            ArrayList<Boolean> matches = new ArrayList<Boolean>();
+            //counted corresponds to the indexes of the recipes we have
+            //already conuted to ensure that we are not counting the same
+            //index more than once if they want more than one instance of that
+            //item
+            ArrayList<Integer> counted = new ArrayList<Integer>();
+            for(int j=0; j<theseInclusions.size(); j++) matches.add(false);
+            for(int j=0; j<theseInclusions.size(); j++){
+              for(int k=0; k<myIngred.size(); k++){
+                if(theseInclusions.get(j).equals(myIngred.get(k))){
+                  boolean contained = false;
+                  for(int l=0; l<counted.size(); l++){
+                    if((int) counted.get(l) == k) contained = true;
+                  }
+                  if(!contained){
+                    matches.set(j,true);
+                    counted.add(k);
+                    break;
+                  }
                 }
               }
             }
-          }
-          boolean good = true;
-          for(int j=0;j<matches.size();j++) if(matches.get(j)!=true){
-            good=false;
-          }
-          if(good) good = checkExclusions(exclude,current);
-          if(good){
-            if(time==current.getTotalTime()){
-              System.out.println(current.getInfo());
-              return;
+            //if not all matches were found then we know this recipe is no good, unless meal plan
+            for(int j=0;j<matches.size();j++) if(matches.get(j)!=true){
+              if(!plan) good=false;
             }
-            else stack.add(current);
+            //if it's still good up to this point we want to check that the recipe
+            //does not contain any exclusions
+            if(good) good = checkExclusions(exclude,current);
+            if(good){
+              for(int l=0;l<exclude.size() && good; l++){
+                for(int k=0; k<myIngred.size() && good; k++){
+                  if(exclude.get(l).equals(myIngred.get(k))) good = false;
+                }
+              }
+            }
+            //here we see, if it's still good, what the total time is, if it's an exact match we
+            //return the info of the recipe and end, otherwise we add it to the stack
+            if(good){
+              int thisCount = 0;
+              for(int w=0; w<matches.size(); w++) if(matches.get(w)==true){
+                thisCount++;
+              }
+              if(thisCount >= bestMax){
+                bestMax = thisCount;
+                bestRecipe = current;
+              }
+              if(time==current.getTotalTime()){
+                if(!plan) return current;
+                if(bestMax == matches.size()) return bestRecipe;
+              }
+              else stack.add(current);
+            }
           }
         }
         else break;
       }
     }
-    Recipe answer = stack.getLast();
-    String output = answer == null ? "I'm sorry, I could not find find any recipes that satisfy your conditions." : answer.getInfo();
-    System.out.println(output);
+    //if we have not already returned an exact match we return the top of the stack (aka the next closest match)
+    if(!plan) return stack.getLast();
+    else{
+      return bestRecipe;
+    }
   }
   
   private boolean checkInclusions(ArrayList<String> inclusions, Recipe recipe){
-  return false;
+    boolean answer = true;
+    ArrayList<Integer> indexes = new ArrayList<Integer>();
+    for(int i=0; i<inclusions.size(); i++){
+      String current = inclusions.get(i);
+      if(current.equals("meat")){
+        if(!recipe.containsMeat()) answer = false;
+        indexes.add(i);
+      }
+      else if(current.equals("seafood")){
+        if(!recipe.containsSeafood()) answer = false;
+        indexes.add(i);
+      }
+      else if(current.equals("dairy")){
+        if(!recipe.containsDairy()) answer = false;
+        indexes.add(i);
+      }
+      else if(current.equals("vegan")){
+        if(!recipe.isVegan()) answer = false;
+        indexes.add(i);
+      }
+      else if(current.equals("vegetarian")){
+        if(!recipe.isVegetarian()) answer = false;
+        indexes.add(i);
+      }
+      else if(current.equals("shellfish")){
+        if(!recipe.containsShellfish()) answer = false;
+        indexes.add(i);
+      }
+    }
+    //we remove them as they are not ingredients, but valid options for this process,
+    //once we are done with this step they are not necessary assuming this functioned 
+    //correctly.
+    for(int i=indexes.size()-1; i>=0; i--) inclusions.remove((int) indexes.get(i));
+    return answer;
   }
   
   private boolean checkExclusions(ArrayList<String> exclusions, Recipe recipe){
@@ -201,8 +325,8 @@ public class SmartDatabase{
     return true;
   }
   
-  private ArrayList<TreeMap<Integer,Recipe>> getListOfTrees(int time, ArrayList<String> ingred, ArrayList<String> exclude, String type, String course){
-    ArrayList<ArrayList<ArrayList<TreeMap<Integer,Recipe>>>> chooseType = null;
+  private ArrayList<TreeSet<Recipe>> getListOfTrees(int time, ArrayList<String> ingred, ArrayList<String> exclude, String type, String course){
+    ArrayList<ArrayList<ArrayList<TreeSet<Recipe>>>> chooseType = null;
     for(int i=0; i<validIngredients.size() && chooseType==null; i++){
       for(int k=0; k<ingred.size() && chooseType==null; k++){
         String current = ingred.get(k);
@@ -212,9 +336,9 @@ public class SmartDatabase{
     if(chooseType==null){
       chooseType = map.get("all");
     }
-    ArrayList<ArrayList<TreeMap<Integer,Recipe>>> chooseCourse = type.equals("") ? chooseType.get(getCuisineVal("all")) : chooseType.get(getCuisineVal(type));
-    ArrayList<TreeMap<Integer,Recipe>> chooseExclusions = course.equals("") ? chooseCourse.get(getCourseVal("all")) : chooseCourse.get(getCourseVal(course));
-    ArrayList<TreeMap<Integer,Recipe>> options = null; 
+    ArrayList<ArrayList<TreeSet<Recipe>>> chooseCourse = type.equals("") ? chooseType.get(getCuisineVal("all")) : chooseType.get(getCuisineVal(type));
+    ArrayList<TreeSet<Recipe>> chooseExclusions = course.equals("") ? chooseCourse.get(getCourseVal("all")) : chooseCourse.get(getCourseVal(course));
+    ArrayList<TreeSet<Recipe>> options = null; 
     ArrayList<String> validChoices = ruleBook.getInclusions();
     for(int i=0; i<exclude.size() && options==null; i++){
       for(int k=0;k<validChoices.size() && options==null; k++){
@@ -222,14 +346,14 @@ public class SmartDatabase{
       }
     }
     if(options == null){
-      options = new ArrayList<TreeMap<Integer,Recipe>>();
+      options = new ArrayList<TreeSet<Recipe>>();
       options.add(chooseExclusions.get(EXALL));
     }
     return options;
   }
   
-  private ArrayList<TreeMap<Integer,Recipe>> getOthers(ArrayList<TreeMap<Integer,Recipe>> list, String me){
-    ArrayList<TreeMap<Integer,Recipe>> output = new ArrayList<TreeMap<Integer,Recipe>>();
+  private ArrayList<TreeSet<Recipe>> getOthers(ArrayList<TreeSet<Recipe>> list, String me){
+    ArrayList<TreeSet<Recipe>> output = new ArrayList<TreeSet<Recipe>>();
     if(!me.equals("meat")) output.add(list.get(EXMEAT));
     if(!me.equals("seafood")) output.add(list.get(EXSEAFOOD));
     if(!me.equals("shellfish")) output.add(list.get(EXSHELLFISH));
@@ -239,21 +363,53 @@ public class SmartDatabase{
     return output;
   }
   
-  public static void main(String[] args){
-    SmartDatabase test = new SmartDatabase(new FoodRules());
-    Recipe tmp = new Recipe("scallionios","appetizer","French","peas","eggs", "lettuce", 9, 9);
-    test.add(tmp);
-    tmp = new Recipe("scallions3","all","Italian","scallions peas","arugula", "lettuce mesclun", 9, 9);
-    test.add(tmp);
-    tmp = new Recipe("scallions2","entree","Italian","scallions cauliflower","chicken", "spinach", 9, 9);
-    test.add(tmp);
-    ArrayList<String> lol = new ArrayList<String>();
-    lol.add("lettuce");
-    ArrayList<String> troll = new ArrayList<String>();
-    troll.add("");
-    test.find(19,lol, troll,"Italian","");
-    System.out.println("");
-    test.find(17,lol, troll,"French","");
-    System.out.println("done");
+  /**
+   * This method prints out the information of the dishes that best satisfy the passed conditions.
+   * @param time The time of the recipe you would like it to be under.
+   * @param include The list of things that must be included.
+   * @param exclude The list of things that must be excluded.
+   * @param type The cuisine type of the Recipe.
+   */
+  public void plan(int time, ArrayList<String> include, ArrayList<String> exclude, String type){
+    Recipe entree = find(time/4,include,exclude,type,true,"Entree");
+    Recipe salad1 = null;
+    Recipe salad2 = null;
+    Recipe appetizer = null;
+    if(entree!=null){
+      ArrayList<String> newInclude = cleanUp(entree,include);
+      salad1 = find(time/4,newInclude,exclude,type,true,"Salad");
+      if(salad1!=null){
+        newInclude = cleanUp(salad1,newInclude);
+        salad2 = find(time/4,newInclude,exclude,type,true,"Salad");
+        if(salad2!=null){
+          newInclude = cleanUp(salad2,newInclude);
+          appetizer = find(time/4,newInclude,exclude,type,true,"Appetizer");
+          if(appetizer!=null){
+            System.out.println(entree.getInfo());
+            System.out.println(salad1.getInfo());
+            System.out.println(salad2.getInfo());
+            System.out.println(appetizer.getInfo());
+            return;
+          }
+        }
+      }
+    }
+    System.out.println("I'm sorry, I could not find find something that satisfies your conditions.");
   }
+  
+  private ArrayList<String> cleanUp(Recipe dish, ArrayList<String> include){
+    ArrayList<String> mealIngredients = dish.getIngredients();
+    ArrayList<String> foundIngredients = new ArrayList<String>();
+    for(int i=0; i<mealIngredients.size(); i++) foundIngredients.add(mealIngredients.get(i));
+    
+    ArrayList<Integer> remFrom = new ArrayList<Integer>();
+    for(int i=0; i<include.size(); i++){
+      for(int k=0; k<foundIngredients.size(); k++){
+        if(foundIngredients.get(k).equals(include.get(i))) remFrom.add((int) i);
+      }
+    }
+    for(int i=0; i<remFrom.size(); i++) include.set((int) remFrom.get(i),"");
+    return include;
+  }
+
 }

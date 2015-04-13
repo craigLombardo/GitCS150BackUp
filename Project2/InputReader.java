@@ -1,6 +1,10 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
+/**
+ * This class handles all of the user input and performs appropriate action based on the user input.
+ * @author Craig Lombardo
+ */
 public class InputReader{
   
   private Scanner sc;
@@ -9,7 +13,12 @@ public class InputReader{
   private MasterDatabase masterDatabase;
   private FoodRules ruleBook;
   
-  
+  /**
+   * This constructor method creates an input reader with the two databases and a ruleset.
+   * @param smart The SmartDatabase to be used.
+   * @param master The MasterDatabase to be used.
+   * @param rules The ruleset to be used by this reader.
+   */
   public InputReader(SmartDatabase smart, MasterDatabase master, FoodRules rules){
     validCommands = new ArrayList<String>();
     validCommands.add("add");
@@ -29,6 +38,10 @@ public class InputReader{
     validOptions = ruleBook.getInclusions();
   }
   
+  /**
+   * This method gets the next command the user would like to do and then handles things
+   * accordingly based on their response.
+   */
   public void getCommand(){
     sc = new Scanner(System.in);
     boolean valid = false;
@@ -108,7 +121,7 @@ public class InputReader{
   }
   
   private String getCourse(Scanner sc){
-    System.out.println("What course is this recipe? i.e. appetizer, salad or entree");
+    System.out.println("What course is this recipe? i.e. Appetizer, Salad or Entree");
     String course;
     while(true){
       course = sc.nextLine();
@@ -199,19 +212,20 @@ public class InputReader{
     int time = getTime("total",sc);
     ArrayList<String> include = getClusions(sc,"include");
     ArrayList<String> exclude = getClusions(sc,"exclude");
-    System.out.println(include);
     String type = getType(sc,true);
     if(checkIfPossible(include,exclude)){
-      smartDatabase.find(time, include, exclude, type, "");
+      Recipe answer = smartDatabase.find(time, include, exclude, type, false, "");
+      if(answer == null) System.out.println("I'm sorry, I could not find find something that satisfies your conditions.");
+      else System.out.println(answer.getInfo());
     }
     else{
-      System.out.println("I'm sorry, I could not find find any recipes that satisfy your conditions.");
+      System.out.println("I'm sorry, I could not find find something that satisfies your conditions.");
     }
   }
   
   private ArrayList<String> getClusions(Scanner sc, String word){
     System.out.println("What would you like to " + word + "? If nothing, simply keep the field blank.");
-    System.out.println("Some exampls options are: meat, seafood, shellfish, dairy, vegetarian or vegan");
+    System.out.println("Some example options are: meat, seafood, shellfish, dairy, vegetarian or vegan");
     String answer = sc.nextLine() + " ";
     int start = 0;
     ArrayList<String> inclusions = new ArrayList<String>();
@@ -260,16 +274,21 @@ public class InputReader{
   
   private void plan(){
     //plan a meal
+    sc = new Scanner(System.in);
+    int time = getTime("total",sc);
+    ArrayList<String> include = getClusions(sc,"include");
+    ArrayList<String> exclude = getClusions(sc,"exclude");
+    String type = getType(sc,true);
+    if(checkIfPossible(include,exclude)){
+      smartDatabase.plan(time, include, exclude, type);
+    }
+    else{
+      System.out.println("I'm sorry, I could not find find something that satisfies your conditions.");
+    }
   }
   
   private void quit(){
     //exit, things are writen data out to file in cookbook
-  }
-  
-  public static void main(String[] args){
-    FoodRules ruleBook = new FoodRules();
-    InputReader test = new InputReader(new SmartDatabase(ruleBook), new MasterDatabase(), ruleBook);
-    test.getCommand();
   }
   
 }

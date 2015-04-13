@@ -1,0 +1,9 @@
+import junit.framework.TestCase;
+
+public class RecipeTest extends TestCase {
+  
+
+  public void testX() {
+  }
+  
+}

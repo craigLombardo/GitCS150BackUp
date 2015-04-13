@@ -5,21 +5,36 @@ import java.io.PrintWriter;
 import java.util.Map;
 import java.util.Collections;
 
+/**
+ * This class serves as the "MasterDatabase" it will store all of it's elements
+ * based on their name.
+ * @author Craig Lombardo
+ */
 public class MasterDatabase{
   
-  public HashMap<String,ArrayList<Recipe>> map;
+  private HashMap<String,ArrayList<Recipe>> map;
   
+  /**
+   * This constructor creates a new, empty, MasterDatabase
+   */
   public MasterDatabase(){
     map = new HashMap<String,ArrayList<Recipe>>();
   }
   
-  public boolean add(Recipe newR){
+  /**
+   * This method adds the new Recipe to the MasterDatabase.
+   * @param newR The Recipe to add.
+   */
+  public void add(Recipe newR){
     ensureAvailable(newR.getName().substring(0,1));
     ArrayList<Recipe> current = map.get(newR.getName().substring(0,1));
     current.add(newR);
-    return true;
   }
   
+  /**
+   * This method removes a given item from the MasterDatabase.
+   * @param item The recipe to remove.
+   */
   public void remove(Recipe item){
     map.get(item.getName().substring(0,1)).remove(item);
   }
@@ -31,7 +46,7 @@ public class MasterDatabase{
    * we add one.
    * @param letter The letter to check;
    */
-  public void ensureAvailable(String letter){
+  private void ensureAvailable(String letter){
     if(map.get(letter)==null){
       map.put(letter, new ArrayList<Recipe>());
     }
@@ -48,7 +63,7 @@ public class MasterDatabase{
    * modified from http://www.algolist.net/Algorithms/Binary_search
    */
   
-  public Recipe binarySearch(ArrayList<Recipe> array, String name, int left, int right){
+  private Recipe binarySearch(ArrayList<Recipe> array, String name, int left, int right){
     if(left > right) return null;
     int middle = (left + right)/2;
     if(array.get(middle).getName().equals(name)){
@@ -64,8 +79,14 @@ public class MasterDatabase{
     Collections.sort(list,new RecipeTreeNameComparator());
     return binarySearch(list, name, 0, list.size()-1);
   }
-  //http://stackoverflow.com/questions/1066589/iterate-through-a-hashmap
-  public void printOut(String outputFile) {
+  
+  /**
+   * This method writes all of the Recipes to the output file specified.
+   * Code was taken a modified from http://stackoverflow.com/questions/1066589/iterate-through-a-hashmap
+   * for iteration through a HashMap.
+   * @param outputFile The output file to write to.
+   */
+  public void printOut(String outputFile){
     PrintWriter dataWriter = null;
     try{
       dataWriter = new PrintWriter(outputFile);
@@ -84,28 +105,6 @@ public class MasterDatabase{
        it.remove();
     }
     dataWriter.close();
-  }
-  
-  public ArrayList<Recipe> hihi(String name){
-    return map.get(name.substring(0,1));
-  }
-  
-  public static void main(String[] args){
-    MasterDatabase test = new MasterDatabase();
-    Recipe tmp = new Recipe("testing","2","3","beef cheese","peas eggs", "lettuce Sides", 9, 9);
-    test.add(tmp);
-    tmp = new Recipe("resting2","2","3","beef cheese","peas eggs", "lettuce Sides", 9, 9);
-    test.add(tmp);
-    tmp = new Recipe("testing21","2","3","beef cheese","peas eggs", "lettuce Sides", 9, 9);
-    test.add(tmp);
-    Recipe found = test.find("testing");
-    if(found!=null) System.out.println(found.getInfo());
-    else System.out.println("No recipes were found with that name");
-    //test.remove(found);
-    found = test.find("testing21");
-    if(found!=null) System.out.println(found.getInfo());
-    else System.out.println("No recipes were found with that name");
-    test.printOut("ppppptmp.txt");
   }
   
 }

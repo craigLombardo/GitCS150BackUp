@@ -1,23 +1,34 @@
-/*import java.util.HashMap;
-import java.util.ArrayList;
-
 public class CookBook{
   
-  //private final int MEAT=1,SEAFOOD=2,DAIRY=4,VEGAN=8,VEGETARIAN=16,SHELLFISH=32;
+  private FoodRules ruleBook;
+  private DataHandler data;
+  private InputReader input;
+  private MasterDatabase master;
+  private SmartDatabase smart;
   
-  private ArrayList<HashMap> allergens;
-  
-  public CookBook(){
-    allergens = new ArrayList<HashMap>();
-    for(int i=0; i<64; i++){
-      allergens.add(null);
-    }
+  public CookBook(String inputFile, String outputFile){
+    ruleBook = new FoodRules();
+    master = new MasterDatabase();
+    smart = new SmartDatabase(ruleBook);
+    data = new DataHandler(inputFile, outputFile, smart, master);
+    input = new InputReader(smart, master, ruleBook);
   }
   
-  //public boolean add()
+  public void activate(){
+    data.getData();
+    input.getCommand();
+    data.writeData();
+  }
   
   public static void main(String[] args){
-    CookBook test = new CookBook();
-    
+    //"exampleRecipe/recipeDB/recipe_60000a.txt"
+    //"recipe_10.txt"
+    try{
+      CookBook test = new CookBook(args[0],"CookBookOutputInformation.txt");
+      test.activate();
+    }
+    catch(java.lang.NullPointerException e){
+      
+    }
   }
-}*/
+}

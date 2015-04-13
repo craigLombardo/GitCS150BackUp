@@ -10,7 +10,7 @@ import java.util.Collections;
 public class FoodRules{
   
   private ArrayList<String> meat, seafood, shellfish, vegetables, dairy, soy, other, cuisineType;
-  private ArrayList<String> allIngredients, allCourses, validInclusions;
+  private ArrayList<String> allIngredients, allCourses, validInclusions, asian, middleEastern, southAsian;
   
   /**
    * This constructor method takes no parameters and sets all of the items included
@@ -87,11 +87,23 @@ public class FoodRules{
     cuisineType.add("SouthAsian");
     Collections.sort(cuisineType);
     
+    asian = new ArrayList<String>();
+    asian.add("Chinese");
+    asian.add("Korean");
+    
+    middleEastern = new ArrayList<String>();
+    middleEastern.add("Greek");
+    middleEastern.add("Turkish");
+    
+    southAsian = new ArrayList<String>();
+    southAsian.add("Indian");
+    southAsian.add("Pakistan");
+    
     allCourses = new ArrayList<String>();
 
-    allCourses.add("appetizer");
-    allCourses.add("entree");
-    allCourses.add("salad");
+    allCourses.add("Appetizer");
+    allCourses.add("Entree");
+    allCourses.add("Salad");
 
     allIngredients = new ArrayList<String>();
 
@@ -211,17 +223,53 @@ public class FoodRules{
     return allIngredients;
   }
   
+  /**
+   * This method adds to the current list of valid ingredients.
+   * @param ingredient The ingredient to add.
+   */
   public void addIngredient(String ingredient){
     allIngredients.add(ingredient);
     Collections.sort(allIngredients);
   }
   
+  /**
+   * This method returns a list of valid courses.
+   * @return An ArrayList of the valid courses.
+   */
   public ArrayList<String> getCourses(){
     return allCourses;
   }
   
+  /**
+   * This method returns a list of valid inclusions.
+   * @return An ArrayList of the valid inclusions.
+   */
   public ArrayList<String> getInclusions(){
     return validInclusions;
+  }
+  
+  /**
+   * This method returns a list of the valid Asian types.
+   * @return A list of the Asian types.
+   */
+  public ArrayList<String> getAsian(){
+    return asian;
+  }
+   
+  /**
+   * This method returns a list of the valid Middle Eastern types.
+   * @return A list of the Middle Eastern types.
+   */
+  public ArrayList<String> getMiddleEastern(){
+    return middleEastern;
+  }
+   
+  /**
+   * This method returns a list of the valid South Asian types.
+   * @return A list of the South Asian types.
+   */
+  public ArrayList<String> getSouthAsian(){
+    return southAsian;
   }
   
 }
