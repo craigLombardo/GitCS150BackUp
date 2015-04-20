@@ -1,9 +1,10 @@
 import junit.framework.TestCase;
 import java.util.ArrayList;
-public class TwoThreeTreeTest extends TestCase {
+
+public class TreeSetContainerTest extends TestCase {
   
   public void testAdd(){
-    TwoThreeTree<Integer,Integer> cont = new TwoThreeTree<Integer,Integer>();
+    TreeSetContainer<Integer,Integer> cont = new TreeSetContainer<Integer,Integer>();
     
     assert(cont.add(1,1));
     assert(cont.add(6,6));
@@ -17,7 +18,7 @@ public class TwoThreeTreeTest extends TestCase {
   }
   
   public void testClear(){
-    TwoThreeTree<Integer,Integer> cont = new TwoThreeTree<Integer,Integer>();
+    TreeSetContainer<Integer,Integer> cont = new TreeSetContainer<Integer,Integer>();
     
     cont.add(1,1);
     cont.add(6,6);
@@ -36,7 +37,7 @@ public class TwoThreeTreeTest extends TestCase {
   }
   
   public void testContains(){
-    TwoThreeTree<Integer,Integer> cont = new TwoThreeTree<Integer,Integer>();
+    TreeSetContainer<Integer,Integer> cont = new TreeSetContainer<Integer,Integer>();
     
     cont.add(1,1);
     cont.add(6,6);
@@ -53,7 +54,7 @@ public class TwoThreeTreeTest extends TestCase {
   }
   
   public void testFirst(){
-    TwoThreeTree<Integer,Integer> cont = new TwoThreeTree<Integer,Integer>();
+    TreeSetContainer<Integer,Integer> cont = new TreeSetContainer<Integer,Integer>();
     
     cont.add(1,1);
     cont.add(6,6);
@@ -68,7 +69,7 @@ public class TwoThreeTreeTest extends TestCase {
   }
   
   public void testLast(){
-    TwoThreeTree<Integer,Integer> cont = new TwoThreeTree<Integer,Integer>();
+    TreeSetContainer<Integer,Integer> cont = new TreeSetContainer<Integer,Integer>();
     
     cont.add(1,1);
     cont.add(6,6);
@@ -83,7 +84,7 @@ public class TwoThreeTreeTest extends TestCase {
   }
   
   public void testSize(){
-    TwoThreeTree<Integer,Integer> cont = new TwoThreeTree<Integer,Integer>();
+    TreeSetContainer<Integer,Integer> cont = new TreeSetContainer<Integer,Integer>();
     
     cont.add(1,1);
     cont.add(6,6);
@@ -103,7 +104,7 @@ public class TwoThreeTreeTest extends TestCase {
   
   
   public void testToArray(){
-    TwoThreeTree<Integer,Integer> cont = new TwoThreeTree<Integer,Integer>();
+    TreeSetContainer<Integer,Integer> cont = new TreeSetContainer<Integer,Integer>();
     ArrayList<Integer> arr = new ArrayList<Integer>();
     
     cont.add(1,1);

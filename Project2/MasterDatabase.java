@@ -95,7 +95,7 @@ public class MasterDatabase{
       System.out.println("erroe");
     }
     Iterator it = map.entrySet().iterator();
-    while (it.hasNext()) {
+    while (it.hasNext()){
         Map.Entry pair = (Map.Entry)it.next();
         ArrayList current = (ArrayList) pair.getValue();
         for(int i=0; i<current.size(); i++){

@@ -1,0 +1,9 @@
+import junit.framework.TestCase;
+
+public class TreeSetContainerTest extends TestCase {
+  
+  public void testX(){
+    TreeSetContainer<Integer,Integer> cont = new TreeSetContainer<Integer,Integer>();
+  }
+  
+}

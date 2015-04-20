@@ -2,9 +2,9 @@ import java.util.ArrayList;
 
 /**
  * This class serves as an implementation of a 2-3 Tree. 
- * @autho Craig Lombardo
+ * @author Craig Lombardo
  */
-public class TwoThreeTree<K extends Number & Comparable<K>, E>{
+public class TwoThreeTree<K extends Number & Comparable<K>, E> extends AbstractTree<K,E>{
   
   private TwoThreeTreeNode root;
   
@@ -16,8 +16,8 @@ public class TwoThreeTree<K extends Number & Comparable<K>, E>{
   }
   
   /** This method adds the specified key/element to this set if it is not already present.
-    * @param K The key of the element you are trying to add.
-    * @param E The element you would like to add.
+    * @param k The key of the element you are trying to add.
+    * @param e The element you would like to add.
     * @return true if it was added, false if it already existed.
     */
   public boolean add(K k, E e){
@@ -25,12 +25,15 @@ public class TwoThreeTree<K extends Number & Comparable<K>, E>{
       root = new TwoThreeTreeNode();
       root.setLeftInfo(k,e);
     }
-    else root.find(k,false).add(k,e);
+    else{
+      System.out.println("base at: " + root.find(k,false).leftKey);
+      root.find(k,false).add(k,e);
+    }
     System.out.println("Inserting: " + k);
-    root.print();
+    root.printTree();
     ArrayList<E> ok = toArray();
     for(int i=0; i<ok.size(); i++) System.out.print(ok.get(i)+" ");
-    System.out.println("\n\n");
+    System.out.println("\n");
     return true;
   }
   
@@ -43,6 +46,7 @@ public class TwoThreeTree<K extends Number & Comparable<K>, E>{
   
   /**
    * This method determines if the key is already present in the Tree.
+   * @param k The key you are looking for.
    * @return true if this set contains the specified Key, false if not.
    */
   public boolean contains(K k){
@@ -163,23 +167,88 @@ public class TwoThreeTree<K extends Number & Comparable<K>, E>{
           middleElement = rightElement;
           setRightInfo(key,data);
         }
-        if(parent == null) resetRoot(middleKey, middleElement);
-        else{
-          if(middleNode == null){
-            TwoThreeTreeNode newNode = new TwoThreeTreeNode();
-            newNode.setLeftInfo(rightKey,rightElement);
-            parent.setMiddleNode(newNode);
-            setRightInfo(null,null);
-            parent.add(middleKey,middleElement);
+        if(tmpMiddleNode != null){
+          if(parent == null){
+            parent = new TwoThreeTreeNode();
+            parent.setLeftInfo(middleKey,middleElement);
+            
+            TwoThreeTreeNode newPRight = new TwoThreeTreeNode();
+            newPRight.setLeftInfo(rightKey,rightElement);
+            
+            newPRight.setLeftNode(middleNode);
+            newPRight.setRightNode(rightNode);
+            
+            middleKey = null;
+            middleElement = null;
+            
+            setRightInfo(null,null); 
+            
+            rightNode = tmpMiddleNode;
+            middleNode = null;
+            tmpMiddleNode = null;
+            
+            parent.setLeftNode(this);
+            parent.setRightNode(newPRight);
+            
+            root = parent;
           }
           else{
-            setTmpNode(middleKey,middleElement);
+            if(parent.middleNode == null){
+            TwoThreeTreeNode newNode = new TwoThreeTreeNode();
+            newNode.setLeftInfo(rightKey,rightElement);
+
+
+             if(rightKey.compareTo(parent.leftNode.getLeftKey())<0){
+              parent.setMiddleNode(leftNode);
+              parent.setLeftNode(newNode);
+            }
+            else if(rightKey.compareTo(parent.rightNode.getLeftKey())>0){
+              parent.setMiddleNode(rightNode);
+              parent.setRightNode(newNode);
+            }
+            else parent.setMiddleNode(newNode);
+                        setRightInfo(null,null);
+                         parent.add(middleKey,middleElement);
+            
+          }
+            else{
+              parent.addTmpNode(rightKey,rightElement);
+              setRightInfo(null,null);
+              parent.add(middleKey,middleElement);
+            }
+          }
+        }
+        else if(parent == null){
+          resetRoot(middleKey, middleElement);
+        }
+        else{
+          if(parent.middleNode == null){
+            TwoThreeTreeNode newNode = new TwoThreeTreeNode();
+            newNode.setLeftInfo(rightKey,rightElement);
+
+             if(rightKey.compareTo(parent.leftNode.getLeftKey())<0){
+              parent.setMiddleNode(leftNode);
+              parent.setLeftNode(newNode);
+            }
+            else if(rightKey.compareTo(parent.rightNode.getLeftKey())>0){
+              parent.setMiddleNode(rightNode);
+              parent.setRightNode(newNode);
+            }
+            else parent.setMiddleNode(newNode);
+                        setRightInfo(null,null);
+                         parent.add(middleKey,middleElement);
+            
+          }
+          else{
+            parent.addTmpNode(rightKey,rightElement);
+            setRightInfo(null,null);
+            parent.add(middleKey,middleElement);
           }
         }
       }
     }
     
-    private void setTmpNode(K key, E element){
+    private void addTmpNode(K key, E element){
       if(key.compareTo(leftNode.getLeftKey())<0){
         tmpMiddleNode = leftNode;
         leftNode = new TwoThreeTreeNode();
@@ -221,22 +290,25 @@ public class TwoThreeTree<K extends Number & Comparable<K>, E>{
         if(leftKey.equals(key)) return this;
         else if(rightKey!=null && rightKey.equals(key)) return this;
       }
-      
-      boolean right = rightKey!=null ? key.compareTo(rightKey)>0 : key.compareTo(leftKey)>0;
-      boolean middle = rightKey!=null? key.compareTo(leftKey)>0 : false;
+      System.out.println("key: "+key+" leftK: "+leftKey);
+      boolean right = key.compareTo(leftKey)>0;
+      boolean middle = rightKey!=null? key.compareTo(rightKey)<0 : false;
       
       int direction = 0;
       if(right) direction++;
       if(middle) direction++;
       if(direction == 0){
+        System.out.println("went left");
         if(leftNode != null) return leftNode.find(key, find);
         else return find ? null : this;
       }
       else if(direction == 1){
+                System.out.println("went right");
         if(rightNode != null) return rightNode.find(key, find);
         else return find ? null : this;
       }
       else{
+                System.out.println("went middle");
         if(middleNode != null) return middleNode.find(key, find);
         else return find ? null : this;
       }
@@ -321,100 +393,52 @@ public class TwoThreeTree<K extends Number & Comparable<K>, E>{
       System.out.println("My Right Value: " + rightElement);
     }
     
+    
+    private void printTree(){
+      System.out.println(this.getPart("  "));
+    }
+    
+    private String getPart(String current){
+      String total = "";
+      total = total + current + leftKey + "  " + rightKey+"\n" ;
+      String leftPart = leftNode != null ? leftNode.getPart(current + current) : "";
+      String middlePart = middleNode != null ? middleNode.getPart(current + current) : "";
+      String rightPart = rightNode != null ? rightNode.getPart(current + current) : "";
+      total = total + leftPart + middlePart + rightPart;
+      return total;
+    }
+    
+    
+    
+    
   }
   
   public static void main(String[] args){
-    TwoThreeTree<Integer,String> test = new TwoThreeTree<Integer,String>();
-    test.add(20,"20");
-    test.add(17,"17");
-    test.add(5,"5");
-    test.add(12,"12");
-    test.add(15,"15");
-    test.add(11,"11");
+    TwoThreeTree<Integer,Integer> test = new TwoThreeTree<Integer,Integer>();
+    test.add(20,20);
+    
+    
+    test.add(17,17);
+    test.add(5,5);
+    test.add(12,12);
+    test.add(15,15);
+    test.add(11,11);
+    test.add(10,10);
+    test.add(2,2);
+    test.add(3,3);
+    test.add(4,4);
+    test.add(1,1);
     
     System.out.println("root "+test.root.getLeftKey()+ " " + test.root.getRightKey() +"\n");
     
     System.out.println("left: \n"+test.root.getLeftNode().getLeftKey());
     System.out.println(test.root.getLeftNode().getRightKey()+"\n");
     
-    System.out.println("middle: \n"+test.root.getMiddleNode().getLeftKey());
-    System.out.println(test.root.getMiddleNode().getRightKey()+"\n");
-    
     System.out.println("right: \n"+test.root.getRightNode().getLeftKey());
     System.out.println(test.root.getRightNode().getRightKey()+"\n");
     
-    
-    /*System.out.println(test.root.getRightNode().getLeftKey());
-     System.out.println(test.root.getRightNode().getMiddleNode());
-     System.out.println(test.root.getRightNode().getRightKey()+"\n");
-     
-     System.out.println(test.root.getRightNode().getLeftNode());
-     System.out.println(test.root.getRightNode().getLeftNode());
-     System.out.println(test.root.getRightNode().getLeftNode()+"\n");*/
+    System.out.println("rightl: \n"+test.root.getRightNode().leftNode.getLeftKey());
+    System.out.println(test.root.getRightNode().leftNode.getRightKey()+"\n");
   }
   
 }
-
-
-
-
-/**
- * 
- * else{
-        K middleKey = key;
-        E middleElement = data;
-        
-        if(key.compareTo(leftKey)<0){
-          middleKey = leftKey;
-          middleElement = leftElement;
-          setLeftInfo(key,data);
-        }
-        else if(key.compareTo(rightKey)>0){
-          middleKey = rightKey;
-          middleElement = rightElement;
-          setRightInfo(key,data);
-        }
-        
-        if(tmpMiddleNode!=null){
-          if(parent == null){
-            parent = new TwoThreeTreeNode();
-            TwoThreeTreeNode pLeft = new TwoThreeTreeNode();
-            TwoThreeTreeNode pRight = new TwoThreeTreeNode();
-            
-            pLeft.setLeftNode(leftNode);
-            pLeft.setRightNode(tmpMiddleNode);
-            
-            pRight.setLeftNode(middleNode);
-            pRight.setRightNode(rightNode);
-              
-            parent.setLeftInfo(middleKey,middleElement);
-            
-            root = parent;
-          }
-          else{
-            parent.add(middleKey,middleElement);
-            parent.checkRestructure();
-          }
-        }
-        else if(parent == null){
-          resetRoot(middleKey, middleElement);
-        }
-        else{
-          if(parent.getMiddleNode() == null){
-            TwoThreeTreeNode newNode = new TwoThreeTreeNode();
-            if(middleKey.compareTo(parent.getLeftKey()) < 0){
-              newNode.setLeftInfo(rightKey,rightElement);
-              setRightInfo(null,null);
-            }
-            else{
-              newNode.setLeftInfo(leftKey,leftElement);
-              setLeftInfo(rightKey,rightElement);
-              setRightInfo(null,null);
-            }
-            parent.setMiddleNode(newNode);
-          }
-          parent.add(middleKey,middleElement);
-        }
-      }
-      
-      */
