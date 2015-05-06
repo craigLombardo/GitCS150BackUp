@@ -3,6 +3,7 @@ import java.util.LinkedList;
 import java.util.HashMap;
 import java.util.PriorityQueue;
 import java.util.Collections;
+import java.util.Map;
 
 /**
  * This class serves as a directed graph which will store a collection of directed edges.
@@ -13,7 +14,9 @@ public class DirectedGraph<K,E>{
   private HashMap<K,DirectedGraphNode> map;
   
   /**
-   * This constructor method creates a directed graph with a single key/element.
+   * This constructor method creates a directed graph with a single key/element node.
+   * @param k The key of the first node.
+   * @param e The element of the first node.
    */
   public DirectedGraph(K k, E e){
     map = new HashMap<K,DirectedGraphNode>();
@@ -21,7 +24,10 @@ public class DirectedGraph<K,E>{
   }
   
   /**
-   * This method adds a node with key k.
+   * This method adds a new node to the graph.
+   * @param k The key of the new node.
+   * @param e The element of new node.
+   * @return true if successful, false if not
    */
   public boolean addNode(K k, E e){
     if(!map.containsKey(k)){
@@ -32,7 +38,12 @@ public class DirectedGraph<K,E>{
   }
   
   /**
-   * Add an edge from the node with key k1 to the node with key k2. The edge has weight w. Returns true if the edge is successfully added.
+   * This method adds an edge from the node with key k1 to the node with key k2. Since it is a directed graph,
+   * k1 "points" to k2 but not in reverse.
+   * @param k1 The key of the starting node.
+   * @param k2 The key of the destination node.
+   * @param w The weight of the new edge. 
+   * @return true if the edge is successfully added, false if not.
    */
   public boolean addEdge(K k1, K k2, int w){
     DirectedGraphNode one = map.get(k1);
@@ -40,13 +51,18 @@ public class DirectedGraph<K,E>{
     
     if((one!=null && two!=null) && one!=two && w>0){
       one.addEdge(new Edge(two,w));
+      one.setConnected(true);
+      two.setConnected(true);
       return true;
     }
     else return false;
   }
   
   /**
-   * Find the shortest path from the node with key k1 to the node with key k2.
+   * This method finds the shortest path from the node with key k1 to the node with key k2.
+   * @param k1 The key of the starting node.
+   * @param k2 The key of the destination node.
+   * @return ArrayList An ArrayList of the path from k1 to k2
    */
   public ArrayList<DirectedGraphNode> findShortestPath(K k1, K k2){
     DirectedGraphNode source = map.get(k1);
@@ -56,6 +72,13 @@ public class DirectedGraph<K,E>{
     return path;
   }
   
+  /**
+   * This method finds the shortest path information from the node with key k1 to the node with key k2.
+   * @param k1 The key of the starting node.
+   * @param k2 The key of the destination node.
+   * @return String The information on the path from k1 to k2; information includes distance and the element 
+   * of each node in the order of the path.
+   */
   public String findShortestPathInfo(K k1, K k2){
     DirectedGraphNode source = map.get(k1);
     DirectedGraphNode target = map.get(k2);
@@ -75,19 +98,28 @@ public class DirectedGraph<K,E>{
         }
       }
     }
-    
     String output = "Path from " + source.getElement() + " -> " + target.getElement() + "\n";
-    output = output + "Distance: " + total + "\n";
-    output = output + "Path: " + pathStr + path.get(path.size()-1).getElement() + " ";
-    return path.size()>0 ? output : "No valid path found!";
+    if(path.size()>0){
+      output = output + "Distance: " + total + "\n";
+      output = output + "Path: " + pathStr + path.get(path.size()-1).getElement() + "\n";
+    }
+    else output = output + "No valid path found!\n";
+    return output;
   }
   
-  //http://www.algolist.com/code/java/Dijkstra%27s_algorithm
+  /**
+   * This method was modified from Algolist.com
+   * http://www.algolist.com/code/java/Dijkstra%27s_algorithm
+   */
   private void computePaths(DirectedGraphNode source){
+    for(Map.Entry<K, DirectedGraphNode> entry : map.entrySet())
+    {
+      entry.getValue().setMinDistance((int) Double.POSITIVE_INFINITY);
+      entry.getValue().setPrevious(null);
+    }
     source.setMinDistance(0);
     PriorityQueue<DirectedGraphNode> queue = new PriorityQueue<DirectedGraphNode>();
     queue.add(source);
-    
     while(!queue.isEmpty()){
       DirectedGraphNode current = queue.poll();
       // Visit each edge exiting current
@@ -106,7 +138,10 @@ public class DirectedGraph<K,E>{
     }
   }
   
-  //http://www.algolist.com/code/java/Dijkstra%27s_algorithm
+  /**
+   * This method was modified from Algolist.com
+   * http://www.algolist.com/code/java/Dijkstra%27s_algorithm
+   */
   private ArrayList<DirectedGraphNode> getShortestPathTo(DirectedGraphNode target){
     ArrayList<DirectedGraphNode> path = new ArrayList<DirectedGraphNode>();
     for(DirectedGraphNode node = target; node != null; node = node.getPrevious()){
@@ -116,6 +151,18 @@ public class DirectedGraph<K,E>{
     return path.size()<=1 ? new ArrayList<DirectedGraphNode>() : path;
   }
   
+  /**
+   * This method returns whether or not all nodes can be reached in the graph.
+   * @return true if all can be reached, false if not
+   */
+  public boolean checkAllConnected(){
+    boolean output = true;
+    for(Map.Entry<K, DirectedGraphNode> entry : map.entrySet()){
+      if(output) output = entry.getValue().isConnected();
+    }
+    return output;
+  }
+  
   private class DirectedGraphNode implements Comparable<DirectedGraphNode>{
     
     private LinkedList<Edge> myEdges;
@@ -123,6 +170,7 @@ public class DirectedGraph<K,E>{
     private E myElement;
     private int minDistance = (int) Double.POSITIVE_INFINITY;
     private DirectedGraphNode previous;
+    private boolean connected = false;
     
     private DirectedGraphNode(K key, E element){
       myEdges = new LinkedList<Edge>();
@@ -130,8 +178,13 @@ public class DirectedGraph<K,E>{
       myElement = element;
     }
     
+    /**
+     * This method compares this minimum distance to the minimum distance of another node.
+     * @param other The other DirectedGraphNode to compare to this current node.
+     * @return int An integer <0 if this distance is less, =0 if the distances are equal or >0
+     */
     public int compareTo(DirectedGraphNode other){
-      return Double.compare(minDistance, other.minDistance);
+      return Integer.compare(minDistance, other.minDistance);
     }
     
     private void addEdge(Edge edge){
@@ -161,6 +214,14 @@ public class DirectedGraph<K,E>{
     private E getElement(){
       return myElement;
     }
+    
+    private void setConnected(boolean bool){
+      connected = bool;
+    }
+    
+    private boolean isConnected(){
+      return connected;
+    }
   }
   
   private class Edge{
@@ -182,6 +243,10 @@ public class DirectedGraph<K,E>{
     
   }
   
+  /**
+   * The main method is used in conjunction with the graph presented to 
+   * @param args This is not used in testing.
+   */
   public static void main(String[] args){    
     DirectedGraph<Integer,String> test = new DirectedGraph<Integer,String>(1,"A");
     test.addNode(2,"B");
@@ -202,6 +267,16 @@ public class DirectedGraph<K,E>{
     test.addEdge(6,7,9);
     
     System.out.println(test.findShortestPathInfo(2,4));
+    
+    System.out.println(test.findShortestPathInfo(4,2));
+    
+    System.out.println(test.findShortestPathInfo(7,1));
+    
+    System.out.println(test.findShortestPathInfo(7,6));
+    
+    System.out.println(test.findShortestPathInfo(1,3));
+    
+    System.out.println(test.findShortestPathInfo(1,2));
   }
   
 }

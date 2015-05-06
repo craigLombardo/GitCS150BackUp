@@ -1,0 +1,38 @@
+import java.util.ArrayList;
+/**
+ * This class serves as a Farm by which we will travel to in order 
+ * to collect all of the necessary ingredients for a meal.
+ * @author Craig Lombardo
+ */
+public class Farm{
+  
+  private String myName;
+  private ArrayList<Item> myItems;
+  
+  /**
+   * This constructor method creates a new Farm with a given name.
+   * @param name The name of the farm.
+   * @param items The itesma the Farm has to offer.
+   */
+  public Farm(String name, ArrayList<Item> items){
+    myName = name;
+    myItems = items;
+  }
+  
+  /**
+   * This method returns the name of this farm.
+   * @return The name of this farm.
+   */
+  public String getName(){
+    return myName;
+  }  
+  
+  /**
+   * This method returns an ArrayList of the Items in stock at this farm.
+   * @return An ArrayList with all of the items at this farm.
+   */
+  public ArrayList<Item> getItems(){
+    return myItems;
+  }
+  
+}

@@ -1,0 +1,12 @@
+import junit.framework.TestCase;
+
+public class ItemTest extends TestCase {
+  
+  public void testCompareTo(){
+    Item one = new Item("Smaller",1.0);
+    Item two = new Item("larger",1.0);
+    
+    assert(one.compareTo(two)<0);
+  }
+  
+}
