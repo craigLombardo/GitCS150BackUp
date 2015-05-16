@@ -72,4 +72,23 @@ public class FarmTest extends TestCase{
     cost = test.getCost(input);
     assert(cost==7);
   }
+  
+  public void testFindItem(){
+    ArrayList<Item> stock = new ArrayList<Item>();
+    
+    Item one = new Item("one",1);
+    Item two = new Item("two",2);
+    Item three = new Item("three",3);
+    Item four = new Item("four",4);
+    
+    stock.add(one);
+    stock.add(two);
+    stock.add(three);
+    stock.add(four);
+    
+    Farm test = new Farm("Test Farm",stock);
+    
+    assert(test.findItem("five")==null);
+    assert(test.findItem("two")==two);
+  }
 }

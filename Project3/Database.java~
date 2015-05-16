@@ -14,19 +14,31 @@ import java.util.Scanner;
 public class Database{
   
   private HashMap<String,Junction> map;
+  private ArrayList<Farm> farms;
+  private ArrayList<Restaurant> rests;
   
   /**
    * The constructor method creates a new empty database.
+   * @param conn An input file serving as the connectivity list, all entries should
+   * be on their own line in the form of:<br>&#60;conn1&#62; - &#60;conn2&#62; &#60;distance&#62;
+   * @param farm An input file serving as the list of Farms in the area, all entries
+   * should be on their own line and should be in the form of:<br>
+   * farm &#60;node name&#62; - &#60;ingredient1&#62; &#60;cost&#62; &#60;ingredient2&#62; &#60;cost&#62; ...
+   * @param rest An input file serving as the list of Restaurants in the area, all
+   * entries should be on their own line and should be in the form of:<br>
+   * restaurant &#60;node name&#62;
    */
-  public Database(String conns, String farms, String rests){
+  public Database(String conn, String farm, String rest){
     map = new HashMap<String,Junction>();
+    farms = new ArrayList<Farm>();
+    rests = new ArrayList<Restaurant>();
     Scanner connSc = null;
     Scanner farmSc = null;
     Scanner restSc = null;
     try{
-      connSc = new Scanner(new File(conns));
-      farmSc = new Scanner(new File(farms));
-      restSc = new Scanner(new File(rests));
+      connSc = new Scanner(new File(conn));
+      farmSc = new Scanner(new File(farm));
+      restSc = new Scanner(new File(rest));
       addFarms(farmSc);
       addRests(restSc);
       addConns(connSc);
@@ -44,10 +56,26 @@ public class Database{
       String num = line.next();
       line.next();
       while(line.hasNext()){
-        farmSupply.add(new Item(line.next(),Double.parseDouble(line.next())));
+        Item newI = new Item(line.next(),Double.parseDouble(line.next()));
+        if(farmSupply.size()==0) farmSupply.add(newI);
+        else{
+          boolean insert = true;
+          for(Item i : farmSupply){
+            if(i.getName().equals(newI.getName())){
+              if(newI.getCost()<i.getCost()){
+                i.setCost(newI.getCost());
+                insert = false;
+                break;
+              }
+            }
+          }
+          if(insert) farmSupply.add(newI);
+        }
       }
+      Collections.sort(farmSupply);
       Farm newF = new Farm(num,farmSupply);
       map.put(newF.getName(), new Junction(newF.getName(), newF, null));
+      farms.add(newF);
       line.close();
     }
   } 
@@ -59,6 +87,7 @@ public class Database{
       String num = line.next();
       Restaurant newR = new Restaurant(num);
       map.put(num,new Junction(num,null,newR));
+      rests.add(newR);
       line.close();
     }
   }
@@ -144,16 +173,35 @@ public class Database{
     return path.size()<=1 ? new ArrayList<Junction>() : path;
   }
   
+  public int getDistance(ArrayList<Junction> list){
+    int total = 0;
+    for(int i=0; i<list.size()-1; i++) total += list.get(i).getDistTo(list.get(i+1));
+    return total;
+  }
+  
+  /**
+   * This needs updatind
+   * @param args empty
+   */
   public static void main(String[] args){
     Database test = new Database("exampleData/connectivity.txt","exampleData/farms.txt","exampleData/restaurants.txt");
-    System.out.println(test.map);
-    System.out.println();
-    ArrayList<Item> tmp = test.map.get("22").getFarm().getItems();
-    for(Item i : tmp) System.out.println(i.getName() + " : " + i.getCost());
-    System.out.println();
-    Junction dut = test.map.get("22");
-    ArrayList<Junction.Road> ok = dut.getRoads();
-    for(Junction.Road r : ok) System.out.println(dut.getName() + " - " + r.getOtherJunction(dut).getName() + " w: " + r.getDistance());
+    //System.out.println(test.map);
+    //System.out.println();
+    //ArrayList<Item> tmp = test.map.get("22").getFarm().getItems();
+    //for(Item i : tmp) System.out.println(i.getName() + " : " + i.getCost());
+    //System.out.println();
+    //Junction dut = test.map.get("22");
+    Junction rest = test.map.get("28");
+    rest.computePaths(test.map);
+    
+    for(Farm f : test.farms){
+      ArrayList<Junction> lol = test.getShortestPathTo(test.map.get(f.getName()));
+      for(Junction l : lol) System.out.print(l.getName()+", ");
+      System.out.println("\nDistance: " + test.getDistance(lol)+"\n");
+    }
+    //ArrayList<Junction.Road> ok = dut.getRoads();
+    //for(Junction.Road r : ok) System.out.println(dut.getName() + " - " + r.getOtherJunction(dut).getName() + " w: " + r.getDistance());
+    //for
   }
   
 }

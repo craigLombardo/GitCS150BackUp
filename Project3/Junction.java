@@ -85,6 +85,19 @@ public class Junction implements Comparable<Junction>{
   }
   
   /**
+   * This method returns the distance from this Junction to another junction
+   * @param other The other Junction to get the distance to
+   * @return The distance to this Junction 
+   */
+  public int getDistTo(Junction other){
+    int min = (int) Double.POSITIVE_INFINITY;
+    for(Road r : myRoads){
+      if(r.getOtherJunction(this).equals(other)) min = r.getDistance() < min ? r.getDistance() : min;
+    }
+    return min == (int) Double.POSITIVE_INFINITY ? -1 : min;
+  }
+  
+  /**
    * This method sets the minimum distance of paths, used for Dijkstra's algorithm, it is advised
    * to not use this method as it is used in calculations.
    * @param d The new min distance.
@@ -160,19 +173,7 @@ public class Junction implements Comparable<Junction>{
     }
   }
   
-  /**
-   * 
-   * 
-   * 
-   * CHANGE THIS TO PRIVATE BEFORE SUBMISSION
-   * 
-   * 
-   * 
-   * 
-   * 
-   */
-  
-  public class Road{
+  private class Road{
     
     private Junction junctionOne, junctionTwo;
     private int distance;

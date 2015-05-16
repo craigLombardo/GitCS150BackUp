@@ -8,7 +8,7 @@ public class ItemTest extends TestCase {
     
     assert(one.compareTo(two)<0);
     assert(two.compareTo(one)>0);
-      
+    
     Item sameOne = new Item("match",1.0);
     Item sameTwo = new Item("match",2.0);
     

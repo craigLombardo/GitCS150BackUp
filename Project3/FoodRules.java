@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Random;
 
 /**
  * This class will handle the food rules used by our cookbook. This class will
@@ -9,7 +8,7 @@ import java.util.Random;
  * @author Craig Lombardo
  */
 public class FoodRules{
-  private static final int MIN_INGRED = 5;
+  
   private ArrayList<String> meat, seafood, shellfish, vegetables, dairy, soy, other, cuisineType;
   private ArrayList<String> allIngredients, allCourses, validInclusions, asian, middleEastern, southAsian;
   
@@ -101,13 +100,13 @@ public class FoodRules{
     southAsian.add("Pakistan");
     
     allCourses = new ArrayList<String>();
-
+    
     allCourses.add("Appetizer");
     allCourses.add("Entree");
     allCourses.add("Salad");
-
+    
     allIngredients = new ArrayList<String>();
-
+    
     for(int i=0; i<meat.size(); i++) allIngredients.add(meat.get(i));
     for(int i=0; i<seafood.size(); i++) allIngredients.add(seafood.get(i));
     for(int i=0; i<shellfish.size(); i++) allIngredients.add(shellfish.get(i));
@@ -256,7 +255,7 @@ public class FoodRules{
   public ArrayList<String> getAsian(){
     return asian;
   }
-   
+  
   /**
    * This method returns a list of the valid Middle Eastern types.
    * @return A list of the Middle Eastern types.
@@ -264,18 +263,13 @@ public class FoodRules{
   public ArrayList<String> getMiddleEastern(){
     return middleEastern;
   }
-   
+  
   /**
    * This method returns a list of the valid South Asian types.
    * @return A list of the South Asian types.
    */
   public ArrayList<String> getSouthAsian(){
     return southAsian;
-  }
-  
-  public String makeMeal(String req, String ex, String cuisine){
-    Random rand = new Random();
-    return "" + rand.nextInt();
   }
   
 }

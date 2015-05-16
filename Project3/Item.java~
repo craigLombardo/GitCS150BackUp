@@ -3,7 +3,7 @@
  * of this project, each item will represent an ingredient in our meal.
  * @author Craig Lombardo
  */
-public class Item{
+public class Item implements Comparable<Item>{
   
   private String myName;
   private double myCost;
@@ -16,6 +16,10 @@ public class Item{
   public Item(String name, double cost){
     myName = name;
     myCost = cost;
+  }
+  
+  public int compareTo(Item other){
+    return myName.compareTo(other.getName());
   }
   
   /**
@@ -32,6 +36,10 @@ public class Item{
    */
   public double getCost(){
     return myCost;
+  }
+  
+  public void setCost(Double other){
+    myCost = other;
   }
   
 }

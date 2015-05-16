@@ -1,6 +1,6 @@
 /**
  * This class serves as a Restaurant.
- * @Author Craig Lombardo
+ * @author Craig Lombardo
  */
 public class Restaurant{
   

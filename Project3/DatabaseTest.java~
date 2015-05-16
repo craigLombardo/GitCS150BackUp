@@ -1,47 +1,61 @@
 import junit.framework.TestCase;
+import java.util.ArrayList;
 
-/**
- * A JUnit test case class.
- * Every method starting with the word "test" will be called when running
- * the test with JUnit.
- */
 public class DatabaseTest extends TestCase {
   
   public void testaddJunction(){
-    Database test = new Database();
+    Database test = new Database("","","");
     Junction nill = new Junction("Junction",null,null);
-    Junction farm = new Junction("Craig Farm",new Farm("Craig",null), null);
-    Junction rest = new Junction("Maybe Restaurant",null,new Restaurant("Maybe"));
+    Junction farm = new Junction("Craig's Farm",new Farm("Craig",null), null);
+    Junction rest = new Junction("The Restaurant",null,new Restaurant("Maybe"));
     Junction fail = new Junction("Craig's Farm",null,null);
     assert(test.addJunction(nill));
     assert(test.addJunction(farm));
     assert(test.addJunction(rest));
-    
+    assert(!test.addJunction(fail));
   }
-    
-    System.out.println(test.connect("empty","Craig Farm",20));
-    System.out.println(test.connect("empty","Maybe Rest",5));
-    
-    System.out.println("\nnill");
-    ArrayList<Junction.Road> jk = nill.getRoads();
-    for(Junction.Road r : jk) System.out.println(r.getDistance() + " - " + r.getOtherJunction(nill).getName());
-    
-    System.out.println("\nfarm");
-    ArrayList<Junction.Road> lol = farm.getRoads();
-    for(Junction.Road r : lol) System.out.println(r.getDistance() + " - " + r.getOtherJunction(farm).getName());
-    
-    System.out.println("\nrest");
-    ArrayList<Junction.Road> ok = rest.getRoads();
-    for(Junction.Road r : ok) System.out.println(r.getDistance() + " - " + r.getOtherJunction(rest).getName());
-    
-    rest.computePaths(test.map);
-    ArrayList<Junction> path = test.getShortestPathTo(farm);
-    for(Junction j : path) System.out.print(j.getName() + " -> ");
-    System.out.println();
-    
-    nill.computePaths(test.map);
-    path = test.getShortestPathTo(rest);
-    for(Junction j : path) System.out.print(j.getName() + " -> ");
-    System.out.println();
   
+  public void testConnect(){
+    Database test = new Database("","","");
+    Junction nill = new Junction("Junction",null,null);
+    Junction farm = new Junction("Craig Farm",new Farm("Craig",null), null);
+    Junction rest = new Junction("The Restaurant",null,new Restaurant("Maybe"));
+    
+    test.addJunction(nill);
+    test.addJunction(farm);
+    test.addJunction(rest);
+    
+    assert(test.connect("Junction","Craig Farm",20));
+    assert(test.connect("Junction","The Restaurant",5));
+    
+    assert(!test.connect("Junction","fake",12));
+  }
+  
+  public void testGetShortestPath(){
+    Database test = new Database("","","");
+    Junction nill = new Junction("Junction",null,null);
+    Junction farm = new Junction("Craig Farm",new Farm("Craig",null), null);
+    Junction rest = new Junction("The Restaurant",null,new Restaurant("Maybe"));
+    
+    test.addJunction(nill);
+    test.addJunction(farm);
+    test.addJunction(rest);
+    
+    test.connect("Junction","Craig Farm",20);
+    test.connect("Junction","The Restaurant",5);
+    test.connect("Craig Farm","Junction",10);
+    
+    rest.computePaths(test.getMap());
+    String answer = "";
+    ArrayList<Junction> path = test.getShortestPathTo(farm);
+    for(Junction j : path) answer = answer + j.getName() + " -> ";
+    assert(answer.equals("The Restaurant -> Junction -> Craig Farm -> "));
+    assert(test.getDistance(path)==15);
+    
+    answer = "";
+    nill.computePaths(test.getMap());
+    path = test.getShortestPathTo(rest);
+    for(Junction j : path) answer = answer + j.getName() + " -> ";
+    assert(answer.equals("Junction -> The Restaurant -> "));
+  }
 }

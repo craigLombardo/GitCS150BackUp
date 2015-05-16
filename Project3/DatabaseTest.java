@@ -1,11 +1,6 @@
 import junit.framework.TestCase;
 import java.util.ArrayList;
 
-/**
- * A JUnit test case class.
- * Every method starting with the word "test" will be called when running
- * the test with JUnit.
- */
 public class DatabaseTest extends TestCase {
   
   public void testaddJunction(){
@@ -36,7 +31,7 @@ public class DatabaseTest extends TestCase {
     assert(!test.connect("Junction","fake",12));
   }
   
-  public void testGetShortestPath(){
+  public void testGetShortestPathTo(){
     Database test = new Database("","","");
     Junction nill = new Junction("Junction",null,null);
     Junction farm = new Junction("Craig Farm",new Farm("Craig",null), null);
@@ -48,17 +43,24 @@ public class DatabaseTest extends TestCase {
     
     test.connect("Junction","Craig Farm",20);
     test.connect("Junction","The Restaurant",5);
+    test.connect("Craig Farm","Junction",10);
     
-    rest.computePaths(test.getMap());
     String answer = "";
-    ArrayList<Junction> path = test.getShortestPathTo(farm);
+    ArrayList<Junction> path = test.getShortestPathTo(rest,farm);
     for(Junction j : path) answer = answer + j.getName() + " -> ";
     assert(answer.equals("The Restaurant -> Junction -> Craig Farm -> "));
+    assert(test.getDistance(path)==15);
     
     answer = "";
-    nill.computePaths(test.getMap());
-    path = test.getShortestPathTo(rest);
+    path = test.getShortestPathTo(nill,rest);
     for(Junction j : path) answer = answer + j.getName() + " -> ";
     assert(answer.equals("Junction -> The Restaurant -> "));
+    assert(test.getDistance(path)==5);
+    
+    answer = "";
+    path = test.getShortestPathTo(farm,rest);
+    for(Junction j : path) answer = answer + j.getName() + " -> ";
+    assert(answer.equals("Craig Farm -> Junction -> The Restaurant -> "));
+    assert(test.getDistance(path)==15);
   }
 }

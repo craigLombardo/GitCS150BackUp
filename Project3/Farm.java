@@ -35,13 +35,19 @@ public class Farm{
     return myItems;
   }
   
-  private Item findItem(String name){
-    Item out = null;
-    for(int i=0; i<myItems.size(); i++){
-      Item current = myItems.get(i);
-      if(current.getName().equals(name)) return current;
+  /**
+   * This method looks for a given Item at the farm given it's name.
+   * @param name The name of the Item you are looking for.
+   * @return null if the Item is not listed, an Item if it is present
+   */
+  public Item findItem(String name){
+    Item best = null;
+    for(Item i : myItems){ 
+      if(i.getName().equals(name)){
+        if(best ==null || i.getCost()<best.getCost()) best = i;
+      }
     }
-    return out;
+    return best;
   }
   
   /**
@@ -75,5 +81,4 @@ public class Farm{
     }
     return total;
   }
-  
 }

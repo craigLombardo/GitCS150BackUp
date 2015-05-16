@@ -35,4 +35,46 @@ public class Farm{
     return myItems;
   }
   
+ /**
+  * This method looks for a given Item at the farm given it's name.
+  * @param name The name of the Item you are looking for.
+  * @return null if the Item is not listed, an Item if it is present
+  */
+  public Item findItem(String name){
+    for(Item i : myItems) 
+      if(i.getName().equals(name)) return i;
+    return null;
+  }
+  
+  /**
+   * This method determines what ingredients this farm has out of the list of needed ingredients.
+   * @param list An ArrayList of Strings corresponding to the names of the ingredients that are needed.
+   * @return An ArrayList of Strings corresponding to the names of the ingredients that this farm has
+   * that are also needed by the user
+   */
+  public ArrayList<String> hasWhichIngredients(ArrayList<String> list){
+    ArrayList<String> out = new ArrayList<String>();
+    for(String i : list){
+      Item item = findItem(i);
+      if(item!=null) out.add(item.getName());
+    }
+    return out;
+  }
+  
+  /**
+   * This method returns the total cost of getting all of the necessary ingredients from this farm,
+   * based on the given list. It is important to note that getting the price of ingredients that are not present
+   * at this parm will not result in a price change. i.e. if this farm only has beans for 1$ and you ask for the
+   * price to buy beans and chicken the price will be 1$.
+   * @param list The list of items to be purchased from this farm.
+   * @return The cost of all of these ingredients.
+   */
+  public double getCost(ArrayList<String> list){
+    double total = 0.0;
+    for(String i : list){
+      Item current = findItem(i);
+      if(current!=null) total += current.getCost();
+    }
+    return total;
+  }
 }

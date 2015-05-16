@@ -29,12 +29,25 @@ public class JunctionTest extends TestCase {
   }
   
   public void testComputePaths(){
-  Junction nill = new Junction("Junction",null,null);
+    Junction nill = new Junction("Junction",null,null);
     Junction farm = new Junction("Craig Farm",new Farm("Craig",null), null);
     Junction rest = new Junction("The Restaurant",null,new Restaurant("Maybe"));
     
     nill.connectTo(farm, 120);
     nill.connectTo(rest,129);
+  }
+  
+  public void testGetDistTo(){
+    Junction nill = new Junction("Junction",null,null);
+    Junction farm = new Junction("Craig Farm",new Farm("Craig",null), null);
+    Junction rest = new Junction("The Restaurant",null,new Restaurant("Maybe"));
+    
+    nill.connectTo(farm, 120);
+    nill.connectTo(rest,129);
+    
+    assert(farm.getDistTo(nill)==120);
+    
+    assert(rest.getDistTo(nill)==129);
   }
   
 }

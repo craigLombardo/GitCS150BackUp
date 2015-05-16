@@ -38,4 +38,12 @@ public class Item implements Comparable<Item>{
     return myCost;
   }
   
+  /**
+   * This method sets the cost to another value.
+   * @param other The new cost of the Item.
+   */
+  public void setCost(Double other){
+    myCost = other;
+  }
+  
 }

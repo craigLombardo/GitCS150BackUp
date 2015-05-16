@@ -20,7 +20,21 @@ public class JunctionTest extends TestCase {
     Junction farm = new Junction("Craig Farm",new Farm("Craig",null), null);
     Junction rest = new Junction("The Restaurant",null,new Restaurant("Maybe"));
     
+    nill.connectTo(farm, 120);
+    nill.connectTo(rest,129);
     
+    assert(nill.getRoads().size()==2);
+    assert(rest.getRoads().size()==1);
+    assert(farm.getRoads().size()==1);
+  }
+  
+  public void testComputePaths(){
+    Junction nill = new Junction("Junction",null,null);
+    Junction farm = new Junction("Craig Farm",new Farm("Craig",null), null);
+    Junction rest = new Junction("The Restaurant",null,new Restaurant("Maybe"));
+    
+    nill.connectTo(farm, 120);
+    nill.connectTo(rest,129);
   }
   
 }
